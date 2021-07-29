@@ -2533,6 +2533,7 @@ void __attribute__((picinterrupt(("")))) isr(void){
         if (PORTBbits.RB0 == 0) {
             PORTC++;
         }
+
         if (PORTBbits.RB1 == 0) {
             PORTC--;
         }
@@ -2613,6 +2614,5 @@ void main(void) {
     INTCONbits.PEIE = 1;
     PIE1bits.ADIE = 1;
     ADCON0bits.GO = 1;
-    while (1){
-}
+    while (1){}
      }

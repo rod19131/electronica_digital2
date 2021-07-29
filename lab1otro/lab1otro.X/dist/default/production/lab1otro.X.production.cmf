@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 E E 3 2
 config CONFIG 4 2007 2007 2 2
@@ -76,23 +76,23 @@ STRING 134-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lab1otro.X.production.o
-11 cinit CODE >973:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-11 cinit CODE >976:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-11 cinit CODE >1026:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-12 cinit CODE >1027:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-13 cinit CODE >1028:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-14 cinit CODE >1029:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-15 cinit CODE >1030:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-16 cinit CODE >1031:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-17 cinit CODE >1032:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-18 cinit CODE >1033:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-19 cinit CODE >1034:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-1A cinit CODE >1035:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-1F cinit CODE >1039:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-20 cinit CODE >1040:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-21 cinit CODE >1046:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-21 cinit CODE >1048:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-22 cinit CODE >1049:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
+11 cinit CODE >973:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+11 cinit CODE >976:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+11 cinit CODE >1026:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+12 cinit CODE >1027:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+13 cinit CODE >1028:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+14 cinit CODE >1029:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+15 cinit CODE >1030:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+16 cinit CODE >1031:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+17 cinit CODE >1032:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+18 cinit CODE >1033:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+19 cinit CODE >1034:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+1A cinit CODE >1035:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+1F cinit CODE >1039:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+20 cinit CODE >1040:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+21 cinit CODE >1046:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+21 cinit CODE >1048:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+22 cinit CODE >1049:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
 4 intentry CODE >37:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 11A text4 CODE >11:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_canal.c
 11B text4 CODE >12:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_canal.c
@@ -106,37 +106,37 @@ F6 text3 CODE >29:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\t
 25 text2 CODE >39:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 29 text2 CODE >41:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 2F text2 CODE >42:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-33 text2 CODE >44:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-37 text2 CODE >45:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-39 text2 CODE >48:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-3A text2 CODE >50:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-40 text2 CODE >53:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-46 text2 CODE >54:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-47 text2 CODE >55:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-48 text2 CODE >56:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+33 text2 CODE >45:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+37 text2 CODE >46:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+39 text2 CODE >49:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+3A text2 CODE >51:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+40 text2 CODE >54:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+46 text2 CODE >55:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+47 text2 CODE >56:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 48 text2 CODE >57:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-49 text2 CODE >59:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-54 text2 CODE >60:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-57 text2 CODE >61:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-5A text2 CODE >62:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-5B text2 CODE >65:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-5F text2 CODE >66:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-60 text2 CODE >68:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-61 text2 CODE >69:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+48 text2 CODE >58:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+49 text2 CODE >60:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+54 text2 CODE >61:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+57 text2 CODE >62:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+5A text2 CODE >63:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+5B text2 CODE >66:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+5F text2 CODE >67:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+60 text2 CODE >69:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 61 text2 CODE >70:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-62 text2 CODE >71:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-6C text2 CODE >72:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-6D text2 CODE >73:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-6F text2 CODE >74:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-70 text2 CODE >75:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+61 text2 CODE >71:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+62 text2 CODE >72:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+6C text2 CODE >73:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+6D text2 CODE >74:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+6F text2 CODE >75:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 70 text2 CODE >76:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-71 text2 CODE >77:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-83 text2 CODE >78:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-84 text2 CODE >79:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-85 text2 CODE >80:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-86 text2 CODE >81:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-96 text2 CODE >82:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-97 text2 CODE >85:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+70 text2 CODE >77:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+71 text2 CODE >78:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+83 text2 CODE >79:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+84 text2 CODE >80:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+85 text2 CODE >81:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+86 text2 CODE >82:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+96 text2 CODE >83:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+97 text2 CODE >86:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 128 text1 CODE >11:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_c.c
 128 text1 CODE >13:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_c.c
 12C text1 CODE >14:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_c.c
@@ -145,55 +145,54 @@ F6 text3 CODE >29:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\t
 131 text1 CODE >17:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_c.c
 132 text1 CODE >18:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_c.c
 133 text1 CODE >19:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_c.c
-A0 maintext CODE >87:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-A0 maintext CODE >90:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-A6 maintext CODE >91:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-A7 maintext CODE >93:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-AA maintext CODE >94:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-AB maintext CODE >95:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-AE maintext CODE >96:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-B0 maintext CODE >97:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-B1 maintext CODE >98:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-B2 maintext CODE >99:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-B3 maintext CODE >100:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-B4 maintext CODE >101:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-B5 maintext CODE >102:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-B8 maintext CODE >103:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-B9 maintext CODE >104:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-BA maintext CODE >105:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-BB maintext CODE >107:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-BE maintext CODE >108:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-BF maintext CODE >110:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-C0 maintext CODE >111:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-C1 maintext CODE >112:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-C3 maintext CODE >113:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-C6 maintext CODE >114:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-C7 maintext CODE >116:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-CC maintext CODE >118:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-CD maintext CODE >119:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-CE maintext CODE >120:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-CF maintext CODE >121:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-D0 maintext CODE >122:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-D3 maintext CODE >123:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-D6 maintext CODE >124:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+A0 maintext CODE >88:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+A0 maintext CODE >91:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+A6 maintext CODE >92:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+A7 maintext CODE >94:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+AA maintext CODE >95:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+AB maintext CODE >96:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+AE maintext CODE >97:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+B0 maintext CODE >98:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+B1 maintext CODE >99:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+B2 maintext CODE >100:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+B3 maintext CODE >101:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+B4 maintext CODE >102:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+B5 maintext CODE >103:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+B8 maintext CODE >104:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+B9 maintext CODE >105:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+BA maintext CODE >106:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+BB maintext CODE >108:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+BE maintext CODE >109:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+BF maintext CODE >111:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+C0 maintext CODE >112:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+C1 maintext CODE >113:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+C3 maintext CODE >114:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+C6 maintext CODE >115:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+C7 maintext CODE >117:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+CC maintext CODE >119:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+CD maintext CODE >120:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+CE maintext CODE >121:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+CF maintext CODE >122:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+D0 maintext CODE >123:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
+D3 maintext CODE >124:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 D6 maintext CODE >125:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-F7 inittext CODE >1000:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-F7 inittext CODE >1001:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-F8 inittext CODE >1002:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-F9 inittext CODE >1003:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-FA inittext CODE >1004:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-FB inittext CODE >1011:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-FB inittext CODE >1012:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-100 inittext CODE >1013:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-101 inittext CODE >1014:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-102 inittext CODE >1015:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-103 inittext CODE >1016:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-104 inittext CODE >1017:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-105 inittext CODE >1018:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-106 inittext CODE >1019:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-107 inittext CODE >1020:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-108 inittext CODE >1021:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
-109 inittext CODE >1022:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.s
+F7 inittext CODE >1000:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+F7 inittext CODE >1001:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+F8 inittext CODE >1002:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+F9 inittext CODE >1003:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+FA inittext CODE >1004:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+FB inittext CODE >1011:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+FB inittext CODE >1012:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+100 inittext CODE >1013:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+101 inittext CODE >1014:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+102 inittext CODE >1015:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+103 inittext CODE >1016:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+104 inittext CODE >1017:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+105 inittext CODE >1018:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+106 inittext CODE >1019:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+107 inittext CODE >1020:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+108 inittext CODE >1021:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+109 inittext CODE >1022:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -221,20 +220,20 @@ _ADIF 66 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _RBIF 58 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _T0IF 5A 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _TMR0 1 0 ABS 0 - dist/default/production\lab1otro.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
 _main 140 0 CODE 0 maintext dist/default/production\lab1otro.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lab1otro.X.production.o
-start 1C 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
+start 1C 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
 __size_of_main 0 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -244,13 +243,13 @@ _ANSELH 189 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _dispvar 41 0 BANK0 1 bssBANK0 dist/default/production\lab1otro.X.production.o
 adc_canal@canal 71 0 COMMON 1 cstackCOMMON dist/default/production\lab1otro.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
 __size_of_adc_c 0 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _WPUBbits 95 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 start_initialization 22 0 CODE 0 cinit dist/default/production\lab1otro.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\lab1otro.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -298,7 +297,7 @@ _tabla7seg 1B4 0 CODE 0 text3 dist/default/production\lab1otro.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 __end_of_isr 140 0 CODE 0 text2 dist/default/production\lab1otro.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\s8r4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
 __pdataBANK0 31 0 BANK0 1 dataBANK0 dist/default/production\lab1otro.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 tabla7seg@F1296 31 0 BANK0 1 dataBANK0 dist/default/production\lab1otro.X.production.o

@@ -17,7 +17,7 @@
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
 "37 D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 [v _isr isr `II(v  1 e 1 0 ]
-"87
+"88
 [v _main main `(v  1 e 1 0 ]
 "11 D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\tabla7seg.c
 [v _tabla7seg tabla7seg `(uc  1 e 1 0 ]
@@ -204,7 +204,7 @@
 [v _c c `uc  1 e 1 0 ]
 "35
 [v _dispvar dispvar `uc  1 e 1 0 ]
-"87
+"88
 [v _main main `(v  1 e 1 0 ]
 {
 "126
@@ -217,7 +217,7 @@
 "37 D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"85
+"86
 } 0
 "11 D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\tabla7seg.c
 [v _tabla7seg tabla7seg `(uc  1 e 1 0 ]
