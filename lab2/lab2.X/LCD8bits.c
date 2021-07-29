@@ -108,12 +108,10 @@ void Lcd_Write_String(char *a) {
 }
 
 void Lcd_Shift_Right(void) {
-    Lcd_Cmd(0x01);
-    Lcd_Cmd(0x0C);
+    Lcd_Cmd(28);
 }
 
 void Lcd_Shift_Left(void) {
-    Lcd_Cmd(0x01);
-    Lcd_Cmd(0x08);
+    Lcd_Cmd(24);
 }
 

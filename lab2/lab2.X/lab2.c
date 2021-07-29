@@ -6,7 +6,10 @@
  */
 #include <xc.h>
 #include <stdint.h>
+#include <stdio.h>
 #include "LCD8bits.h"
+#include "adc_c.h"
+#include "adc_canal.h"
 //CONFIGURATION WORD 1
 #pragma config FOSC=INTRC_NOCLKOUT //Oscilador interno sin salida
 #pragma config WDTE=OFF           //Reinicio repetitivo del pic
@@ -35,40 +38,80 @@
 #define D7 RD7
 #define _XTAL_FREQ 8000000
 
+//______________________________variables_______________________________________
+unsigned char s1 = 0;
+unsigned char s2 = 0;
+unsigned int a = 0;
+float S1, S2 = 0;
+char volt[16];
+//______________________________funciones_______________________________________
+float mapear(unsigned char adresval){
+    return (adresval-0)*(5.00-0)/(255-0.0)+0;}
+//void __interrupt() isr(void){    // only process timer-triggered interrupts
+//    //adc
+//    if (ADIF == 1) {
+//        //conversion adc
+//        switch (ADCON0bits.CHS){
+//            case 0:
+//                s1 = adc_canal(0);
+//                break;
+//                
+//            case 1:
+//                s2 = adc_canal(1);
+//                break;   
+//        }
+//        __delay_us(20);   //delay de 20 ms
+//        PIR1bits.ADIF = 0;//se baja bandera interrupcion adc
+//        ADCON0bits.GO = 1;//inicio de la siguiente conversion
+//    }  
+//}
 
 void main(void) {
-  unsigned int a;
-  TRISD = 0x00;
-  TRISC = 0x00;
-  Lcd_Init();
+    //configuracion
+    //reloj
+    OSCCONbits.IRCF = 7; //8MHz
+    OSCCONbits.SCS = 1; //reloj interno
+    //configuracion in out
+    ANSELH = 0; //Pines digitales
+    ANSELbits.ANS0  = 1;//RA0 como pines analogicos
+    ANSELbits.ANS1  = 1;//RA1 como pines analogicos
+    TRISA = 3;         //RA0 y RA1 como inputs
+    TRISC = 0;
+    TRISD = 0;
+    PORTA = 0;               //se limpian los puertos
+    PORTC = 0;
+    PORTD = 0;
+    //adc
+    adc_c(); //configuracion adc (usando funcion de libreria)
+    Lcd_Init();
+    //configuracion interrupciones
+    INTCONbits.GIE  = 1; //se habilitan las interrupciones globales
+    INTCONbits.RBIE = 1; //interrupcion on change habilitada
+    INTCONbits.PEIE = 1; //se habilitan las interrupciones de los perifericos
+    PIE1bits.ADIE = 1;   //se habilitan las interrupciones por adc
+    ADCON0bits.GO = 1;  //se comienza la conversion adc
   while(1)
-  {
-    Lcd_Clear();
+      
+  { if (ADCON0bits.GO == 0) {
+        s2 = adc_canal(0);     //se actualiza la variable con valor del adc
+        __delay_us(20);   //delay de 20 ms
+        PIR1bits.ADIF = 0;//se baja bandera interrupcion adc
+        ADCON0bits.GO = 1;//inicio de la siguiente conversion
+    }
     Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("LCD Library for");
+    Lcd_Write_String("S1  S1  S3");
+    S1 = mapear(s1);
+    S2 = mapear(s2);
+    sprintf(volt, "%.2f  %.2f  %d" , S1, S2, s1);
     Lcd_Set_Cursor(2,1);
-    Lcd_Write_String("MPLAB XC8");
-    __delay_ms(500);
-    Lcd_Clear();
-    Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("Developed By");
-    Lcd_Set_Cursor(2,1);
-    Lcd_Write_String("electroSome");
-    __delay_ms(500);
-    Lcd_Clear();
-    Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("www.electroSome.com");
-    __delay_ms(500);
-    Lcd_Clear();
-    Lcd_Set_Cursor(2,1);
-    Lcd_Write_Char('H');
-    Lcd_Write_Char('o');
-    Lcd_Write_Char('l');
-    Lcd_Write_Char('a');
-    Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("Hola Mundo");
-    __delay_ms(1000);
+    Lcd_Write_String(volt);
+    if (ADCON0bits.GO == 0) {
+        s1 = adc_canal(1);     //se actualiza la variable con valor del adc
+        __delay_us(20);   //delay de 20 ms
+        PIR1bits.ADIF = 0;//se baja bandera interrupcion adc
+        ADCON0bits.GO = 1;//inicio de la siguiente conversion
+    }
+    __delay_ms(100);
   }
-    return;
 }
 

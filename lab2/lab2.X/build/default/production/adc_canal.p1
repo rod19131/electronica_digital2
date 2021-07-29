@@ -1,38 +1,30 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"4181 D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4181: extern volatile __bit RD0 __attribute__((address(0x40)));
-[v _RD0 `Vb ~T0 @X0 0 e@64 ]
-"4184
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4184: extern volatile __bit RD1 __attribute__((address(0x41)));
-[v _RD1 `Vb ~T0 @X0 0 e@65 ]
-"4187
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4187: extern volatile __bit RD2 __attribute__((address(0x42)));
-[v _RD2 `Vb ~T0 @X0 0 e@66 ]
-"4190
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4190: extern volatile __bit RD3 __attribute__((address(0x43)));
-[v _RD3 `Vb ~T0 @X0 0 e@67 ]
-"4193
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4193: extern volatile __bit RD4 __attribute__((address(0x44)));
-[v _RD4 `Vb ~T0 @X0 0 e@68 ]
-"4196
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4196: extern volatile __bit RD5 __attribute__((address(0x45)));
-[v _RD5 `Vb ~T0 @X0 0 e@69 ]
-"4199
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4199: extern volatile __bit RD6 __attribute__((address(0x46)));
-[v _RD6 `Vb ~T0 @X0 0 e@70 ]
-"4202
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4202: extern volatile __bit RD7 __attribute__((address(0x47)));
-[v _RD7 `Vb ~T0 @X0 0 e@71 ]
-"4133
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4133: extern volatile __bit RC0 __attribute__((address(0x38)));
-[v _RC0 `Vb ~T0 @X0 0 e@56 ]
-"4136
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4136: extern volatile __bit RC1 __attribute__((address(0x39)));
-[v _RC1 `Vb ~T0 @X0 0 e@57 ]
-[v F1256 `(v ~T0 @X0 1 tf1`ul ]
-"92 D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
-[v __delay `JF1256 ~T0 @X0 0 e ]
-[p i __delay ]
+"1251 D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1251:     struct {
+[s S45 :1 `uc 1 :1 `uc 1 :4 `uc 1 :2 `uc 1 ]
+[n S45 . ADON GO_nDONE CHS ADCS ]
+"1257
+[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1257:     struct {
+[s S46 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S46 . . GO CHS0 CHS1 CHS2 CHS3 ADCS0 ADCS1 ]
+"1267
+[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1267:     struct {
+[s S47 :1 `uc 1 :1 `uc 1 ]
+[n S47 . . nDONE ]
+"1271
+[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1271:     struct {
+[s S48 :1 `uc 1 :1 `uc 1 ]
+[n S48 . . GO_DONE ]
+"1250
+[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1250: typedef union {
+[u S44 `S45 1 `S46 1 `S47 1 `S48 1 ]
+[n S44 . . . . . ]
+"1276
+[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1276: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x01F)));
+[v _ADCON0bits `VS44 ~T0 @X0 0 e@31 ]
+"1238
+[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1238: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
 "54 D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -267,337 +259,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3546
 [; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"13 LCD8bits.c
-[; ;LCD8bits.c: 13: void Lcd_Port(unsigned char a) {
-[v _Lcd_Port `(v ~T0 @X0 1 ef1`uc ]
+"11 adc_canal.c
+[; ;adc_canal.c: 11: unsigned char adc_canal(unsigned char canal) {
+[v _adc_canal `(uc ~T0 @X0 1 ef1`uc ]
 {
-[e :U _Lcd_Port ]
-[v _a `uc ~T0 @X0 1 r1 ]
+[e :U _adc_canal ]
+[v _canal `uc ~T0 @X0 1 r1 ]
 [f ]
+"12
+[; ;adc_canal.c: 12:     ADCON0bits.CHS = canal;
+[e = . . _ADCON0bits 0 2 _canal ]
+"13
+[; ;adc_canal.c: 13:     return ADRESH;
+[e ) _ADRESH ]
+[e $UE 138  ]
 "14
-[; ;LCD8bits.c: 14:     if (a & 1)
-[e $ ! != & -> _a `i -> 1 `i -> 0 `i 139  ]
-"15
-[; ;LCD8bits.c: 15:         RD0 = 1;
-[e = _RD0 -> -> 1 `i `b ]
-[e $U 140  ]
-"16
-[; ;LCD8bits.c: 16:     else
-[e :U 139 ]
-"17
-[; ;LCD8bits.c: 17:         RD0 = 0;
-[e = _RD0 -> -> 0 `i `b ]
-[e :U 140 ]
-"19
-[; ;LCD8bits.c: 19:     if (a & 2)
-[e $ ! != & -> _a `i -> 2 `i -> 0 `i 141  ]
-"20
-[; ;LCD8bits.c: 20:         RD1 = 1;
-[e = _RD1 -> -> 1 `i `b ]
-[e $U 142  ]
-"21
-[; ;LCD8bits.c: 21:     else
-[e :U 141 ]
-"22
-[; ;LCD8bits.c: 22:         RD1 = 0;
-[e = _RD1 -> -> 0 `i `b ]
-[e :U 142 ]
-"24
-[; ;LCD8bits.c: 24:     if (a & 4)
-[e $ ! != & -> _a `i -> 4 `i -> 0 `i 143  ]
-"25
-[; ;LCD8bits.c: 25:         RD2 = 1;
-[e = _RD2 -> -> 1 `i `b ]
-[e $U 144  ]
-"26
-[; ;LCD8bits.c: 26:     else
-[e :U 143 ]
-"27
-[; ;LCD8bits.c: 27:         RD2 = 0;
-[e = _RD2 -> -> 0 `i `b ]
-[e :U 144 ]
-"29
-[; ;LCD8bits.c: 29:     if (a & 8)
-[e $ ! != & -> _a `i -> 8 `i -> 0 `i 145  ]
-"30
-[; ;LCD8bits.c: 30:         RD3 = 1;
-[e = _RD3 -> -> 1 `i `b ]
-[e $U 146  ]
-"31
-[; ;LCD8bits.c: 31:     else
-[e :U 145 ]
-"32
-[; ;LCD8bits.c: 32:         RD3 = 0;
-[e = _RD3 -> -> 0 `i `b ]
-[e :U 146 ]
-"34
-[; ;LCD8bits.c: 34:     if (a & 16)
-[e $ ! != & -> _a `i -> 16 `i -> 0 `i 147  ]
-"35
-[; ;LCD8bits.c: 35:         RD4 = 1;
-[e = _RD4 -> -> 1 `i `b ]
-[e $U 148  ]
-"36
-[; ;LCD8bits.c: 36:     else
-[e :U 147 ]
-"37
-[; ;LCD8bits.c: 37:         RD4 = 0;
-[e = _RD4 -> -> 0 `i `b ]
-[e :U 148 ]
-"39
-[; ;LCD8bits.c: 39:     if (a & 32)
-[e $ ! != & -> _a `i -> 32 `i -> 0 `i 149  ]
-"40
-[; ;LCD8bits.c: 40:         RD5 = 1;
-[e = _RD5 -> -> 1 `i `b ]
-[e $U 150  ]
-"41
-[; ;LCD8bits.c: 41:     else
-[e :U 149 ]
-"42
-[; ;LCD8bits.c: 42:         RD5 = 0;
-[e = _RD5 -> -> 0 `i `b ]
-[e :U 150 ]
-"44
-[; ;LCD8bits.c: 44:     if (a & 64)
-[e $ ! != & -> _a `i -> 64 `i -> 0 `i 151  ]
-"45
-[; ;LCD8bits.c: 45:         RD6 = 1;
-[e = _RD6 -> -> 1 `i `b ]
-[e $U 152  ]
-"46
-[; ;LCD8bits.c: 46:     else
-[e :U 151 ]
-"47
-[; ;LCD8bits.c: 47:         RD6 = 0;
-[e = _RD6 -> -> 0 `i `b ]
-[e :U 152 ]
-"49
-[; ;LCD8bits.c: 49:     if (a & 128)
-[e $ ! != & -> _a `i -> 128 `i -> 0 `i 153  ]
-"50
-[; ;LCD8bits.c: 50:         RD7 = 1;
-[e = _RD7 -> -> 1 `i `b ]
-[e $U 154  ]
-"51
-[; ;LCD8bits.c: 51:     else
-[e :U 153 ]
-"52
-[; ;LCD8bits.c: 52:         RD7 = 0;
-[e = _RD7 -> -> 0 `i `b ]
-[e :U 154 ]
-"53
-[; ;LCD8bits.c: 53: }
+[; ;adc_canal.c: 14: }
 [e :UE 138 ]
-}
-"55
-[; ;LCD8bits.c: 55: void Lcd_Cmd(unsigned char a) {
-[v _Lcd_Cmd `(v ~T0 @X0 1 ef1`uc ]
-{
-[e :U _Lcd_Cmd ]
-[v _a `uc ~T0 @X0 1 r1 ]
-[f ]
-"56
-[; ;LCD8bits.c: 56:     RC0 = 0;
-[e = _RC0 -> -> 0 `i `b ]
-"57
-[; ;LCD8bits.c: 57:     Lcd_Port(a);
-[e ( _Lcd_Port (1 _a ]
-"58
-[; ;LCD8bits.c: 58:     RC1 = 1;
-[e = _RC1 -> -> 1 `i `b ]
-"59
-[; ;LCD8bits.c: 59:     _delay((unsigned long)((4)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"60
-[; ;LCD8bits.c: 60:     RC1 = 0;
-[e = _RC1 -> -> 0 `i `b ]
-"61
-[; ;LCD8bits.c: 61: }
-[e :UE 155 ]
-}
-"63
-[; ;LCD8bits.c: 63: void Lcd_Clear(void) {
-[v _Lcd_Clear `(v ~T0 @X0 1 ef ]
-{
-[e :U _Lcd_Clear ]
-[f ]
-"64
-[; ;LCD8bits.c: 64:     Lcd_Cmd(0);
-[e ( _Lcd_Cmd (1 -> -> 0 `i `uc ]
-"65
-[; ;LCD8bits.c: 65:     Lcd_Cmd(1);
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-"66
-[; ;LCD8bits.c: 66: }
-[e :UE 156 ]
-}
-"68
-[; ;LCD8bits.c: 68: void Lcd_Set_Cursor(unsigned char a,unsigned char b) {
-[v _Lcd_Set_Cursor `(v ~T0 @X0 1 ef2`uc`uc ]
-{
-[e :U _Lcd_Set_Cursor ]
-[v _a `uc ~T0 @X0 1 r1 ]
-[v _b `uc ~T0 @X0 1 r2 ]
-[f ]
-"69
-[; ;LCD8bits.c: 69:     unsigned char temp;
-[v _temp `uc ~T0 @X0 1 a ]
-"70
-[; ;LCD8bits.c: 70:     if (a == 1) {
-[e $ ! == -> _a `i -> 1 `i 158  ]
-{
-"71
-[; ;LCD8bits.c: 71:         temp = 0x80 + b - 1;
-[e = _temp -> - + -> 128 `i -> _b `i -> 1 `i `uc ]
-"72
-[; ;LCD8bits.c: 72:         Lcd_Cmd(temp);
-[e ( _Lcd_Cmd (1 _temp ]
-"74
-[; ;LCD8bits.c: 74:     } else if (a == 2) {
-}
-[e $U 159  ]
-[e :U 158 ]
-[e $ ! == -> _a `i -> 2 `i 160  ]
-{
-"75
-[; ;LCD8bits.c: 75:         temp = 0xC0 + b - 1;
-[e = _temp -> - + -> 192 `i -> _b `i -> 1 `i `uc ]
-"76
-[; ;LCD8bits.c: 76:         Lcd_Cmd(temp);
-[e ( _Lcd_Cmd (1 _temp ]
-"77
-[; ;LCD8bits.c: 77:     }
-}
-[e :U 160 ]
-[e :U 159 ]
-"78
-[; ;LCD8bits.c: 78: }
-[e :UE 157 ]
-}
-"80
-[; ;LCD8bits.c: 80: void Lcd_Init(void) {
-[v _Lcd_Init `(v ~T0 @X0 1 ef ]
-{
-[e :U _Lcd_Init ]
-[f ]
-"81
-[; ;LCD8bits.c: 81:     Lcd_Port(0);
-[e ( _Lcd_Port (1 -> -> 0 `i `uc ]
-"82
-[; ;LCD8bits.c: 82:     _delay((unsigned long)((20)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"83
-[; ;LCD8bits.c: 83:     Lcd_Cmd(48);
-[e ( _Lcd_Cmd (1 -> -> 48 `i `uc ]
-"84
-[; ;LCD8bits.c: 84:     _delay((unsigned long)((5)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"85
-[; ;LCD8bits.c: 85:     Lcd_Cmd(48);
-[e ( _Lcd_Cmd (1 -> -> 48 `i `uc ]
-"86
-[; ;LCD8bits.c: 86:     _delay((unsigned long)((11)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 11 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"87
-[; ;LCD8bits.c: 87:     Lcd_Cmd(48);
-[e ( _Lcd_Cmd (1 -> -> 48 `i `uc ]
-"89
-[; ;LCD8bits.c: 89:     Lcd_Cmd(56);
-[e ( _Lcd_Cmd (1 -> -> 56 `i `uc ]
-"90
-[; ;LCD8bits.c: 90:     Lcd_Cmd(8);
-[e ( _Lcd_Cmd (1 -> -> 8 `i `uc ]
-"91
-[; ;LCD8bits.c: 91:     Lcd_Cmd(1);
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-"92
-[; ;LCD8bits.c: 92:     Lcd_Cmd(6);
-[e ( _Lcd_Cmd (1 -> -> 6 `i `uc ]
-"93
-[; ;LCD8bits.c: 93:     Lcd_Cmd(12);
-[e ( _Lcd_Cmd (1 -> -> 12 `i `uc ]
-"94
-[; ;LCD8bits.c: 94: }
-[e :UE 161 ]
-}
-"96
-[; ;LCD8bits.c: 96: void Lcd_Write_Char(char a) {
-[v _Lcd_Write_Char `(v ~T0 @X0 1 ef1`uc ]
-{
-[e :U _Lcd_Write_Char ]
-[v _a `uc ~T0 @X0 1 r1 ]
-[f ]
-"97
-[; ;LCD8bits.c: 97:     RC0 = 1;
-[e = _RC0 -> -> 1 `i `b ]
-"98
-[; ;LCD8bits.c: 98:     Lcd_Port(a);
-[e ( _Lcd_Port (1 -> _a `uc ]
-"99
-[; ;LCD8bits.c: 99:     RC1 = 1;
-[e = _RC1 -> -> 1 `i `b ]
-"100
-[; ;LCD8bits.c: 100:     _delay((unsigned long)((40)*(8000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-"101
-[; ;LCD8bits.c: 101:     RC1 = 0;
-[e = _RC1 -> -> 0 `i `b ]
-"102
-[; ;LCD8bits.c: 102: }
-[e :UE 162 ]
-}
-"104
-[; ;LCD8bits.c: 104: void Lcd_Write_String(char *a) {
-[v _Lcd_Write_String `(v ~T0 @X0 1 ef1`*uc ]
-{
-[e :U _Lcd_Write_String ]
-[v _a `*uc ~T0 @X0 1 r1 ]
-[f ]
-"105
-[; ;LCD8bits.c: 105:     int i;
-[v _i `i ~T0 @X0 1 a ]
-"106
-[; ;LCD8bits.c: 106:     for (i = 0; a[i] != '\0'; i++)
-{
-[e = _i -> 0 `i ]
-[e $U 167  ]
-[e :U 164 ]
-"107
-[; ;LCD8bits.c: 107:         Lcd_Write_Char(a[i]);
-[e ( _Lcd_Write_Char (1 *U + _a * -> _i `x -> -> # *U _a `i `x ]
-[e ++ _i -> 1 `i ]
-[e :U 167 ]
-[e $ != -> *U + _a * -> _i `x -> -> # *U _a `i `x `ui -> 0 `ui 164  ]
-[e :U 165 ]
-}
-"108
-[; ;LCD8bits.c: 108: }
-[e :UE 163 ]
-}
-"110
-[; ;LCD8bits.c: 110: void Lcd_Shift_Right(void) {
-[v _Lcd_Shift_Right `(v ~T0 @X0 1 ef ]
-{
-[e :U _Lcd_Shift_Right ]
-[f ]
-"111
-[; ;LCD8bits.c: 111:     Lcd_Cmd(28);
-[e ( _Lcd_Cmd (1 -> -> 28 `i `uc ]
-"112
-[; ;LCD8bits.c: 112: }
-[e :UE 168 ]
-}
-"114
-[; ;LCD8bits.c: 114: void Lcd_Shift_Left(void) {
-[v _Lcd_Shift_Left `(v ~T0 @X0 1 ef ]
-{
-[e :U _Lcd_Shift_Left ]
-[f ]
-"115
-[; ;LCD8bits.c: 115:     Lcd_Cmd(24);
-[e ( _Lcd_Cmd (1 -> -> 24 `i `uc ]
-"116
-[; ;LCD8bits.c: 116: }
-[e :UE 169 ]
 }

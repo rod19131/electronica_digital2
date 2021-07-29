@@ -82,3 +82,18 @@ void main(void) {
   }
     return;
 }
+    if (ADCON0bits.GO == 0) {
+        //conversion adc
+        switch (ADCON0bits.CHS){
+            case 0:
+                s1 = adc_canal(0);
+                break;
+                
+            case 1:
+                s2 = adc_canal(0);
+                break;   
+        }
+        __delay_us(20);   //delay de 20 ms
+        PIR1bits.ADIF = 0;//se baja bandera interrupcion adc
+        ADCON0bits.GO = 1;//inicio de la siguiente conversion
+    } 
