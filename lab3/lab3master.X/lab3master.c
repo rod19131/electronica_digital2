@@ -31,12 +31,16 @@
 //*****************************************************************************
 #include <xc.h>
 #include <stdint.h>
+#include <stdio.h>
 #include "SPI.h"
+#include "usart.h"
 //*****************************************************************************
 // Definición de variables
 //*****************************************************************************
 #define _XTAL_FREQ 8000000
 unsigned char dummydata = 0;
+unsigned char pc = 0;
+char term[16];
 //*****************************************************************************
 // Definición de funciones para que se puedan colocar después del main de lo 
 // contrario hay que colocarlos todas las funciones antes del main
@@ -52,6 +56,20 @@ void main(void) {
     // Loop infinito
     //*************************************************************************
     while(1){
+        PORTA = pc;
+        sprintf(term, "pot1: %d  pot2: %d  pc: %d", PORTB, PORTD, pc); //
+        enviocadena(term);                           //envio a pc
+        if (PIR1bits.RCIF == 1) {
+                    switch (RCREG){
+                        case 43: //+  
+                            pc++; 
+                        break;
+
+                        case 45: //-
+                            pc--;
+                        break;
+                    }
+        }
         if (dummydata == 1){
             PORTCbits.RC2 = 0;       //Slave Select
             __delay_ms(1);
@@ -98,6 +116,7 @@ void setup(void){
     OSCCONbits.SCS = 1; //reloj interno
     //configuracion in out
     ANSELH = 0; //Pines digitales
+    TRISA = 0;
     TRISB = 0;
     TRISC = 144;
     TRISD = 0;
@@ -106,6 +125,23 @@ void setup(void){
     PORTC = 0;
     PORTD = 0;
     PORTCbits.RC2 = 1;
+    //TX y RX
+    TXSTAbits.SYNC = 0;
+    TXSTAbits.BRGH = 1;
+    
+    BAUDCTLbits.BRG16 = 1;
+    
+    SPBRG = 207;
+    SPBRGH = 0;
+    
+    RCSTAbits.SPEN = 1;
+    RCSTAbits.RX9 = 0;
+    RCSTAbits.CREN = 1;
+    
+    TXSTAbits.TXEN = 1;
+    //configuracion interrupciones
+    INTCONbits.GIE  = 1; //se habilitan las interrupciones globales
+    INTCONbits.PEIE = 1; //se habilitan las interrupciones de los perifericos
     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
 
 }
