@@ -55,12 +55,10 @@ void setup(void);
 void __interrupt() isr(void){
    if(SSPIF == 1){
         dummydata = spiRead();
-        if (PORTCbits.RC2 == 0){
-        spiWrite(PORTB);
-        PORTCbits.RC2 = 1;}
+        if (dummydata == 0){
+            spiWrite(PORTB);}
         else{
-        spiWrite(PORTD);
-        PORTCbits.RC2 = 0;}
+            spiWrite(PORTD);}
         SSPIF = 0;
     }
    if (ADIF == 1){

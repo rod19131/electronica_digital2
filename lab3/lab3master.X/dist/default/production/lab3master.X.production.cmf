@@ -22,7 +22,7 @@ maintext CODE 0 783 783 78 2
 cstackCOMMON COMMON 1 70 70 7 1
 bssCOMMON COMMON 1 77 77 1 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
 end_init CODE 0 0 0 3 2
 config CONFIG 4 2007 2007 2 2
 # %UNUSED Section
@@ -71,12 +71,12 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lab3master.X.production.o
-7FB cinit CODE >617:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.s
-7FB cinit CODE >620:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.s
-7FB cinit CODE >631:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.s
-7FC cinit CODE >637:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.s
-7FC cinit CODE >639:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.s
-7FD cinit CODE >640:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.s
+7FB cinit CODE >617:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.s
+7FB cinit CODE >620:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.s
+7FB cinit CODE >631:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.s
+7FC cinit CODE >637:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.s
+7FC cinit CODE >639:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.s
+7FD cinit CODE >640:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.s
 74E text5 CODE >12:D:\AlejandroDigital\electronica_digital2\lab3\lab3master.X\SPI.c
 74F text5 CODE >14:D:\AlejandroDigital\electronica_digital2\lab3\lab3master.X\SPI.c
 752 text5 CODE >15:D:\AlejandroDigital\electronica_digital2\lab3\lab3master.X\SPI.c
@@ -154,19 +154,19 @@ __Hspace_4 4010 0 ABS 0 - -
 spiInit@sTransmitEdge 72 0 COMMON 1 cstackCOMMON dist/default/production\lab3master.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
 _main F06 0 CODE 0 maintext dist/default/production\lab3master.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lab3master.X.production.o
-start 0 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
+start 0 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
 __size_of_main 0 0 ABS 0 - dist/default/production\lab3master.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\lab3master.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\lab3master.X.production.o
@@ -176,8 +176,8 @@ _ANSELH 189 0 ABS 0 - dist/default/production\lab3master.X.production.o
 __size_of_spiInit 0 0 ABS 0 - dist/default/production\lab3master.X.production.o
 __size_of_spiRead 0 0 ABS 0 - dist/default/production\lab3master.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
 __size_of_setup 0 0 ABS 0 - dist/default/production\lab3master.X.production.o
 spiInit@sDataSample 70 0 COMMON 1 cstackCOMMON dist/default/production\lab3master.X.production.o
 start_initialization FF6 0 CODE 0 cinit dist/default/production\lab3master.X.production.o
@@ -185,7 +185,7 @@ _SSPBUF 13 0 ABS 0 - dist/default/production\lab3master.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\lab3master.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\lab3master.X.production.o
 _TRISC5 43D 0 ABS 0 - dist/default/production\lab3master.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -227,7 +227,7 @@ __S1 78 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1spc.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\s1ucg.o
 __pmaintext F06 0 CODE 0 maintext dist/default/production\lab3master.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
