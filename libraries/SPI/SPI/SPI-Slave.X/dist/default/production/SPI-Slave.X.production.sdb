@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
-"91 C:\Users\damoi\Desktop\SPI\SPI-Slave.X\main.c
+"90 D:\AlejandroDigital\electronica_digital2\libraries\SPI\SPI\SPI-Slave.X\main.c
 [e E1292 . `uc
 SPI_MASTER_OSC_DIV4 32
 SPI_MASTER_OSC_DIV16 33
@@ -24,7 +24,7 @@ SPI_CLOCK_IDLE_LOW 0
 SPI_IDLE_2_ACTIVE 0
 SPI_ACTIVE_2_IDLE 64
 ]
-"12 C:\Users\damoi\Desktop\SPI\SPI-Slave.X\SPI.c
+"12 D:\AlejandroDigital\electronica_digital2\libraries\SPI\SPI\SPI-Slave.X\SPI.c
 [e E1292 . `uc
 SPI_MASTER_OSC_DIV4 32
 SPI_MASTER_OSC_DIV16 33
@@ -45,21 +45,21 @@ SPI_CLOCK_IDLE_LOW 0
 SPI_IDLE_2_ACTIVE 0
 SPI_ACTIVE_2_IDLE 64
 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"52 C:\Users\damoi\Desktop\SPI\SPI-Slave.X\main.c
+"51 D:\AlejandroDigital\electronica_digital2\libraries\SPI\SPI\SPI-Slave.X\main.c
 [v _isr isr `II(v  1 e 1 0 ]
-"62
+"61
 [v _main main `(v  1 e 1 0 ]
-"76
+"75
 [v _setup setup `(v  1 e 1 0 ]
-"12 C:\Users\damoi\Desktop\SPI\SPI-Slave.X\SPI.c
+"12 D:\AlejandroDigital\electronica_digital2\libraries\SPI\SPI\SPI-Slave.X\SPI.c
 [v _spiInit spiInit `(v  1 e 1 0 ]
 "29
 [v _spiReceiveWait spiReceiveWait `(v  1 s 1 spiReceiveWait ]
@@ -67,7 +67,7 @@ SPI_ACTIVE_2_IDLE 64
 [v _spiWrite spiWrite `(v  1 e 1 0 ]
 "47
 [v _spiRead spiRead `(uc  1 e 1 0 ]
-"229 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f887.h
+"229 C:\Program Files\Microchip\xc8\v2.31\pic\include\proc\pic16f887.h
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
 "353
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
@@ -132,7 +132,7 @@ SPI_ACTIVE_2_IDLE 64
 [v _PIE1bits PIE1bits `VES107  1 e 1 @140 ]
 "2178
 [v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
-[s S225 . 1 `uc 1 BF 1 0 :1:0 
+[s S224 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -142,39 +142,39 @@ SPI_ACTIVE_2_IDLE 64
 `uc 1 SMP 1 0 :1:7 
 ]
 "2232
-[s S234 . 1 `uc 1 . 1 0 :2:0 
+[s S233 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D 1 0 :1:5 
 ]
-[s S239 . 1 `uc 1 . 1 0 :2:0 
+[s S238 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ 1 0 :1:2 
 `uc 1 I2C_START 1 0 :1:3 
 `uc 1 I2C_STOP 1 0 :1:4 
 `uc 1 I2C_DATA 1 0 :1:5 
 ]
-[s S245 . 1 `uc 1 . 1 0 :2:0 
+[s S244 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S250 . 1 `uc 1 . 1 0 :2:0 
+[s S249 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S255 . 1 `uc 1 . 1 0 :2:0 
+[s S254 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S260 . 1 `uc 1 . 1 0 :2:0 
+[s S259 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DATA_ADDRESS 1 0 :1:5 
 ]
-[u S265 . 1 `S225 1 . 1 0 `S234 1 . 1 0 `S239 1 . 1 0 `S245 1 . 1 0 `S250 1 . 1 0 `S255 1 . 1 0 `S260 1 . 1 0 ]
-[v _SSPSTATbits SSPSTATbits `VES265  1 e 1 @148 ]
+[u S264 . 1 `S224 1 . 1 0 `S233 1 . 1 0 `S238 1 . 1 0 `S244 1 . 1 0 `S249 1 . 1 0 `S254 1 . 1 0 `S259 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES264  1 e 1 @148 ]
 "3388
 [v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
 "3450
@@ -185,17 +185,17 @@ SPI_ACTIVE_2_IDLE 64
 [v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
 "4464
 [v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
-"62 C:\Users\damoi\Desktop\SPI\SPI-Slave.X\main.c
+"61 D:\AlejandroDigital\electronica_digital2\libraries\SPI\SPI\SPI-Slave.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"72
+"71
 } 0
-"76
+"75
 [v _setup setup `(v  1 e 1 0 ]
 {
-"93
+"92
 } 0
-"12 C:\Users\damoi\Desktop\SPI\SPI-Slave.X\SPI.c
+"12 D:\AlejandroDigital\electronica_digital2\libraries\SPI\SPI\SPI-Slave.X\SPI.c
 [v _spiInit spiInit `(v  1 e 1 0 ]
 {
 [v spiInit@sType sType `E1292  1 a 1 wreg ]
@@ -207,12 +207,12 @@ SPI_ACTIVE_2_IDLE 64
 [v spiInit@sType sType `E1292  1 a 1 6 ]
 "27
 } 0
-"52 C:\Users\damoi\Desktop\SPI\SPI-Slave.X\main.c
+"51 D:\AlejandroDigital\electronica_digital2\libraries\SPI\SPI\SPI-Slave.X\main.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"58
+"57
 } 0
-"34 C:\Users\damoi\Desktop\SPI\SPI-Slave.X\SPI.c
+"34 D:\AlejandroDigital\electronica_digital2\libraries\SPI\SPI\SPI-Slave.X\SPI.c
 [v _spiWrite spiWrite `(v  1 e 1 0 ]
 {
 [v spiWrite@dat dat `uc  1 a 1 wreg ]
