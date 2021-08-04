@@ -267,6 +267,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3546
 [; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
+"62 ./LCD8bits.h
+[; ;./LCD8bits.h: 62: unsigned char a = 0;
+[v _a `uc ~T0 @X0 1 e ]
+[i _a
+-> -> 0 `i `uc
+]
 "13 LCD8bits.c
 [; ;LCD8bits.c: 13: void Lcd_Port(unsigned char a) {
 [v _Lcd_Port `(v ~T0 @X0 1 ef1`uc ]

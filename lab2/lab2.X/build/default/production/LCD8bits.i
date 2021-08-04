@@ -2629,7 +2629,7 @@ typedef uint16_t uintptr_t;
 
 
 
-
+unsigned char a = 0;
 void Lcd_Port(unsigned char a);
 
 void Lcd_Cmd(unsigned char a);

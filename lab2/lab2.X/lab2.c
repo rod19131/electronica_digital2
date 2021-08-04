@@ -10,6 +10,7 @@
 #include "LCD8bits.h"
 #include "adc_c.h"
 #include "adc_canal.h"
+#include "usart.h"
 //CONFIGURATION WORD 1
 #pragma config FOSC=INTRC_NOCLKOUT //Oscilador interno sin salida
 #pragma config WDTE=OFF           //Reinicio repetitivo del pic
@@ -26,7 +27,7 @@
 //CONFIGURATION WORD 2
 #pragma config WRT=OFF //Proteccion de autoescritura por el programa desactivada
 #pragma config BOR4V=BOR40V //Reinicio abajo de 4V 
-#define RS RC0
+#define RS RC0         //asignacion botones
 #define EN RC1
 #define D0 RD0
 #define D1 RD1
@@ -39,32 +40,14 @@
 #define _XTAL_FREQ 8000000
 
 //______________________________variables_______________________________________
-unsigned char s1 = 0;
-unsigned char s2 = 0;
-unsigned int a = 0;
-float S1, S2 = 0;
-char volt[16];
+unsigned char s1 = 0; //dato s1
+unsigned char s2 = 0; //dato s2
+float S1, S2 = 0;     //decimal s1 y s2
+char volt[16];        //cadena voltajes
+unsigned char pc = 0; //contador +-
 //______________________________funciones_______________________________________
 float mapear(unsigned char adresval){
     return (adresval-0)*(5.00-0)/(255-0.0)+0;}
-//void __interrupt() isr(void){    // only process timer-triggered interrupts
-//    //adc
-//    if (ADIF == 1) {
-//        //conversion adc
-//        switch (ADCON0bits.CHS){
-//            case 0:
-//                s1 = adc_canal(0);
-//                break;
-//                
-//            case 1:
-//                s2 = adc_canal(1);
-//                break;   
-//        }
-//        __delay_us(20);   //delay de 20 ms
-//        PIR1bits.ADIF = 0;//se baja bandera interrupcion adc
-//        ADCON0bits.GO = 1;//inicio de la siguiente conversion
-//    }  
-//}
 
 void main(void) {
     //configuracion
@@ -76,14 +59,28 @@ void main(void) {
     ANSELbits.ANS0  = 1;//RA0 como pines analogicos
     ANSELbits.ANS1  = 1;//RA1 como pines analogicos
     TRISA = 3;         //RA0 y RA1 como inputs
-    TRISC = 0;
+    TRISC = 128;
     TRISD = 0;
-    PORTA = 0;               //se limpian los puertos
+    PORTA = 0;         //se limpian los puertos
     PORTC = 0;
     PORTD = 0;
     //adc
     adc_c(); //configuracion adc (usando funcion de libreria)
     Lcd_Init();
+    //TX y RX
+    TXSTAbits.SYNC = 0;
+    TXSTAbits.BRGH = 1;
+    
+    BAUDCTLbits.BRG16 = 1;
+    
+    SPBRG = 207;
+    SPBRGH = 0;
+    
+    RCSTAbits.SPEN = 1;
+    RCSTAbits.RX9 = 0;
+    RCSTAbits.CREN = 1;
+    
+    TXSTAbits.TXEN = 1;
     //configuracion interrupciones
     INTCONbits.GIE  = 1; //se habilitan las interrupciones globales
     INTCONbits.RBIE = 1; //interrupcion on change habilitada
@@ -92,26 +89,38 @@ void main(void) {
     ADCON0bits.GO = 1;  //se comienza la conversion adc
   while(1)
       
-  { if (ADCON0bits.GO == 0) {
+  {if (ADCON0bits.GO == 0) {
         s2 = adc_canal(0);     //se actualiza la variable con valor del adc
         __delay_us(20);   //delay de 20 ms
         PIR1bits.ADIF = 0;//se baja bandera interrupcion adc
         ADCON0bits.GO = 1;//inicio de la siguiente conversion
     }
-    Lcd_Set_Cursor(1,1);
+    Lcd_Set_Cursor(1,1);  //linea 1
     Lcd_Write_String("S1  S1  S3");
-    S1 = mapear(s1);
+    S1 = mapear(s1);      //mapeo de valores de 0 a 5 V
     S2 = mapear(s2);
-    sprintf(volt, "%.2f  %.2f  %d" , S1, S2, s1);
-    Lcd_Set_Cursor(2,1);
-    Lcd_Write_String(volt);
+    sprintf(volt, "%.2f  %.2f  %d", S1, S2, pc); //valores para pantalla 2 linea
+    enviocadena(volt);                           //envio a pc
+    Lcd_Set_Cursor(2,1);                         //linea 2
+    Lcd_Write_String(volt);                      
     if (ADCON0bits.GO == 0) {
         s1 = adc_canal(1);     //se actualiza la variable con valor del adc
         __delay_us(20);   //delay de 20 ms
         PIR1bits.ADIF = 0;//se baja bandera interrupcion adc
         ADCON0bits.GO = 1;//inicio de la siguiente conversion
     }
+    if (PIR1bits.RCIF == 1) {
+                switch (RCREG){
+                    case 43: //+  
+                        pc++; 
+                    break;
+
+                    case 45: //-
+                        pc--;
+                    break;
+                }
+    }
     __delay_ms(100);
-  }
+    }
 }
 

@@ -59,7 +59,7 @@
 #include <stdint.h>
 //LCD Functions Developed by electroSome
 
-
+unsigned char a = 0;
 void Lcd_Port(unsigned char a);
 
 void Lcd_Cmd(unsigned char a);

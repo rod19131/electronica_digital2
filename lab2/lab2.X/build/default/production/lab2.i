@@ -2736,7 +2736,7 @@ extern int printf(const char *, ...);
 
 
 
-
+unsigned char a = 0;
 void Lcd_Port(unsigned char a);
 
 void Lcd_Cmd(unsigned char a);
@@ -2766,6 +2766,18 @@ void adc_c(void);
 unsigned char adc_canal(unsigned char canal);
 # 12 "lab2.c" 2
 
+# 1 "./usart.h" 1
+# 15 "./usart.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
+# 15 "./usart.h" 2
+
+
+void write(unsigned char data, unsigned char address);
+unsigned char read(unsigned char address);
+void enviocaracter(char a);
+void enviocadena(char* cadena);
+# 13 "lab2.c" 2
+
 
 #pragma config FOSC=INTRC_NOCLKOUT
 #pragma config WDTE=OFF
@@ -2782,16 +2794,16 @@ unsigned char adc_canal(unsigned char canal);
 
 #pragma config WRT=OFF
 #pragma config BOR4V=BOR40V
-# 42 "lab2.c"
+# 43 "lab2.c"
 unsigned char s1 = 0;
 unsigned char s2 = 0;
-unsigned int a = 0;
 float S1, S2 = 0;
 char volt[16];
+unsigned char pc = 0;
 
 float mapear(unsigned char adresval){
     return (adresval-0)*(5.00-0)/(255-0.0)+0;}
-# 69 "lab2.c"
+
 void main(void) {
 
 
@@ -2802,7 +2814,7 @@ void main(void) {
     ANSELbits.ANS0 = 1;
     ANSELbits.ANS1 = 1;
     TRISA = 3;
-    TRISC = 0;
+    TRISC = 128;
     TRISD = 0;
     PORTA = 0;
     PORTC = 0;
@@ -2811,6 +2823,20 @@ void main(void) {
     adc_c();
     Lcd_Init();
 
+    TXSTAbits.SYNC = 0;
+    TXSTAbits.BRGH = 1;
+
+    BAUDCTLbits.BRG16 = 1;
+
+    SPBRG = 207;
+    SPBRGH = 0;
+
+    RCSTAbits.SPEN = 1;
+    RCSTAbits.RX9 = 0;
+    RCSTAbits.CREN = 1;
+
+    TXSTAbits.TXEN = 1;
+
     INTCONbits.GIE = 1;
     INTCONbits.RBIE = 1;
     INTCONbits.PEIE = 1;
@@ -2818,7 +2844,7 @@ void main(void) {
     ADCON0bits.GO = 1;
   while(1)
 
-  { if (ADCON0bits.GO == 0) {
+  {if (ADCON0bits.GO == 0) {
         s2 = adc_canal(0);
         _delay((unsigned long)((20)*(8000000/4000000.0)));
         PIR1bits.ADIF = 0;
@@ -2828,7 +2854,8 @@ void main(void) {
     Lcd_Write_String("S1  S1  S3");
     S1 = mapear(s1);
     S2 = mapear(s2);
-    sprintf(volt, "%.2f  %.2f  %d" , S1, S2, s1);
+    sprintf(volt, "%.2f  %.2f  %d", S1, S2, pc);
+    enviocadena(volt);
     Lcd_Set_Cursor(2,1);
     Lcd_Write_String(volt);
     if (ADCON0bits.GO == 0) {
@@ -2837,6 +2864,17 @@ void main(void) {
         PIR1bits.ADIF = 0;
         ADCON0bits.GO = 1;
     }
+    if (PIR1bits.RCIF == 1) {
+                switch (RCREG){
+                    case 43:
+                        pc++;
+                    break;
+
+                    case 45:
+                        pc--;
+                    break;
+                }
+    }
     _delay((unsigned long)((100)*(8000000/4000.0)));
-  }
+    }
 }

@@ -78,6 +78,12 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
+   <POPUP w="450" x="1175" flags="00008023" y="608" h="250" pid="0" iid="6">
+    <PROPERTIES>
+     <ITEM name="AutoEcho">0</ITEM>
+     <ITEM name="HexMode">0</ITEM>
+    </PROPERTIES>
+   </POPUP>
   </PWI>
  </MODULE>
 </WORKSPACE>
