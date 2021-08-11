@@ -2814,16 +2814,19 @@ void Lcd_Shift_Right(void);
 
 void Lcd_Shift_Left(void);
 # 36 "lab4master.c" 2
-
-
-
-
-
+# 51 "lab4master.c"
 unsigned int senms = 0;
 unsigned char senls = 0;
 unsigned char sencs = 0;
 unsigned char sensorval = 0;
-unsigned char t = 0;
+double t = 0;
+unsigned char s1, s2 = 0;
+float S1, S2 = 0;
+char volt[16];
+char volt1[16];
+unsigned char pc = 0;
+float mapear(unsigned char adresval){
+    return (adresval-0)*(5.00-0)/(255-0.0)+0;}
 
 
 
@@ -2844,7 +2847,13 @@ void main(void) {
 
         I2C_Master_Start();
         I2C_Master_Write(0x51);
-        PORTD = I2C_Master_Read(0);
+        s1 = I2C_Master_Read(0);
+        I2C_Master_Stop();
+        _delay((unsigned long)((200)*(8000000/4000.0)));
+
+        I2C_Master_Start();
+        I2C_Master_Write(0x61);
+        s2 = I2C_Master_Read(0);
         I2C_Master_Stop();
         _delay((unsigned long)((200)*(8000000/4000.0)));
 
@@ -2866,8 +2875,15 @@ void main(void) {
         sensorval += senms;
         sensorval &= ~0b11;
         t = -46.85 +(175.72*sensorval/65536);
-        PORTB = senms;
-        PORTA = senls;
+        S1 = mapear(s1);
+        Lcd_Set_Cursor(1,1);
+        Lcd_Write_String("S1  S1  S3");
+        sprintf(volt, "%d", s2);
+        Lcd_Set_Cursor(2,1);
+        Lcd_Write_String(volt);
+        sprintf(volt, "%d", S1);
+        Lcd_Set_Cursor(2,1);
+        Lcd_Write_String(volt);
     }
 }
 
@@ -2882,6 +2898,8 @@ void setup(void){
     ANSELH = 0;
     ANSEL = 0;
     TRISA = 0;
+    TRISCbits.TRISC0 = 0;
+    TRISCbits.TRISC1 = 0;
     TRISB = 0;
     TRISD = 0;
     TRISE = 0;
@@ -2890,7 +2908,6 @@ void setup(void){
     PORTD = 0;
     PORTE = 0;
 
-    INTCONbits.GIE = 1;
-    INTCONbits.PEIE = 1;
+    Lcd_Init();
     I2C_Master_Init(100000);
 }
