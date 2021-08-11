@@ -30,7 +30,7 @@ bssBANK0 BANK0 1 38 38 12 1
 strings STRING 0 3 3 2B 2
 clrtext CODE 0 535 535 8 2
 config CONFIG 4 2007 2007 2 2
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
 end_init CODE 0 0 0 3 2
 config CONFIG 4 2007 2007 2 2
 # %UNUSED Section
@@ -78,16 +78,16 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lab3master.X.production.o
-7F3 cinit CODE >881:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-7F3 cinit CODE >884:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-7F3 cinit CODE >916:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-7F4 cinit CODE >917:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-7F5 cinit CODE >918:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-7F6 cinit CODE >919:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-7F7 cinit CODE >920:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-7FC cinit CODE >926:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-7FC cinit CODE >928:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-7FD cinit CODE >929:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
+7F3 cinit CODE >881:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+7F3 cinit CODE >884:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+7F3 cinit CODE >916:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+7F4 cinit CODE >917:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+7F5 cinit CODE >918:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+7F6 cinit CODE >919:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+7F7 cinit CODE >920:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+7FC cinit CODE >926:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+7FC cinit CODE >928:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+7FD cinit CODE >929:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
 546 text10 CODE >35:D:\AlejandroDigital\electronica_digital2\lab3\lab3master.X\usart.c
 547 text10 CODE >36:D:\AlejandroDigital\electronica_digital2\lab3\lab3master.X\usart.c
 547 text10 CODE >38:D:\AlejandroDigital\electronica_digital2\lab3\lab3master.X\usart.c
@@ -233,16 +233,16 @@ $dist/default/production\lab3master.X.production.o
 6F1 maintext CODE >102:D:\AlejandroDigital\electronica_digital2\lab3\lab3master.X\lab3master.c
 6F4 maintext CODE >104:D:\AlejandroDigital\electronica_digital2\lab3\lab3master.X\lab3master.c
 703 maintext CODE >105:D:\AlejandroDigital\electronica_digital2\lab3\lab3master.X\lab3master.c
-535 clrtext CODE >903:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-535 clrtext CODE >904:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-536 clrtext CODE >905:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-536 clrtext CODE >906:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-537 clrtext CODE >907:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-538 clrtext CODE >908:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-539 clrtext CODE >909:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-53A clrtext CODE >910:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-53B clrtext CODE >911:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
-53C clrtext CODE >912:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.s
+535 clrtext CODE >903:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+535 clrtext CODE >904:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+536 clrtext CODE >905:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+536 clrtext CODE >906:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+537 clrtext CODE >907:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+538 clrtext CODE >908:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+539 clrtext CODE >909:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+53A clrtext CODE >910:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+53B clrtext CODE >911:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
+53C clrtext CODE >912:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -266,21 +266,21 @@ spiInit@sTransmitEdge 72 0 COMMON 1 cstackCOMMON dist/default/production\lab3mas
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 _pc 38 0 BANK0 1 bssBANK0 dist/default/production\lab3master.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
 _main C7E 0 CODE 0 maintext dist/default/production\lab3master.X.production.o
 _term 3A 0 BANK0 1 bssBANK0 dist/default/production\lab3master.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lab3master.X.production.o
-start 0 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
+start 0 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
 __size_of_main 0 0 ABS 0 - dist/default/production\lab3master.X.production.o
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production\lab3master.X.production.o
 __size_of___lwmod 0 0 ABS 0 - dist/default/production\lab3master.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\lab3master.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\lab3master.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -296,8 +296,8 @@ __size_of_sprintf 0 0 ABS 0 - dist/default/production\lab3master.X.production.o
 ___lwmod@divisor 78 0 COMMON 1 cstackCOMMON dist/default/production\lab3master.X.production.o
 __end_of___lwdiv C7E 0 CODE 0 text3 dist/default/production\lab3master.X.production.o
 __end_of___lwmod BF6 0 CODE 0 text2 dist/default/production\lab3master.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
 _dpowers 12 0 STRING 0 strings dist/default/production\lab3master.X.production.o
 _BAUDCTLbits 187 0 ABS 0 - dist/default/production\lab3master.X.production.o
 ___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\lab3master.X.production.o
@@ -313,7 +313,7 @@ _SSPCON 14 0 ABS 0 - dist/default/production\lab3master.X.production.o
 enviocadena@cadena 72 0 COMMON 1 cstackCOMMON dist/default/production\lab3master.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\lab3master.X.production.o
 _TRISC5 43D 0 ABS 0 - dist/default/production\lab3master.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -363,7 +363,7 @@ __S3 0 0 ABS 0 - -
 sprintf@val 2D 0 BANK0 1 cstackBANK0 dist/default/production\lab3master.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 __stringtab 6 0 STRING 0 strings dist/default/production\lab3master.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sauo.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sitc.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 _RCSTAbits 18 0 ABS 0 - dist/default/production\lab3master.X.production.o
 sprintf@flag 2B 0 BANK0 1 cstackBANK0 dist/default/production\lab3master.X.production.o

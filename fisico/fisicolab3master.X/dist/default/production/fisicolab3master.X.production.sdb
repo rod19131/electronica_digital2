@@ -1,0 +1,411 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"150 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\fisicolab3master.c
+[e E1349 . `uc
+SPI_MASTER_OSC_DIV4 32
+SPI_MASTER_OSC_DIV16 33
+SPI_MASTER_OSC_DIV64 34
+SPI_MASTER_TMR2 35
+SPI_SLAVE_SS_EN 36
+SPI_SLAVE_SS_DIS 37
+]
+[e E1357 . `uc
+SPI_DATA_SAMPLE_MIDDLE 0
+SPI_DATA_SAMPLE_END 128
+]
+[e E1361 . `uc
+SPI_CLOCK_IDLE_HIGH 16
+SPI_CLOCK_IDLE_LOW 0
+]
+[e E1365 . `uc
+SPI_IDLE_2_ACTIVE 0
+SPI_ACTIVE_2_IDLE 64
+]
+"12 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\SPI.c
+[e E1264 . `uc
+SPI_MASTER_OSC_DIV4 32
+SPI_MASTER_OSC_DIV16 33
+SPI_MASTER_OSC_DIV64 34
+SPI_MASTER_TMR2 35
+SPI_SLAVE_SS_EN 36
+SPI_SLAVE_SS_DIS 37
+]
+[e E1272 . `uc
+SPI_DATA_SAMPLE_MIDDLE 0
+SPI_DATA_SAMPLE_END 128
+]
+[e E1276 . `uc
+SPI_CLOCK_IDLE_HIGH 16
+SPI_CLOCK_IDLE_LOW 0
+]
+[e E1280 . `uc
+SPI_IDLE_2_ACTIVE 0
+SPI_ACTIVE_2_IDLE 64
+]
+"505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"53 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\fisicolab3master.c
+[v _main main `(v  1 e 1 0 ]
+"115
+[v _setup setup `(v  1 e 1 0 ]
+"12 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\SPI.c
+[v _spiInit spiInit `(v  1 e 1 0 ]
+"29
+[v _spiReceiveWait spiReceiveWait `(v  1 s 1 spiReceiveWait ]
+"34
+[v _spiWrite spiWrite `(v  1 e 1 0 ]
+"47
+[v _spiRead spiRead `(uc  1 e 1 0 ]
+"35 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\usart.c
+[v _enviocaracter enviocaracter `(v  1 e 1 0 ]
+"44
+[v _enviocadena enviocadena `(v  1 e 1 0 ]
+"358 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"166 D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"290
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S79 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"307
+[u S88 . 1 `S79 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES88  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"414
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+[s S26 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"427
+[u S31 . 1 `S26 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES31  1 e 1 @9 ]
+[s S247 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"482
+[s S256 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S261 . 1 `S247 1 . 1 0 `S256 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES261  1 e 1 @11 ]
+[s S59 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S67 . 1 `S59 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES67  1 e 1 @12 ]
+[s S536 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ULPWUIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"610
+[u S545 . 1 `S536 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES545  1 e 1 @13 ]
+"843
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"850
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+[s S203 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1068
+[s S212 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S216 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S219 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S222 . 1 `S203 1 . 1 0 `S212 1 . 1 0 `S216 1 . 1 0 `S219 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES222  1 e 1 @24 ]
+"1133
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1140
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1416
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1664
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+[s S109 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1882
+[s S115 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S120 . 1 `S109 1 . 1 0 `S115 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES120  1 e 1 @143 ]
+"2177
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S389 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2231
+[s S398 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S403 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S409 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S414 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S419 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S424 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S429 . 1 `S389 1 . 1 0 `S398 1 . 1 0 `S403 1 . 1 0 `S409 1 . 1 0 `S414 1 . 1 0 `S419 1 . 1 0 `S424 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES429  1 e 1 @148 ]
+[s S143 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2582
+[s S152 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S156 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S159 . 1 `S143 1 . 1 0 `S152 1 . 1 0 `S156 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES159  1 e 1 @152 ]
+"2642
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2704
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @154 ]
+"3250
+[v _EEDAT EEDAT `VEuc  1 e 1 @268 ]
+"3257
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+[s S180 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3352
+[u S189 . 1 `S180 1 . 1 0 ]
+[v _BAUDCTLbits BAUDCTLbits `VES189  1 e 1 @391 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+[s S500 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3514
+[u S507 . 1 `S500 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES507  1 e 1 @396 ]
+"3544
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"4457
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"4463
+[v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
+"41 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\fisicolab3master.c
+[v _dummydata dummydata `uc  1 e 1 0 ]
+"42
+[v _pc pc `uc  1 e 1 0 ]
+"43
+[v _term term `[16]uc  1 e 16 0 ]
+"53
+[v _main main `(v  1 e 1 0 ]
+{
+"111
+} 0
+"505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"545
+[v sprintf@val val `ui  1 a 2 13 ]
+"512
+[v sprintf@c c `uc  1 a 1 16 ]
+"521
+[v sprintf@prec prec `c  1 a 1 12 ]
+"525
+[v sprintf@flag flag `uc  1 a 1 11 ]
+"507
+[v sprintf@ap ap `[1]*.4v  1 a 1 10 ]
+"505
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"550
+[v sprintf@sp sp `*.4uc  1 a 1 15 ]
+"1567
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"34 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\SPI.c
+[v _spiWrite spiWrite `(v  1 e 1 0 ]
+{
+[v spiWrite@dat dat `uc  1 a 1 wreg ]
+[v spiWrite@dat dat `uc  1 a 1 wreg ]
+"36
+[v spiWrite@dat dat `uc  1 a 1 0 ]
+"37
+} 0
+"47
+[v _spiRead spiRead `(uc  1 e 1 0 ]
+{
+"51
+} 0
+"29
+[v _spiReceiveWait spiReceiveWait `(v  1 s 1 spiReceiveWait ]
+{
+"32
+} 0
+"115 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\fisicolab3master.c
+[v _setup setup `(v  1 e 1 0 ]
+{
+"152
+} 0
+"12 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\SPI.c
+[v _spiInit spiInit `(v  1 e 1 0 ]
+{
+[v spiInit@sType sType `E1264  1 a 1 wreg ]
+[v spiInit@sType sType `E1264  1 a 1 wreg ]
+[v spiInit@sDataSample sDataSample `E1272  1 p 1 0 ]
+[v spiInit@sClockIdle sClockIdle `E1276  1 p 1 1 ]
+[v spiInit@sTransmitEdge sTransmitEdge `E1280  1 p 1 2 ]
+"14
+[v spiInit@sType sType `E1264  1 a 1 3 ]
+"27
+} 0
+"44 D:\AlejandroDigital\electronica_digital2\fisico\fisicolab3master.X\usart.c
+[v _enviocadena enviocadena `(v  1 e 1 0 ]
+{
+[v enviocadena@cadena cadena `*.4uc  1 a 1 wreg ]
+[v enviocadena@cadena cadena `*.4uc  1 a 1 wreg ]
+[v enviocadena@cadena cadena `*.4uc  1 a 1 2 ]
+"52
+} 0
+"35
+[v _enviocaracter enviocaracter `(v  1 e 1 0 ]
+{
+[v enviocaracter@a a `uc  1 a 1 wreg ]
+[v enviocaracter@a a `uc  1 a 1 wreg ]
+[v enviocaracter@a a `uc  1 a 1 0 ]
+"42
+} 0
