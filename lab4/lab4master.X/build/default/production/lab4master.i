@@ -2814,7 +2814,20 @@ void Lcd_Shift_Right(void);
 
 void Lcd_Shift_Left(void);
 # 36 "lab4master.c" 2
-# 46 "lab4master.c"
+
+
+
+
+
+unsigned int senms = 0;
+unsigned char senls = 0;
+unsigned char sencs = 0;
+unsigned char sensorval = 0;
+unsigned char t = 0;
+
+
+
+
 void setup(void);
 
 
@@ -2834,9 +2847,28 @@ void main(void) {
         PORTD = I2C_Master_Read(0);
         I2C_Master_Stop();
         _delay((unsigned long)((200)*(8000000/4000.0)));
-        PORTB++;
+
+
+        I2C_Master_Start();
+        I2C_Master_Write(0x80);
+        I2C_Master_Write(0xF3);
+        I2C_Master_Stop();
+        _delay((unsigned long)((200)*(8000000/4000.0)));
+        I2C_Master_Start();
+        I2C_Master_Write(0x81);
+        senms = I2C_Master_Read(0);
+        senls = I2C_Master_Read(0);
+        I2C_Master_Stop();
+        _delay((unsigned long)((200)*(8000000/4000.0)));
+
+
+        sensorval = senms<<8;
+        sensorval += senms;
+        sensorval &= ~0b11;
+        t = -46.85 +(175.72*sensorval/65536);
+        PORTB = senms;
+        PORTA = senls;
     }
-    return;
 }
 
 
@@ -2852,9 +2884,11 @@ void setup(void){
     TRISA = 0;
     TRISB = 0;
     TRISD = 0;
+    TRISE = 0;
     PORTA = 0;
     PORTB = 0;
     PORTD = 0;
+    PORTE = 0;
 
     INTCONbits.GIE = 1;
     INTCONbits.PEIE = 1;

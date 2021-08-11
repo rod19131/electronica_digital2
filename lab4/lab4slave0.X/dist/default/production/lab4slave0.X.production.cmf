@@ -23,7 +23,7 @@ cstackCOMMON COMMON 1 70 70 7 1
 intentry CODE 0 4 4 8 2
 bssCOMMON COMMON 1 77 77 2 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 2 2
@@ -73,13 +73,13 @@ STRING FD-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lab4slave0.X.production.o
-F cinit CODE >961:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.s
-F cinit CODE >964:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.s
-F cinit CODE >978:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.s
-10 cinit CODE >979:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.s
-11 cinit CODE >985:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.s
-11 cinit CODE >987:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.s
-12 cinit CODE >988:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.s
+F cinit CODE >961:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.s
+F cinit CODE >964:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.s
+F cinit CODE >978:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.s
+10 cinit CODE >979:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.s
+11 cinit CODE >985:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.s
+11 cinit CODE >987:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.s
+12 cinit CODE >988:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.s
 4 intentry CODE >50:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
 DA text5 CODE >11:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\adc_canal.c
 DB text5 CODE >12:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\adc_canal.c
@@ -137,27 +137,26 @@ EE text2 CODE >16:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\adc
 F1 text2 CODE >17:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\adc_c.c
 F2 text2 CODE >18:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\adc_c.c
 F3 text2 CODE >19:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\adc_c.c
-96 text1 CODE >106:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-96 text1 CODE >109:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-9A text1 CODE >110:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-9B text1 CODE >112:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-9E text1 CODE >113:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-9F text1 CODE >114:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-A3 text1 CODE >115:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-A4 text1 CODE >116:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-A5 text1 CODE >117:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-A8 text1 CODE >118:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-A9 text1 CODE >119:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-AA text1 CODE >121:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-AF text1 CODE >122:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-B3 text1 CODE >125:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-B9 text1 CODE >126:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-BC text1 CODE >127:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-BF text1 CODE >128:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+96 text1 CODE >105:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+96 text1 CODE >108:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+9A text1 CODE >109:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+9B text1 CODE >111:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+9E text1 CODE >112:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+9F text1 CODE >113:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+A3 text1 CODE >114:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+A4 text1 CODE >115:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+A5 text1 CODE >116:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+A8 text1 CODE >117:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+A9 text1 CODE >118:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+AA text1 CODE >120:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+AF text1 CODE >121:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+B3 text1 CODE >122:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+B9 text1 CODE >123:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+BC text1 CODE >124:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
+BF text1 CODE >125:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
 F4 maintext CODE >95:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
 F4 maintext CODE >96:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
 F9 maintext CODE >100:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
-F9 maintext CODE >101:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave0.X\lab4slave0.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -182,19 +181,19 @@ _BF 4A0 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _ADIF 66 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 _PEIE 5E 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
 _main 1E8 0 CODE 0 maintext dist/default/production\lab4slave0.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
-start 18 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
+start 18 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
 __size_of_main 0 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
@@ -205,8 +204,8 @@ _ANSELH 189 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 _SSPCONbits 14 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 adc_canal@canal 71 0 COMMON 1 cstackCOMMON dist/default/production\lab4slave0.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
 _I2C_Slave_Init 180 0 CODE 0 text3 dist/default/production\lab4slave0.X.production.o
 __size_of_adc_c 0 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 __size_of_setup 0 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
@@ -217,7 +216,7 @@ _SSPBUF 13 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -260,7 +259,7 @@ _isr 2A 0 CODE 0 text4 dist/default/production\lab4slave0.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 __end_of_isr 12C 0 CODE 0 text4 dist/default/production\lab4slave0.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\spns.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sh10.o
 _PIE1bits 8C 0 ABS 0 - dist/default/production\lab4slave0.X.production.o
 __pmaintext 1E8 0 CODE 0 maintext dist/default/production\lab4slave0.X.production.o
 __Lcommon 0 0 ABS 0 common -

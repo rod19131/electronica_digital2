@@ -97,8 +97,7 @@ void main(void) {
     //*************************************************************************
     // Loop infinito
     //*************************************************************************
-    while(1){
-    }
+    while(1){}
 }
 //*****************************************************************************
 // Función de Inicialización
@@ -120,8 +119,6 @@ void setup(void){
     //adc
     adc_c(); //configuracion adc (usando funcion de libreria)
     __delay_us(20);
-//    INTCONbits.GIE = 1;         // Habilitamos interrupciones
-//    INTCONbits.PEIE = 1;        // Se habilitan las interrupciones perifericos
     I2C_Slave_Init(0x50);  
     PIE1bits.ADIE = 1;   //se habilitan las interrupciones por adc
     ADCON0bits.GO = 1;  //se comienza la conversion adc

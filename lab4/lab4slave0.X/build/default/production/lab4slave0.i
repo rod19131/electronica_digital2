@@ -2762,8 +2762,7 @@ void main(void) {
 
 
 
-    while(1){
-    }
+    while(1){}
 }
 
 
@@ -2785,8 +2784,6 @@ void setup(void){
 
     adc_c();
     _delay((unsigned long)((20)*(8000000/4000000.0)));
-
-
     I2C_Slave_Init(0x50);
     PIE1bits.ADIE = 1;
     ADCON0bits.GO = 1;

@@ -38,7 +38,11 @@
 // Definición de variables
 //*****************************************************************************
 #define _XTAL_FREQ 8000000
-
+unsigned int senms = 0;
+unsigned char senls = 0;
+unsigned char sencs = 0;
+unsigned char sensorval = 0;
+unsigned char t = 0;
 //*****************************************************************************
 // Definición de funciones para que se puedan colocar después del main de lo 
 // contrario hay que colocarlos todas las funciones antes del main
@@ -62,10 +66,29 @@ void main(void) {
         PORTD = I2C_Master_Read(0);
         I2C_Master_Stop();
         __delay_ms(200);
-        PORTB++;   
+        
+        // Dispositivo I2C (temp) - Hold
+        I2C_Master_Start();
+        I2C_Master_Write(0x80);
+        I2C_Master_Write(0xF3);
+        I2C_Master_Stop();
+        __delay_ms(200);
+        I2C_Master_Start();
+        I2C_Master_Write(0x81);
+        senms = I2C_Master_Read(0);
+        senls = I2C_Master_Read(0);  
+        I2C_Master_Stop();
+        __delay_ms(200);
+        
+        // Conversion de datos
+        sensorval = senms<<8;
+        sensorval += senms;
+        sensorval &= ~0b11;
+        t = -46.85 +(175.72*sensorval/65536);
+        PORTB = senms;
+        PORTA = senls;
     }
-    return;
-}
+}   
 //*****************************************************************************
 // Función de Inicialización
 //*****************************************************************************
@@ -80,9 +103,11 @@ void setup(void){
     TRISA = 0;
     TRISB = 0;
     TRISD = 0;
+    TRISE = 0;
     PORTA = 0;         //se limpian los puertos
     PORTB = 0;
     PORTD = 0;
+    PORTE = 0;
     //configuracion interrupciones
     INTCONbits.GIE  = 1; //se habilitan las interrupciones globales
     INTCONbits.PEIE = 1; //se habilitan las interrupciones de los perifericos
