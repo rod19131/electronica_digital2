@@ -32,12 +32,12 @@
 //*****************************************************************************
 #include <stdint.h>
 #include <stdio.h>
-#include "I2C.h"
+#include "I2C.h" 
 #include "LCD8bits.h"
 //*****************************************************************************
 // Definición de variables
 //*****************************************************************************
-#define RS RC0         //asignacion botones
+#define RS RC0         //asignacion lcd
 #define EN RC1
 #define D0 RD0
 #define D1 RD1
@@ -48,11 +48,12 @@
 #define D6 RD6
 #define D7 RD7
 #define _XTAL_FREQ 8000000
-unsigned int senms = 0;
-unsigned int sensorval = 0;
-double t = 0;
-unsigned char s1, s2 = 0;
-char volt[16];        //cadena voltajes
+//variables
+unsigned int senms = 0;    //valores sensor i2c buf
+unsigned int sensorval = 0;//valores sensor i2c
+double t = 0;              //conversion temperatura
+unsigned char s1, s2 = 0;  //valores esclavos
+char volt[16];        //cadena LCD valores
 
 //*****************************************************************************
 // Definición de funciones para que se puedan colocar después del main de lo 
@@ -66,30 +67,26 @@ void setup(void);
 void main(void) {
     setup();
     while(1){
-        I2C_Master_Start();
-        I2C_Master_Write(0x50);
-        I2C_Master_Write(PORTB);
-        I2C_Master_Stop();
-        __delay_ms(50);
-       
+        //recepcion adc slave0
         I2C_Master_Start();
         I2C_Master_Write(0x51);
         s1 = I2C_Master_Read(0);
         I2C_Master_Stop();
         __delay_ms(50);
-        
+        //recepcion cont slave1
         I2C_Master_Start();
         I2C_Master_Write(0x61);
         s2 = I2C_Master_Read(0);
         I2C_Master_Stop();
         __delay_ms(50);
         
-        // Dispositivo I2C (temp) - Hold
+        //recepcion sensor i2c temp
         I2C_Master_Start();
         I2C_Master_Write(0x80);
         I2C_Master_Write(0xF3);
         I2C_Master_Stop();
         __delay_ms(100);
+        
         I2C_Master_Start();
         I2C_Master_Write(0x81);
         senms = I2C_Master_Read(0);
@@ -97,11 +94,12 @@ void main(void) {
         I2C_Master_Stop();
         __delay_ms(50);
         
-        // Conversion de datos
+        //conversion temperatura
         sensorval = senms<<8;
         sensorval += senms;
         sensorval &= ~0b11;
         t = -46.85 +(175.72*sensorval/65536);
+        //escribir valores en LCD
         sprintf(volt, "%d   %d    %.0f  ", s1, s2, t); //valores para pantalla 2 linea
         Lcd_Set_Cursor(2,1);                         //linea 2
         Lcd_Write_String(volt);

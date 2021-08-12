@@ -2814,7 +2814,7 @@ void Lcd_Shift_Right(void);
 
 void Lcd_Shift_Left(void);
 # 36 "lab4master.c" 2
-# 51 "lab4master.c"
+# 52 "lab4master.c"
 unsigned int senms = 0;
 unsigned int sensorval = 0;
 double t = 0;
@@ -2833,11 +2833,6 @@ void setup(void);
 void main(void) {
     setup();
     while(1){
-        I2C_Master_Start();
-        I2C_Master_Write(0x50);
-        I2C_Master_Write(PORTB);
-        I2C_Master_Stop();
-        _delay((unsigned long)((50)*(8000000/4000.0)));
 
         I2C_Master_Start();
         I2C_Master_Write(0x51);
@@ -2857,6 +2852,7 @@ void main(void) {
         I2C_Master_Write(0xF3);
         I2C_Master_Stop();
         _delay((unsigned long)((100)*(8000000/4000.0)));
+
         I2C_Master_Start();
         I2C_Master_Write(0x81);
         senms = I2C_Master_Read(0);
@@ -2869,6 +2865,7 @@ void main(void) {
         sensorval += senms;
         sensorval &= ~0b11;
         t = -46.85 +(175.72*sensorval/65536);
+
         sprintf(volt, "%d   %d    %.0f  ", s1, s2, t);
         Lcd_Set_Cursor(2,1);
         Lcd_Write_String(volt);

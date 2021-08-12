@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"61 lab4master.c
-[; ;lab4master.c: 61: void setup(void);
+"62 lab4master.c
+[; ;lab4master.c: 62: void setup(void);
 [v _setup `(v ~T0 @X0 0 ef ]
 "41 ./I2C.h
 [; ;./I2C.h: 41: void I2C_Master_Start(void);
@@ -9,19 +9,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 "55
 [; ;./I2C.h: 55: void I2C_Master_Write(unsigned d);
 [v _I2C_Master_Write `(v ~T0 @X0 0 ef1`ui ]
-"228 D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
-[; ;D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 228: extern volatile unsigned char PORTB __attribute__((address(0x006)));
-[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
-"49 ./I2C.h
+"60
+[; ;./I2C.h: 60: unsigned short I2C_Master_Read(unsigned short a);
+[v _I2C_Master_Read `(us ~T0 @X0 0 ef1`us ]
+"49
 [; ;./I2C.h: 49: void I2C_Master_Stop(void);
 [v _I2C_Master_Stop `(v ~T0 @X0 0 ef ]
 [v F1256 `(v ~T0 @X0 1 tf1`ul ]
 "92 D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
 [v __delay `JF1256 ~T0 @X0 0 e ]
 [p i __delay ]
-"60 ./I2C.h
-[; ;./I2C.h: 60: unsigned short I2C_Master_Read(unsigned short a);
-[v _I2C_Master_Read `(us ~T0 @X0 0 ef1`us ]
 "194 C:\Program Files\Microchip\xc8\v2.31\pic\include\c90\stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "69 ./LCD8bits.h
@@ -347,210 +344,195 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _a
 -> -> 0 `i `uc
 ]
-"51 lab4master.c
-[; ;lab4master.c: 51: unsigned int senms = 0;
+"52 lab4master.c
+[; ;lab4master.c: 52: unsigned int senms = 0;
 [v _senms `ui ~T0 @X0 1 e ]
 [i _senms
 -> -> 0 `i `ui
 ]
-"52
-[; ;lab4master.c: 52: unsigned int sensorval = 0;
+"53
+[; ;lab4master.c: 53: unsigned int sensorval = 0;
 [v _sensorval `ui ~T0 @X0 1 e ]
 [i _sensorval
 -> -> 0 `i `ui
 ]
-"53
-[; ;lab4master.c: 53: double t = 0;
+"54
+[; ;lab4master.c: 54: double t = 0;
 [v _t `d ~T0 @X0 1 e ]
 [i _t
 -> -> 0 `i `d
 ]
-"54
-[; ;lab4master.c: 54: unsigned char s1, s2 = 0;
+"55
+[; ;lab4master.c: 55: unsigned char s1, s2 = 0;
 [v _s1 `uc ~T0 @X0 1 e ]
 [v _s2 `uc ~T0 @X0 1 e ]
 [i _s2
 -> -> 0 `i `uc
 ]
-"55
-[; ;lab4master.c: 55: char volt[16];
+"56
+[; ;lab4master.c: 56: char volt[16];
 [v _volt `uc ~T0 @X0 -> 16 `i e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"66
-[; ;lab4master.c: 66: void main(void) {
+"67
+[; ;lab4master.c: 67: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"67
-[; ;lab4master.c: 67:     setup();
-[e ( _setup ..  ]
 "68
-[; ;lab4master.c: 68:     while(1){
+[; ;lab4master.c: 68:     setup();
+[e ( _setup ..  ]
+"69
+[; ;lab4master.c: 69:     while(1){
 [e :U 141 ]
 {
-"69
-[; ;lab4master.c: 69:         I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"70
-[; ;lab4master.c: 70:         I2C_Master_Write(0x50);
-[e ( _I2C_Master_Write (1 -> -> 80 `i `ui ]
 "71
-[; ;lab4master.c: 71:         I2C_Master_Write(PORTB);
-[e ( _I2C_Master_Write (1 -> _PORTB `ui ]
+[; ;lab4master.c: 71:         I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
 "72
-[; ;lab4master.c: 72:         I2C_Master_Stop();
-[e ( _I2C_Master_Stop ..  ]
-"73
-[; ;lab4master.c: 73:         _delay((unsigned long)((50)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"75
-[; ;lab4master.c: 75:         I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"76
-[; ;lab4master.c: 76:         I2C_Master_Write(0x51);
+[; ;lab4master.c: 72:         I2C_Master_Write(0x51);
 [e ( _I2C_Master_Write (1 -> -> 81 `i `ui ]
-"77
-[; ;lab4master.c: 77:         s1 = I2C_Master_Read(0);
+"73
+[; ;lab4master.c: 73:         s1 = I2C_Master_Read(0);
 [e = _s1 -> ( _I2C_Master_Read (1 -> -> 0 `i `us `uc ]
+"74
+[; ;lab4master.c: 74:         I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"75
+[; ;lab4master.c: 75:         _delay((unsigned long)((50)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"77
+[; ;lab4master.c: 77:         I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
 "78
-[; ;lab4master.c: 78:         I2C_Master_Stop();
-[e ( _I2C_Master_Stop ..  ]
-"79
-[; ;lab4master.c: 79:         _delay((unsigned long)((50)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"81
-[; ;lab4master.c: 81:         I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"82
-[; ;lab4master.c: 82:         I2C_Master_Write(0x61);
+[; ;lab4master.c: 78:         I2C_Master_Write(0x61);
 [e ( _I2C_Master_Write (1 -> -> 97 `i `ui ]
-"83
-[; ;lab4master.c: 83:         s2 = I2C_Master_Read(0);
+"79
+[; ;lab4master.c: 79:         s2 = I2C_Master_Read(0);
 [e = _s2 -> ( _I2C_Master_Read (1 -> -> 0 `i `us `uc ]
+"80
+[; ;lab4master.c: 80:         I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"81
+[; ;lab4master.c: 81:         _delay((unsigned long)((50)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "84
-[; ;lab4master.c: 84:         I2C_Master_Stop();
-[e ( _I2C_Master_Stop ..  ]
+[; ;lab4master.c: 84:         I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
 "85
-[; ;lab4master.c: 85:         _delay((unsigned long)((50)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"88
-[; ;lab4master.c: 88:         I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"89
-[; ;lab4master.c: 89:         I2C_Master_Write(0x80);
+[; ;lab4master.c: 85:         I2C_Master_Write(0x80);
 [e ( _I2C_Master_Write (1 -> -> 128 `i `ui ]
-"90
-[; ;lab4master.c: 90:         I2C_Master_Write(0xF3);
+"86
+[; ;lab4master.c: 86:         I2C_Master_Write(0xF3);
 [e ( _I2C_Master_Write (1 -> -> 243 `i `ui ]
-"91
-[; ;lab4master.c: 91:         I2C_Master_Stop();
+"87
+[; ;lab4master.c: 87:         I2C_Master_Stop();
 [e ( _I2C_Master_Stop ..  ]
-"92
-[; ;lab4master.c: 92:         _delay((unsigned long)((100)*(8000000/4000.0)));
+"88
+[; ;lab4master.c: 88:         _delay((unsigned long)((100)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"93
-[; ;lab4master.c: 93:         I2C_Master_Start();
+"90
+[; ;lab4master.c: 90:         I2C_Master_Start();
 [e ( _I2C_Master_Start ..  ]
-"94
-[; ;lab4master.c: 94:         I2C_Master_Write(0x81);
+"91
+[; ;lab4master.c: 91:         I2C_Master_Write(0x81);
 [e ( _I2C_Master_Write (1 -> -> 129 `i `ui ]
-"95
-[; ;lab4master.c: 95:         senms = I2C_Master_Read(0);
+"92
+[; ;lab4master.c: 92:         senms = I2C_Master_Read(0);
 [e = _senms -> ( _I2C_Master_Read (1 -> -> 0 `i `us `ui ]
-"96
-[; ;lab4master.c: 96:         sensorval = I2C_Master_Read(0);
+"93
+[; ;lab4master.c: 93:         sensorval = I2C_Master_Read(0);
 [e = _sensorval -> ( _I2C_Master_Read (1 -> -> 0 `i `us `ui ]
-"97
-[; ;lab4master.c: 97:         I2C_Master_Stop();
+"94
+[; ;lab4master.c: 94:         I2C_Master_Stop();
 [e ( _I2C_Master_Stop ..  ]
-"98
-[; ;lab4master.c: 98:         _delay((unsigned long)((50)*(8000000/4000.0)));
+"95
+[; ;lab4master.c: 95:         _delay((unsigned long)((50)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"101
-[; ;lab4master.c: 101:         sensorval = senms<<8;
+"98
+[; ;lab4master.c: 98:         sensorval = senms<<8;
 [e = _sensorval << _senms -> 8 `i ]
-"102
-[; ;lab4master.c: 102:         sensorval += senms;
+"99
+[; ;lab4master.c: 99:         sensorval += senms;
 [e =+ _sensorval _senms ]
-"103
-[; ;lab4master.c: 103:         sensorval &= ~0b11;
+"100
+[; ;lab4master.c: 100:         sensorval &= ~0b11;
 [e =& _sensorval -> ~ -> 3 `i `ui ]
-"104
-[; ;lab4master.c: 104:         t = -46.85 +(175.72*sensorval/65536);
+"101
+[; ;lab4master.c: 101:         t = -46.85 +(175.72*sensorval/65536);
 [e = _t + -U .46.85 / * .175.72 -> _sensorval `d -> -> 65536 `l `d ]
-"105
-[; ;lab4master.c: 105:         sprintf(volt, "%d   %d    %.0f  ", s1, s2, t);
+"103
+[; ;lab4master.c: 103:         sprintf(volt, "%d   %d    %.0f  ", s1, s2, t);
 [e ( _sprintf (1 , , , (. , &U _volt :s 1C -> _s1 `i -> _s2 `i _t ]
-"106
-[; ;lab4master.c: 106:         Lcd_Set_Cursor(2,1);
+"104
+[; ;lab4master.c: 104:         Lcd_Set_Cursor(2,1);
 [e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"107
-[; ;lab4master.c: 107:         Lcd_Write_String(volt);
+"105
+[; ;lab4master.c: 105:         Lcd_Write_String(volt);
 [e ( _Lcd_Write_String (1 &U _volt ]
-"108
-[; ;lab4master.c: 108:     }
+"106
+[; ;lab4master.c: 106:     }
 }
 [e :U 140 ]
 [e $U 141  ]
 [e :U 142 ]
-"109
-[; ;lab4master.c: 109: }
+"107
+[; ;lab4master.c: 107: }
 [e :UE 139 ]
 }
-"113
-[; ;lab4master.c: 113: void setup(void){
+"111
+[; ;lab4master.c: 111: void setup(void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"116
-[; ;lab4master.c: 116:     OSCCONbits.IRCF = 7;
+"114
+[; ;lab4master.c: 114:     OSCCONbits.IRCF = 7;
 [e = . . _OSCCONbits 0 4 -> -> 7 `i `uc ]
-"117
-[; ;lab4master.c: 117:     OSCCONbits.SCS = 1;
+"115
+[; ;lab4master.c: 115:     OSCCONbits.SCS = 1;
 [e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
-"119
-[; ;lab4master.c: 119:     ANSELH = 0;
+"117
+[; ;lab4master.c: 117:     ANSELH = 0;
 [e = _ANSELH -> -> 0 `i `uc ]
-"120
-[; ;lab4master.c: 120:     ANSEL = 0;
+"118
+[; ;lab4master.c: 118:     ANSEL = 0;
 [e = _ANSEL -> -> 0 `i `uc ]
-"121
-[; ;lab4master.c: 121:     TRISA = 0;
+"119
+[; ;lab4master.c: 119:     TRISA = 0;
 [e = _TRISA -> -> 0 `i `uc ]
-"122
-[; ;lab4master.c: 122:     TRISCbits.TRISC0 = 0;
+"120
+[; ;lab4master.c: 120:     TRISCbits.TRISC0 = 0;
 [e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
-"123
-[; ;lab4master.c: 123:     TRISCbits.TRISC1 = 0;
+"121
+[; ;lab4master.c: 121:     TRISCbits.TRISC1 = 0;
 [e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
-"124
-[; ;lab4master.c: 124:     TRISB = 0;
+"122
+[; ;lab4master.c: 122:     TRISB = 0;
 [e = _TRISB -> -> 0 `i `uc ]
-"125
-[; ;lab4master.c: 125:     TRISD = 0;
+"123
+[; ;lab4master.c: 123:     TRISD = 0;
 [e = _TRISD -> -> 0 `i `uc ]
-"126
-[; ;lab4master.c: 126:     TRISE = 0;
+"124
+[; ;lab4master.c: 124:     TRISE = 0;
 [e = _TRISE -> -> 0 `i `uc ]
-"127
-[; ;lab4master.c: 127:     PORTD = 0;
+"125
+[; ;lab4master.c: 125:     PORTD = 0;
 [e = _PORTD -> -> 0 `i `uc ]
-"129
-[; ;lab4master.c: 129:     Lcd_Init();
+"127
+[; ;lab4master.c: 127:     Lcd_Init();
 [e ( _Lcd_Init ..  ]
-"130
-[; ;lab4master.c: 130:     Lcd_Set_Cursor(1,1);
+"128
+[; ;lab4master.c: 128:     Lcd_Set_Cursor(1,1);
 [e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"131
-[; ;lab4master.c: 131:     Lcd_Write_String("ADC: CONT: TEMP:");
+"129
+[; ;lab4master.c: 129:     Lcd_Write_String("ADC: CONT: TEMP:");
 [e ( _Lcd_Write_String (1 :s 2C ]
-"132
-[; ;lab4master.c: 132:     I2C_Master_Init(100000);
+"130
+[; ;lab4master.c: 130:     I2C_Master_Init(100000);
 [e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
-"133
-[; ;lab4master.c: 133: }
+"131
+[; ;lab4master.c: 131: }
 [e :UE 143 ]
 }
 [p f _sprintf 8462464 ]

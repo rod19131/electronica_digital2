@@ -36,7 +36,6 @@
 //*****************************************************************************
 #define _XTAL_FREQ 8000000
 uint8_t z;
-uint8_t pseudo;
 //*****************************************************************************
 // Definición de funciones para que se puedan colocar después del main de lo 
 // contrario hay que colocarlos todas las funciones antes del main

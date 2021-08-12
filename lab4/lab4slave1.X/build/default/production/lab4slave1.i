@@ -2693,7 +2693,6 @@ void I2C_Slave_Init(uint8_t address);
 
 
 uint8_t z;
-uint8_t pseudo;
 
 
 

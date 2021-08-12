@@ -2703,7 +2703,6 @@ unsigned char adc_canal(unsigned char canal);
 
 
 uint8_t z;
-uint8_t pseudo;
 
 
 
