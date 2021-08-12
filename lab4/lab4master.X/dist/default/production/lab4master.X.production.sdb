@@ -5,18 +5,46 @@
 [d frameptr 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
-"505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"417 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _fround fround `(d  1 s 4 fround ]
+"433
+[v _scale scale `(d  1 s 4 scale ]
+"505
 [v _sprintf sprintf `(i  1 e 2 0 ]
+"60 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"60 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
@@ -37,11 +65,9 @@
 [v _I2C_Master_Write I2C_Master_Write `(v  1 e 1 0 ]
 "74
 [v _I2C_Master_Read I2C_Master_Read `(us  1 e 2 0 ]
-"61 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-[v _mapear mapear `(f  1 e 4 0 ]
-"72
+"66 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
 [v _main main `(v  1 e 1 0 ]
-"125
+"113
 [v _setup setup `(v  1 e 1 0 ]
 "13 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\LCD8bits.c
 [v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
@@ -56,15 +82,15 @@
 "104
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
 "358 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
-[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
-"166 D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
-[v _PORTA PORTA `VEuc  1 e 1 @5 ]
-"228
+[v _dpowers dpowers `DC[10]ul  1 s 40 dpowers ]
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\powers.c
+[v __powers_ _powers_ `DC[13]d  1 e 52 0 ]
+"39
+[v __npowers_ _npowers_ `DC[13]d  1 e 52 0 ]
+"228 D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
 "352
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
-"414
-[v _PORTE PORTE `VEuc  1 e 1 @9 ]
 "843
 [v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
 "850
@@ -105,7 +131,7 @@
 [v _OSCCONbits OSCCONbits `VES79  1 e 1 @143 ]
 "1979
 [v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
-[s S187 . 1 `uc 1 SEN 1 0 :1:0 
+[s S175 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -115,8 +141,8 @@
 `uc 1 GCEN 1 0 :1:7 
 ]
 "1996
-[u S196 . 1 `S187 1 . 1 0 ]
-[v _SSPCON2bits SSPCON2bits `VES196  1 e 1 @145 ]
+[u S184 . 1 `S175 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES184  1 e 1 @145 ]
 "2048
 [v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
 "2177
@@ -160,140 +186,143 @@
 "51 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
 [v _senms senms `ui  1 e 2 0 ]
 "52
-[v _senls senls `uc  1 e 1 0 ]
-"54
-[v _sensorval sensorval `uc  1 e 1 0 ]
-"55
+[v _sensorval sensorval `ui  1 e 2 0 ]
+"53
 [v _t t `d  1 e 4 0 ]
-"56
+"54
 [v _s1 s1 `uc  1 e 1 0 ]
 [v _s2 s2 `uc  1 e 1 0 ]
-"57
-[v _S1 S1 `f  1 e 4 0 ]
-"58
+"55
 [v _volt volt `[16]uc  1 e 16 0 ]
-"72
+"66
 [v _main main `(v  1 e 1 0 ]
 {
-"121
+"109
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"533
+[v sprintf@fval fval `d  1 a 4 40 ]
 "545
-[v sprintf@val val `ui  1 a 2 11 ]
-"512
-[v sprintf@c c `uc  1 a 1 14 ]
-"521
-[v sprintf@prec prec `c  1 a 1 10 ]
+[v sprintf@val val `ul  1 a 4 35 ]
+[u S421 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
+"543
+[v sprintf@tmpval tmpval `S421  1 a 4 31 ]
+"517
+[v sprintf@prec prec `i  1 a 2 44 ]
+"534
+[v sprintf@eexp eexp `i  1 a 2 29 ]
 "525
-[v sprintf@flag flag `uc  1 a 1 9 ]
+[v sprintf@flag flag `us  1 a 2 27 ]
+"512
+[v sprintf@c c `uc  1 a 1 46 ]
 "507
-[v sprintf@ap ap `[1]*.4v  1 a 1 8 ]
+[v sprintf@ap ap `[1]*.4v  1 a 1 26 ]
 "505
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
-[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+[v sprintf@f f `*.24DCuc  1 p 1 8 ]
 "550
-[v sprintf@sp sp `*.4uc  1 a 1 13 ]
+[v sprintf@sp sp `*.4uc  1 a 1 39 ]
 "1567
+} 0
+"433
+[v _scale scale `(d  1 s 4 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"436
+[v scale@scl scl `c  1 a 1 48 ]
+"449
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 7 ]
+[v ___awdiv@dividend dividend `i  1 p 2 9 ]
+"41
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"417 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _fround fround `(d  1 s 4 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"421
+[v fround@prec prec `uc  1 a 1 49 ]
+"426
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwmod@counter counter `uc  1 a 1 13 ]
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
 "5
-[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
-[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
 "25
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
 "11
-[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
 "5
-[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
 "30
-} 0
-"125 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-[v _setup setup `(v  1 e 1 0 ]
-{
-"146
-} 0
-"80 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\LCD8bits.c
-[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
-{
-"94
-} 0
-"16 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\I2C.c
-[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
-{
-[v I2C_Master_Init@c c `DCul  1 p 4 0 ]
-"24
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-[v ___lldiv __lldiv `(ul  1 e 4 0 ]
-{
-"10
-[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
-"11
-[v ___lldiv@counter counter `uc  1 a 1 13 ]
-"5
-[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
-[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
-"30
-} 0
-"61 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-[v _mapear mapear `(f  1 e 4 0 ]
-{
-[v mapear@adresval adresval `uc  1 a 1 wreg ]
-[v mapear@adresval adresval `uc  1 a 1 wreg ]
-[v mapear@adresval adresval `uc  1 a 1 60 ]
-"62
-} 0
-"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-{
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-"13
-[v ___xxtofl@arg arg `ul  1 a 4 10 ]
-"12
-[v ___xxtofl@exp exp `uc  1 a 1 9 ]
-"10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 0 ]
-"15
-[v ___xxtofl@sign sign `uc  1 a 1 8 ]
-"44
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S590 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S619 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S595 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S598 . 4 `l 1 i 4 0 `d 1 f 4 0 `S590 1 fAsBytes 4 0 `S595 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S598  1 a 4 20 ]
+[s S624 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S627 . 4 `l 1 i 4 0 `d 1 f 4 0 `S619 1 fAsBytes 4 0 `S624 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S627  1 a 4 24 ]
 "12
-[v ___flmul@grs grs `ul  1 a 4 14 ]
-[s S667 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[v ___flmul@grs grs `ul  1 a 4 18 ]
+[s S696 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S670 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S667 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S670  1 a 2 24 ]
+[u S699 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S696 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S699  1 a 2 28 ]
 "10
-[v ___flmul@bexp bexp `uc  1 a 1 19 ]
+[v ___flmul@bexp bexp `uc  1 a 1 23 ]
 "11
-[v ___flmul@aexp aexp `uc  1 a 1 18 ]
+[v ___flmul@aexp aexp `uc  1 a 1 22 ]
 "9
-[v ___flmul@sign sign `uc  1 a 1 13 ]
+[v ___flmul@sign sign `uc  1 a 1 17 ]
 "8
-[v ___flmul@b b `d  1 p 4 0 ]
-[v ___flmul@a a `d  1 p 4 4 ]
+[v ___flmul@b b `d  1 p 4 4 ]
+[v ___flmul@a a `d  1 p 4 8 ]
 "205
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
@@ -310,41 +339,124 @@
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
 "60
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"60 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
 {
-"21
-[v ___fldiv@grs grs `ul  1 a 4 46 ]
-"22
-[v ___fldiv@rem rem `ul  1 a 4 39 ]
-"20
-[v ___fldiv@new_exp new_exp `i  1 a 2 44 ]
-"19
-[v ___fldiv@aexp aexp `uc  1 a 1 51 ]
-"18
-[v ___fldiv@bexp bexp `uc  1 a 1 50 ]
-"16
-[v ___fldiv@sign sign `uc  1 a 1 43 ]
-"8
-[v ___fldiv@a a `d  1 p 4 26 ]
-[v ___fldiv@b b `d  1 p 4 30 ]
-"185
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 4 0 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 4 4 ]
+"101
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+"60 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 4 0 ]
+[v __div_to_l_@f2 f2 `d  1 p 4 4 ]
+"101
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"10
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"5
+[v ___llmod@divisor divisor `ul  1 p 4 0 ]
+[v ___llmod@dividend dividend `ul  1 p 4 4 ]
+"25
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 59 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 58 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 49 ]
+"70
+} 0
+"242 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 0 ]
+[v ___flsub@b b `d  1 p 4 4 ]
+"250
+} 0
+"10
 [v ___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
-[v ___fladd@grs grs `uc  1 a 1 71 ]
+[v ___fladd@grs grs `uc  1 a 1 75 ]
 "15
-[v ___fladd@bexp bexp `uc  1 a 1 70 ]
+[v ___fladd@bexp bexp `uc  1 a 1 74 ]
 "16
-[v ___fladd@aexp aexp `uc  1 a 1 69 ]
+[v ___fladd@aexp aexp `uc  1 a 1 73 ]
 "13
-[v ___fladd@signs signs `uc  1 a 1 68 ]
+[v ___fladd@signs signs `uc  1 a 1 72 ]
 "10
-[v ___fladd@b b `d  1 p 4 52 ]
-[v ___fladd@a a `d  1 p 4 56 ]
+[v ___fladd@b b `d  1 p 4 56 ]
+[v ___fladd@a a `d  1 p 4 60 ]
 "237
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
+"12
+} 0
+"113 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+[v _setup setup `(v  1 e 1 0 ]
+{
+"133
 } 0
 "104 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\LCD8bits.c
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
@@ -376,6 +488,11 @@
 [v Lcd_Set_Cursor@a a `uc  1 a 1 6 ]
 "78
 } 0
+"80
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"94
+} 0
 "55
 [v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
 {
@@ -391,6 +508,44 @@
 [v Lcd_Port@a a `uc  1 a 1 wreg ]
 [v Lcd_Port@a a `uc  1 a 1 0 ]
 "53
+} 0
+"16 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\I2C.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+[v I2C_Master_Init@c c `DCul  1 p 4 0 ]
+"24
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 50 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 43 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 48 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 55 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 54 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 47 ]
+"8
+[v ___fldiv@a a `d  1 p 4 30 ]
+[v ___fldiv@b b `d  1 p 4 34 ]
+"185
 } 0
 "65 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\I2C.c
 [v _I2C_Master_Write I2C_Master_Write `(v  1 e 1 0 ]
