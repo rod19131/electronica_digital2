@@ -48,17 +48,9 @@ void setup(void);
 void __interrupt() isr(void){
     if(RBIF == 1)  {
         //incremento de la variable con antirebote
-        if (PORTBbits.RB0 == 0) {
-            PORTA++; 
-            sprintf(cont, "%d", PORTA);
-            enviocadena(cont);
-        }
+        if (PORTBbits.RB0 == 0) {PORTA++;}
         //decremento de la variable con antirebote
-        if (PORTBbits.RB1 == 0) {
-            PORTA--; 
-            sprintf(cont, "%d", PORTA);
-            enviocadena(cont);
-        }
+        if (PORTBbits.RB1 == 0) {PORTA--;}
         //se baja la bandera de interrupcion por cambio
         INTCONbits.RBIF = 0;
     }
@@ -71,7 +63,10 @@ void main(void) {
     //*************************************************************************
     // Loop infinito
     //*************************************************************************
-    while(1){if (PIR1bits.RCIF == 1) {PORTD = RCREG;}}
+    while(1){if (PIR1bits.RCIF == 1) {
+                 PORTD = RCREG;
+                 sprintf(cont, "%d\n", PORTA);
+                 enviocadena(cont);}}
 }
 //*****************************************************************************
 // Función de Inicialización
@@ -115,6 +110,6 @@ void setup(void){
     INTCONbits.GIE  = 1; //se habilitan las interrupciones globales
     INTCONbits.RBIE = 1; //interrupcion on change habilitada 
     INTCONbits.PEIE = 1; //se habilitan las interrupciones de los perifericos
-    sprintf(cont, "%d", PORTA);
+    sprintf(cont, "contador botones: %d \n", PORTA);
     enviocadena(cont);
 }
