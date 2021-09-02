@@ -57,9 +57,9 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"49 D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\lab2.c
+"50 D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\lab2.c
 [v _mapear mapear `(f  1 e 4 0 ]
-"52
+"53
 [v _main main `(v  1 e 1 0 ]
 "13 D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\LCD8bits.c
 [v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
@@ -117,7 +117,7 @@
 "553
 [u S334 . 1 `S326 1 . 1 0 ]
 [v _PIR1bits PIR1bits `VES334  1 e 1 @12 ]
-[s S564 . 1 `uc 1 CCP2IF 1 0 :1:0 
+[s S565 . 1 `uc 1 CCP2IF 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ULPWUIF 1 0 :1:2 
 `uc 1 BCLIF 1 0 :1:3 
@@ -127,8 +127,8 @@
 `uc 1 OSFIF 1 0 :1:7 
 ]
 "610
-[u S573 . 1 `S564 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES573  1 e 1 @13 ]
+[u S574 . 1 `S565 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES574  1 e 1 @13 ]
 [s S178 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
@@ -234,15 +234,15 @@
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
 "2704
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @154 ]
-[s S472 . 1 `uc 1 . 1 0 :4:0 
+[s S473 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 VCFG0 1 0 :1:4 
 `uc 1 VCFG1 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
 "2991
-[u S478 . 1 `S472 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES478  1 e 1 @159 ]
+[u S479 . 1 `S473 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES479  1 e 1 @159 ]
 "3250
 [v _EEDAT EEDAT `VEuc  1 e 1 @268 ]
 "3257
@@ -273,7 +273,7 @@
 [v _ANSELbits ANSELbits `VES95  1 e 1 @392 ]
 "3449
 [v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
-[s S528 . 1 `uc 1 RD 1 0 :1:0 
+[s S529 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -281,8 +281,8 @@
 `uc 1 EEPGD 1 0 :1:7 
 ]
 "3514
-[u S535 . 1 `S528 1 . 1 0 ]
-[v _EECON1bits EECON1bits `VES535  1 e 1 @396 ]
+[u S536 . 1 `S529 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES536  1 e 1 @396 ]
 "3544
 [v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
 "4133
@@ -316,10 +316,10 @@
 [v _volt volt `[16]uc  1 e 16 0 ]
 "47
 [v _pc pc `uc  1 e 1 0 ]
-"52
+"53
 [v _main main `(v  1 e 1 0 ]
 {
-"125
+"135
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -329,9 +329,9 @@
 [v sprintf@fval fval `d  1 a 4 34 ]
 "545
 [v sprintf@val val `ul  1 a 4 29 ]
-[u S771 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
+[u S772 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
 "543
-[v sprintf@tmpval tmpval `S771  1 a 4 25 ]
+[v sprintf@tmpval tmpval `S772  1 a 4 25 ]
 "517
 [v sprintf@prec prec `i  1 a 2 38 ]
 "534
@@ -533,13 +533,13 @@
 [v ___fleq@ff2 ff2 `d  1 p 4 4 ]
 "12
 } 0
-"49 D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\lab2.c
+"50 D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\lab2.c
 [v _mapear mapear `(f  1 e 4 0 ]
 {
 [v mapear@adresval adresval `uc  1 a 1 wreg ]
 [v mapear@adresval adresval `uc  1 a 1 wreg ]
 [v mapear@adresval adresval `uc  1 a 1 64 ]
-"50
+"51
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -559,17 +559,17 @@
 "8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S969 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S970 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S974 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S977 . 4 `l 1 i 4 0 `d 1 f 4 0 `S969 1 fAsBytes 4 0 `S974 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S977  1 a 4 24 ]
+[s S975 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S978 . 4 `l 1 i 4 0 `d 1 f 4 0 `S970 1 fAsBytes 4 0 `S975 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S978  1 a 4 24 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 18 ]
-[s S1046 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S1047 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S1049 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1046 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1049  1 a 2 28 ]
+[u S1050 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1047 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1050  1 a 2 28 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 23 ]
 "11

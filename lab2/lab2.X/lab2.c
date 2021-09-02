@@ -45,6 +45,7 @@ unsigned char s2 = 0; //dato s2
 float S1, S2 = 0;     //decimal s1 y s2
 char volt[16];        //cadena voltajes
 unsigned char pc = 0; //contador +-
+char pcchar = 0;
 //______________________________funciones_______________________________________
 float mapear(unsigned char adresval){
     return (adresval-0)*(5.00-0)/(255-0.0)+0;}
@@ -79,16 +80,18 @@ void main(void) {
     RCSTAbits.SPEN = 1;
     RCSTAbits.RX9 = 0;
     RCSTAbits.CREN = 1;
-    
     TXSTAbits.TXEN = 1;
+//    TXSTAbits.TX9 = 1;
     //configuracion interrupciones
     INTCONbits.GIE  = 1; //se habilitan las interrupciones globales
     INTCONbits.RBIE = 1; //interrupcion on change habilitada
     INTCONbits.PEIE = 1; //se habilitan las interrupciones de los perifericos
+//    PIE1bits.RCIE = 1;
+//    PIR1bits.RCIF = 0;
+//    PIR1bits.TXIF = 0;
     PIE1bits.ADIE = 1;   //se habilitan las interrupciones por adc
     ADCON0bits.GO = 1;  //se comienza la conversion adc
-  while(1)
-      
+  while(1)    
   {if (ADCON0bits.GO == 0) {
         s2 = adc_canal(0);     //se actualiza la variable con valor del adc
         __delay_us(20);   //delay de 20 ms
@@ -99,7 +102,7 @@ void main(void) {
     Lcd_Write_String("S1  S1  S3");
     S1 = mapear(s1);      //mapeo de valores de 0 a 5 V
     S2 = mapear(s2);
-    sprintf(volt, "%.2f  %.2f  %d", S1, S2, pc); //valores para pantalla 2 linea
+    sprintf(volt, "%.2f  %.2f  %d\n", S1, S2, pc); //valores para pantalla 2 linea
     enviocadena(volt);                           //envio a pc
     Lcd_Set_Cursor(2,1);                         //linea 2
     Lcd_Write_String(volt);                      
@@ -110,6 +113,13 @@ void main(void) {
         ADCON0bits.GO = 1;//inicio de la siguiente conversion
     }
     if (PIR1bits.RCIF == 1) {
+//        pcchar = RCREG;
+//        if (RCREG == '+'){
+//            pc++;
+//        }
+//        else if (RCREG == '-'){
+//            pc--;
+//        }
                 switch (RCREG){
                     case 43: //+  
                         pc++; 

@@ -1,0 +1,406 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\lab0fisicov0.X.production.o
+cinit CODE 0 F F 1E 2
+text1 CODE 0 E6 E6 43 2
+idataCOMMON CODE 0 149 149 1 2
+maintext CODE 0 2D 2D B9 2
+cstackCOMMON COMMON 1 76 76 3 1
+cstackBANK0 BANK0 1 2D 2D 2 1
+inittext CODE 0 129 129 13 2
+intentry CODE 0 4 4 8 2
+idataBANK0 CODE 0 13C 13C D 2
+dataBANK0 BANK0 1 20 20 D 1
+dataCOMMON COMMON 1 79 79 1 1
+bssCOMMON COMMON 1 70 70 6 1
+config CONFIG 4 2007 2007 2 2
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 2F-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 2F-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 14A-1FFF 2
+ENTRY 3-3 2
+ENTRY 14A-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 14A-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 14A-1FFF 2
+STRING 3-3 2
+STRING 14A-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\lab0fisicov0.X.production.o
+F cinit CODE >503:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+F cinit CODE >506:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+F cinit CODE >582:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+10 cinit CODE >583:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+11 cinit CODE >584:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+12 cinit CODE >585:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+13 cinit CODE >586:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+14 cinit CODE >587:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+15 cinit CODE >588:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+16 cinit CODE >589:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+17 cinit CODE >590:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+18 cinit CODE >591:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+1D cinit CODE >595:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+22 cinit CODE >596:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+23 cinit CODE >600:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+24 cinit CODE >601:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+25 cinit CODE >602:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+26 cinit CODE >603:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+27 cinit CODE >604:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+28 cinit CODE >605:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+29 cinit CODE >611:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+29 cinit CODE >613:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+2A cinit CODE >614:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+4 intentry CODE >56:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+E6 text1 CODE >56:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+E6 text1 CODE >58:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+EA text1 CODE >60:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+F5 text1 CODE >61:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+F7 text1 CODE >62:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+F8 text1 CODE >63:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+F9 text1 CODE >64:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+FD text1 CODE >65:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+FE text1 CODE >66:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+FF text1 CODE >67:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+100 text1 CODE >68:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+101 text1 CODE >69:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+102 text1 CODE >70:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+103 text1 CODE >73:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+104 text1 CODE >76:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+108 text1 CODE >78:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+112 text1 CODE >79:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+113 text1 CODE >80:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+115 text1 CODE >81:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+116 text1 CODE >83:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+11D text1 CODE >84:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+121 text1 CODE >85:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+122 text1 CODE >87:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+2D maintext CODE >89:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+2D maintext CODE >92:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+33 maintext CODE >93:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+34 maintext CODE >95:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+37 maintext CODE >96:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+38 maintext CODE >97:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+3B maintext CODE >98:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+3D maintext CODE >99:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+3E maintext CODE >100:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+3F maintext CODE >101:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+40 maintext CODE >102:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+41 maintext CODE >103:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+42 maintext CODE >104:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+43 maintext CODE >105:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+46 maintext CODE >106:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+47 maintext CODE >107:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+48 maintext CODE >108:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+49 maintext CODE >110:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+4C maintext CODE >111:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+4D maintext CODE >112:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+4E maintext CODE >114:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+4F maintext CODE >115:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+50 maintext CODE >116:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+52 maintext CODE >118:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+56 maintext CODE >119:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+57 maintext CODE >121:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+58 maintext CODE >122:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+59 maintext CODE >123:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+5A maintext CODE >124:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+60 maintext CODE >125:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+65 maintext CODE >126:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+6B maintext CODE >127:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+71 maintext CODE >128:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+7F maintext CODE >129:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+80 maintext CODE >130:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+84 maintext CODE >132:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+92 maintext CODE >133:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+93 maintext CODE >134:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+97 maintext CODE >136:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+A8 maintext CODE >138:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+AE maintext CODE >139:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+AF maintext CODE >140:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+B1 maintext CODE >141:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+B2 maintext CODE >144:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+B8 maintext CODE >145:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+B9 maintext CODE >146:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+BB maintext CODE >147:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+BD maintext CODE >151:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+BD maintext CODE >152:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+BE maintext CODE >153:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+BF maintext CODE >154:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C0 maintext CODE >155:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C1 maintext CODE >156:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C1 maintext CODE >157:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C2 maintext CODE >158:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C3 maintext CODE >159:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C4 maintext CODE >160:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C5 maintext CODE >161:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C5 maintext CODE >162:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C6 maintext CODE >163:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C7 maintext CODE >164:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C8 maintext CODE >165:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C9 maintext CODE >166:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+C9 maintext CODE >167:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+CA maintext CODE >168:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+CB maintext CODE >169:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+CC maintext CODE >170:D:\AlejandroDigital\electronica_digital2\lab0fisicov0\lab0fisicov0.X\lab0fisicov0.c
+129 inittext CODE >556:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+129 inittext CODE >557:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+12A inittext CODE >558:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+12B inittext CODE >559:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+12C inittext CODE >560:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+12D inittext CODE >567:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+12D inittext CODE >568:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+132 inittext CODE >569:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+133 inittext CODE >570:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+134 inittext CODE >571:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+135 inittext CODE >572:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+136 inittext CODE >573:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+137 inittext CODE >574:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+138 inittext CODE >575:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+139 inittext CODE >576:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+13A inittext CODE >577:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+13B inittext CODE >578:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_a 74 0 COMMON 1 bssCOMMON dist/default/production\lab0fisicov0.X.production.o
+_c 73 0 COMMON 1 bssCOMMON dist/default/production\lab0fisicov0.X.production.o
+___latbits 2 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 14A 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_j1 71 0 COMMON 1 bssCOMMON dist/default/production\lab0fisicov0.X.production.o
+_j2 70 0 COMMON 1 bssCOMMON dist/default/production\lab0fisicov0.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_RBIF 58 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_T0IF 5A 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+_main 5A 0 CODE 0 maintext dist/default/production\lab0fisicov0.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+start 18 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+__size_of_main 0 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_cuentareg 79 0 COMMON 1 dataCOMMON dist/default/production\lab0fisicov0.X.production.o
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+__pidataCOMMON 292 0 CODE 0 idataCOMMON dist/default/production\lab0fisicov0.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+__Lmaintext 0 0 ABS 0 maintext -
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+_WPUBbits 95 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\lab0fisicov0.X.production.o
+__pcstackBANK0 2D 0 BANK0 1 cstackBANK0 dist/default/production\lab0fisicov0.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 5A 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+_PORTBbits 6 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 14A 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 1CC 0 CODE 0 text1 dist/default/production\lab0fisicov0.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+__end_of_isr 252 0 CODE 0 text1 dist/default/production\lab0fisicov0.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\s6b8.o
+_inicio 75 0 COMMON 1 bssCOMMON dist/default/production\lab0fisicov0.X.production.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\lab0fisicov0.X.production.o
+__pmaintext 5A 0 CODE 0 maintext dist/default/production\lab0fisicov0.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 70 0 COMMON 1 bssCOMMON dist/default/production\lab0fisicov0.X.production.o
+init_fetch0 252 0 CODE 0 inittext dist/default/production\lab0fisicov0.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 52 0 CODE 0 cinit dist/default/production\lab0fisicov0.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__ptext1 1CC 0 CODE 0 text1 dist/default/production\lab0fisicov0.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_tabladecadas 20 0 BANK0 1 dataBANK0 dist/default/production\lab0fisicov0.X.production.o
+__end_of__initialization 52 0 CODE 0 cinit dist/default/production\lab0fisicov0.X.production.o
+_carrera 72 0 COMMON 1 bssCOMMON dist/default/production\lab0fisicov0.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 278 0 CODE 0 idataBANK0 dist/default/production\lab0fisicov0.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 76 0 COMMON 1 cstackCOMMON dist/default/production\lab0fisicov0.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+init_ram0 25A 0 CODE 0 inittext dist/default/production\lab0fisicov0.X.production.o
+__end_of_main 1CC 0 CODE 0 maintext dist/default/production\lab0fisicov0.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\lab0fisicov0.X.production.o
+_IOCBbits 96 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+_tabla 29 0 BANK0 1 dataBANK0 dist/default/production\lab0fisicov0.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\lab0fisicov0.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\lab0fisicov0.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization 1E 0 CODE 0 cinit dist/default/production\lab0fisicov0.X.production.o
+__pdataCOMMON 79 0 COMMON 1 dataCOMMON dist/default/production\lab0fisicov0.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intentry 0 4 8 146 2
+reset_vec 0 0 0 3 2
+dataBANK0 1 20 20 F 1
+bssCOMMON 1 70 70 A 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

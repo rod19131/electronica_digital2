@@ -2800,6 +2800,7 @@ unsigned char s2 = 0;
 float S1, S2 = 0;
 char volt[16];
 unsigned char pc = 0;
+char pcchar = 0;
 
 float mapear(unsigned char adresval){
     return (adresval-0)*(5.00-0)/(255-0.0)+0;}
@@ -2834,16 +2835,18 @@ void main(void) {
     RCSTAbits.SPEN = 1;
     RCSTAbits.RX9 = 0;
     RCSTAbits.CREN = 1;
-
     TXSTAbits.TXEN = 1;
+
 
     INTCONbits.GIE = 1;
     INTCONbits.RBIE = 1;
     INTCONbits.PEIE = 1;
+
+
+
     PIE1bits.ADIE = 1;
     ADCON0bits.GO = 1;
   while(1)
-
   {if (ADCON0bits.GO == 0) {
         s2 = adc_canal(0);
         _delay((unsigned long)((20)*(8000000/4000000.0)));
@@ -2854,7 +2857,7 @@ void main(void) {
     Lcd_Write_String("S1  S1  S3");
     S1 = mapear(s1);
     S2 = mapear(s2);
-    sprintf(volt, "%.2f  %.2f  %d", S1, S2, pc);
+    sprintf(volt, "%.2f  %.2f  %d\n", S1, S2, pc);
     enviocadena(volt);
     Lcd_Set_Cursor(2,1);
     Lcd_Write_String(volt);
@@ -2865,6 +2868,13 @@ void main(void) {
         ADCON0bits.GO = 1;
     }
     if (PIR1bits.RCIF == 1) {
+
+
+
+
+
+
+
                 switch (RCREG){
                     case 43:
                         pc++;

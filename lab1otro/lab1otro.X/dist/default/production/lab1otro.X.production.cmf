@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 E E 3 2
 config CONFIG 4 2007 2007 2 2
@@ -76,23 +76,23 @@ STRING 134-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lab1otro.X.production.o
-11 cinit CODE >973:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-11 cinit CODE >976:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-11 cinit CODE >1026:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-12 cinit CODE >1027:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-13 cinit CODE >1028:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-14 cinit CODE >1029:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-15 cinit CODE >1030:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-16 cinit CODE >1031:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-17 cinit CODE >1032:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-18 cinit CODE >1033:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-19 cinit CODE >1034:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-1A cinit CODE >1035:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-1F cinit CODE >1039:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-20 cinit CODE >1040:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-21 cinit CODE >1046:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-21 cinit CODE >1048:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-22 cinit CODE >1049:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+11 cinit CODE >973:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+11 cinit CODE >976:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+11 cinit CODE >1026:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+12 cinit CODE >1027:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+13 cinit CODE >1028:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+14 cinit CODE >1029:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+15 cinit CODE >1030:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+16 cinit CODE >1031:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+17 cinit CODE >1032:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+18 cinit CODE >1033:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+19 cinit CODE >1034:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+1A cinit CODE >1035:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+1F cinit CODE >1039:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+20 cinit CODE >1040:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+21 cinit CODE >1046:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+21 cinit CODE >1048:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+22 cinit CODE >1049:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
 4 intentry CODE >37:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 11A text4 CODE >11:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_canal.c
 11B text4 CODE >12:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\adc_canal.c
@@ -176,23 +176,23 @@ CF maintext CODE >122:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro
 D0 maintext CODE >123:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 D3 maintext CODE >124:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
 D6 maintext CODE >125:D:\AlejandroDigital\electronica_digital2\lab1otro\lab1otro.X\lab1otro.c
-F7 inittext CODE >1000:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-F7 inittext CODE >1001:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-F8 inittext CODE >1002:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-F9 inittext CODE >1003:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-FA inittext CODE >1004:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-FB inittext CODE >1011:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-FB inittext CODE >1012:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-100 inittext CODE >1013:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-101 inittext CODE >1014:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-102 inittext CODE >1015:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-103 inittext CODE >1016:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-104 inittext CODE >1017:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-105 inittext CODE >1018:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-106 inittext CODE >1019:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-107 inittext CODE >1020:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-108 inittext CODE >1021:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
-109 inittext CODE >1022:C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.s
+F7 inittext CODE >1000:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+F7 inittext CODE >1001:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+F8 inittext CODE >1002:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+F9 inittext CODE >1003:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+FA inittext CODE >1004:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+FB inittext CODE >1011:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+FB inittext CODE >1012:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+100 inittext CODE >1013:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+101 inittext CODE >1014:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+102 inittext CODE >1015:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+103 inittext CODE >1016:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+104 inittext CODE >1017:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+105 inittext CODE >1018:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+106 inittext CODE >1019:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+107 inittext CODE >1020:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+108 inittext CODE >1021:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
+109 inittext CODE >1022:C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -220,20 +220,20 @@ _ADIF 66 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _RBIF 58 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _T0IF 5A 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _TMR0 1 0 ABS 0 - dist/default/production\lab1otro.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
 _main 140 0 CODE 0 maintext dist/default/production\lab1otro.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lab1otro.X.production.o
-start 1C 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+start 1C 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
 __size_of_main 0 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -243,13 +243,13 @@ _ANSELH 189 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _dispvar 41 0 BANK0 1 bssBANK0 dist/default/production\lab1otro.X.production.o
 adc_canal@canal 71 0 COMMON 1 cstackCOMMON dist/default/production\lab1otro.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
 __size_of_adc_c 0 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 _WPUBbits 95 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 start_initialization 22 0 CODE 0 cinit dist/default/production\lab1otro.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\lab1otro.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -297,7 +297,7 @@ _tabla7seg 1B4 0 CODE 0 text3 dist/default/production\lab1otro.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\lab1otro.X.production.o
 __end_of_isr 140 0 CODE 0 text2 dist/default/production\lab1otro.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\s77c.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\spf0.o
 __pdataBANK0 31 0 BANK0 1 dataBANK0 dist/default/production\lab1otro.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 tabla7seg@F1296 31 0 BANK0 1 dataBANK0 dist/default/production\lab1otro.X.production.o

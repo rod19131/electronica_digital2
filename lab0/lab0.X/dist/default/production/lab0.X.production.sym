@@ -154,7 +154,7 @@ bssCOMMON 70 79 COMMON 70 1
 dataBANK0 20 2E BANK0 20 1
 %locals
 dist/default/production\lab0.X.production.o
-C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
+C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
 503 F 0 CODE 0
 506 F 0 CODE 0
 582 F 0 CODE 0

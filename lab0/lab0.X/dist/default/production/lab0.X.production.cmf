@@ -25,7 +25,7 @@ dataBANK0 BANK0 1 20 20 D 1
 dataCOMMON COMMON 1 79 79 1 1
 bssCOMMON COMMON 1 70 70 6 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 2 2
@@ -75,29 +75,29 @@ STRING 148-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lab0.X.production.o
-F cinit CODE >503:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-F cinit CODE >506:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-F cinit CODE >582:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-10 cinit CODE >583:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-11 cinit CODE >584:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-12 cinit CODE >585:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-13 cinit CODE >586:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-14 cinit CODE >587:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-15 cinit CODE >588:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-16 cinit CODE >589:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-17 cinit CODE >590:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-18 cinit CODE >591:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-1D cinit CODE >595:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-22 cinit CODE >596:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-23 cinit CODE >600:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-24 cinit CODE >601:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-25 cinit CODE >602:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-26 cinit CODE >603:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-27 cinit CODE >604:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-28 cinit CODE >605:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-29 cinit CODE >611:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-29 cinit CODE >613:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-2A cinit CODE >614:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
+F cinit CODE >503:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+F cinit CODE >506:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+F cinit CODE >582:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+10 cinit CODE >583:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+11 cinit CODE >584:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+12 cinit CODE >585:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+13 cinit CODE >586:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+14 cinit CODE >587:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+15 cinit CODE >588:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+16 cinit CODE >589:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+17 cinit CODE >590:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+18 cinit CODE >591:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+1D cinit CODE >595:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+22 cinit CODE >596:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+23 cinit CODE >600:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+24 cinit CODE >601:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+25 cinit CODE >602:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+26 cinit CODE >603:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+27 cinit CODE >604:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+28 cinit CODE >605:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+29 cinit CODE >611:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+29 cinit CODE >613:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+2A cinit CODE >614:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
 4 intentry CODE >56:D:\AlejandroDigital\electronica_digital2\lab0\lab0.X\lab0.c
 E6 text1 CODE >56:D:\AlejandroDigital\electronica_digital2\lab0\lab0.X\lab0.c
 E6 text1 CODE >58:D:\AlejandroDigital\electronica_digital2\lab0\lab0.X\lab0.c
@@ -187,23 +187,23 @@ C9 maintext CODE >165:D:\AlejandroDigital\electronica_digital2\lab0\lab0.X\lab0.
 CA maintext CODE >166:D:\AlejandroDigital\electronica_digital2\lab0\lab0.X\lab0.c
 CB maintext CODE >167:D:\AlejandroDigital\electronica_digital2\lab0\lab0.X\lab0.c
 CC maintext CODE >168:D:\AlejandroDigital\electronica_digital2\lab0\lab0.X\lab0.c
-127 inittext CODE >556:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-127 inittext CODE >557:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-128 inittext CODE >558:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-129 inittext CODE >559:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-12A inittext CODE >560:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-12B inittext CODE >567:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-12B inittext CODE >568:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-130 inittext CODE >569:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-131 inittext CODE >570:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-132 inittext CODE >571:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-133 inittext CODE >572:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-134 inittext CODE >573:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-135 inittext CODE >574:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-136 inittext CODE >575:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-137 inittext CODE >576:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-138 inittext CODE >577:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
-139 inittext CODE >578:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.s
+127 inittext CODE >556:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+127 inittext CODE >557:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+128 inittext CODE >558:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+129 inittext CODE >559:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+12A inittext CODE >560:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+12B inittext CODE >567:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+12B inittext CODE >568:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+130 inittext CODE >569:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+131 inittext CODE >570:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+132 inittext CODE >571:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+133 inittext CODE >572:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+134 inittext CODE >573:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+135 inittext CODE >574:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+136 inittext CODE >575:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+137 inittext CODE >576:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+138 inittext CODE >577:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
+139 inittext CODE >578:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -233,22 +233,22 @@ __Hstrings 0 0 ABS 0 strings -
 _RBIF 58 0 ABS 0 - dist/default/production\lab0.X.production.o
 _T0IF 5A 0 ABS 0 - dist/default/production\lab0.X.production.o
 _TMR0 1 0 ABS 0 - dist/default/production\lab0.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
 _main 5A 0 CODE 0 maintext dist/default/production\lab0.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lab0.X.production.o
-start 18 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
+start 18 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
 __size_of_main 0 0 ABS 0 - dist/default/production\lab0.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\lab0.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _cuentareg 79 0 COMMON 1 dataCOMMON dist/default/production\lab0.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\lab0.X.production.o
@@ -259,13 +259,13 @@ __pidataCOMMON 28E 0 CODE 0 idataCOMMON dist/default/production\lab0.X.productio
 _ANSELH 189 0 ABS 0 - dist/default/production\lab0.X.production.o
 __LdataCOMMON 0 0 ABS 0 dataCOMMON -
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
 __LidataCOMMON 0 0 ABS 0 idataCOMMON -
 _WPUBbits 95 0 ABS 0 - dist/default/production\lab0.X.production.o
 start_initialization 1E 0 CODE 0 cinit dist/default/production\lab0.X.production.o
 __pcstackBANK0 2D 0 BANK0 1 cstackBANK0 dist/default/production\lab0.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -311,7 +311,7 @@ saved_w 7E 0 ABS 0 - dist/default/production\lab0.X.production.o
 __HidataCOMMON 0 0 ABS 0 idataCOMMON -
 __end_of_isr 24E 0 CODE 0 text1 dist/default/production\lab0.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sko4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sfoo.o
 _inicio 75 0 COMMON 1 bssCOMMON dist/default/production\lab0.X.production.o
 __pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\lab0.X.production.o
 __pmaintext 5A 0 CODE 0 maintext dist/default/production\lab0.X.production.o
