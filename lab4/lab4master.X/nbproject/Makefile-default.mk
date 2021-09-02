@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=lab4master.c I2C.c LCD8bits.c
+SOURCEFILES_QUOTED_IF_SPACED=lab4master.c I2C.c LCD8bits.c usart.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lab4master.p1 ${OBJECTDIR}/I2C.p1 ${OBJECTDIR}/LCD8bits.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/lab4master.p1.d ${OBJECTDIR}/I2C.p1.d ${OBJECTDIR}/LCD8bits.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lab4master.p1 ${OBJECTDIR}/I2C.p1 ${OBJECTDIR}/LCD8bits.p1 ${OBJECTDIR}/usart.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/lab4master.p1.d ${OBJECTDIR}/I2C.p1.d ${OBJECTDIR}/LCD8bits.p1.d ${OBJECTDIR}/usart.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/lab4master.p1 ${OBJECTDIR}/I2C.p1 ${OBJECTDIR}/LCD8bits.p1
+OBJECTFILES=${OBJECTDIR}/lab4master.p1 ${OBJECTDIR}/I2C.p1 ${OBJECTDIR}/LCD8bits.p1 ${OBJECTDIR}/usart.p1
 
 # Source Files
-SOURCEFILES=lab4master.c I2C.c LCD8bits.c
+SOURCEFILES=lab4master.c I2C.c LCD8bits.c usart.c
 
 
 
@@ -118,6 +118,14 @@ ${OBJECTDIR}/LCD8bits.p1: LCD8bits.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/LCD8bits.d ${OBJECTDIR}/LCD8bits.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/LCD8bits.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/usart.p1: usart.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/usart.p1.d 
+	@${RM} ${OBJECTDIR}/usart.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/usart.p1 usart.c 
+	@-${MV} ${OBJECTDIR}/usart.d ${OBJECTDIR}/usart.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/usart.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 else
 ${OBJECTDIR}/lab4master.p1: lab4master.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -142,6 +150,14 @@ ${OBJECTDIR}/LCD8bits.p1: LCD8bits.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/LCD8bits.p1 LCD8bits.c 
 	@-${MV} ${OBJECTDIR}/LCD8bits.d ${OBJECTDIR}/LCD8bits.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/LCD8bits.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/usart.p1: usart.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/usart.p1.d 
+	@${RM} ${OBJECTDIR}/usart.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/usart.p1 usart.c 
+	@-${MV} ${OBJECTDIR}/usart.d ${OBJECTDIR}/usart.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/usart.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 

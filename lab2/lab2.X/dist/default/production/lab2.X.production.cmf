@@ -56,7 +56,7 @@ bssBANK1 BANK1 1 CC CC 1B 1
 strings STRING 0 1800 1800 BB 2
 clrtext CODE 0 19F2 19F2 8 2
 config CONFIG 4 2007 2007 2 2
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
 end_init CODE 0 0 0 3 2
 config CONFIG 4 2007 2007 2 2
 # %UNUSED Section
@@ -112,20 +112,20 @@ STRING 18BB-19F1 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lab2.X.production.o
-7EF cinit CODE >1435:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7EF cinit CODE >1438:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7EF cinit CODE >1488:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7F0 cinit CODE >1489:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7F1 cinit CODE >1490:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7F2 cinit CODE >1491:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7F3 cinit CODE >1494:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7F4 cinit CODE >1495:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7F5 cinit CODE >1496:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7F6 cinit CODE >1497:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7F7 cinit CODE >1498:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7FC cinit CODE >1504:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7FC cinit CODE >1506:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-7FD cinit CODE >1507:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
+7EF cinit CODE >1435:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7EF cinit CODE >1438:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7EF cinit CODE >1488:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7F0 cinit CODE >1489:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7F1 cinit CODE >1490:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7F2 cinit CODE >1491:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7F3 cinit CODE >1494:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7F4 cinit CODE >1495:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7F5 cinit CODE >1496:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7F6 cinit CODE >1497:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7F7 cinit CODE >1498:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7FC cinit CODE >1504:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7FC cinit CODE >1506:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+7FD cinit CODE >1507:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
 1B3C text34 CODE >13:D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\LCD8bits.c
 1B3D text34 CODE >14:D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\LCD8bits.c
 1B41 text34 CODE >15:D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\LCD8bits.c
@@ -965,16 +965,16 @@ F7 text1 CODE >856:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\d
 91A maintext CODE >130:D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\lab2.c
 91B maintext CODE >131:D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\lab2.c
 92D maintext CODE >133:D:\AlejandroDigital\electronica_digital2\lab2\lab2.X\lab2.c
-19F2 clrtext CODE >1475:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-19F2 clrtext CODE >1476:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-19F3 clrtext CODE >1477:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-19F3 clrtext CODE >1478:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-19F4 clrtext CODE >1479:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-19F5 clrtext CODE >1480:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-19F6 clrtext CODE >1481:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-19F7 clrtext CODE >1482:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-19F8 clrtext CODE >1483:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
-19F9 clrtext CODE >1484:C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.s
+19F2 clrtext CODE >1475:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+19F2 clrtext CODE >1476:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+19F3 clrtext CODE >1477:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+19F3 clrtext CODE >1478:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+19F4 clrtext CODE >1479:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+19F5 clrtext CODE >1480:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+19F6 clrtext CODE >1481:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+19F7 clrtext CODE >1482:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+19F8 clrtext CODE >1483:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
+19F9 clrtext CODE >1484:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1007,12 +1007,12 @@ _s2 D5 0 BANK1 1 bssBANK1 dist/default/production\lab2.X.production.o
 __end_of_Lcd_Init 3954 0 CODE 0 text32 dist/default/production\lab2.X.production.o
 __end_of_Lcd_Port 36F4 0 CODE 0 text34 dist/default/production\lab2.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
 _main 1028 0 CODE 0 maintext dist/default/production\lab2.X.production.o
 _volt D7 0 BANK1 1 bssBANK1 dist/default/production\lab2.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lab2.X.production.o
 _Lcd_Write_Char 343E 0 CODE 0 text30 dist/default/production\lab2.X.production.o
-start 0 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
+start 0 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
 ___flmul@aexp 36 0 BANK0 1 cstackBANK0 dist/default/production\lab2.X.production.o
 ___flmul@bexp 37 0 BANK0 1 cstackBANK0 dist/default/production\lab2.X.production.o
 ___flmul@prod 38 0 BANK0 1 cstackBANK0 dist/default/production\lab2.X.production.o
@@ -1037,12 +1037,12 @@ __Hpowerup 0 0 CODE 0 powerup -
 ___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\lab2.X.production.o
 __end_of__npowers_ 30F0 0 STRING 0 strings dist/default/production\lab2.X.production.o
 _sprintf$1319 B0 0 BANK1 1 cstackBANK1 dist/default/production\lab2.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
 __size_of__div_to_l_ 0 0 ABS 0 - dist/default/production\lab2.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\lab2.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\lab2.X.production.o
@@ -1093,8 +1093,8 @@ __end_of___lwdiv 9C 0 CODE 0 text8 dist/default/production\lab2.X.production.o
 __end_of___lwmod 3678 0 CODE 0 text7 dist/default/production\lab2.X.production.o
 __size_of_isdigit 0 0 ABS 0 - dist/default/production\lab2.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\lab2.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
 _dpowers 30F0 0 STRING 0 strings dist/default/production\lab2.X.production.o
 _BAUDCTLbits 187 0 ABS 0 - dist/default/production\lab2.X.production.o
 __size_of__tdiv_to_l_ 0 0 ABS 0 - dist/default/production\lab2.X.production.o
@@ -1126,7 +1126,7 @@ enviocadena@cadena 72 0 COMMON 1 cstackCOMMON dist/default/production\lab2.X.pro
 __tdiv_to_l_@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\lab2.X.production.o
 __tdiv_to_l_@f2 74 0 COMMON 1 cstackCOMMON dist/default/production\lab2.X.production.o
 __size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\lab2.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1199,7 +1199,7 @@ __size_of_Lcd_Write_String 0 0 ABS 0 - dist/default/production\lab2.X.production
 __stringtab 3000 0 STRING 0 strings dist/default/production\lab2.X.production.o
 Lcd_Write_String@a 73 0 COMMON 1 cstackCOMMON dist/default/production\lab2.X.production.o
 Lcd_Write_String@i 78 0 COMMON 1 cstackCOMMON dist/default/production\lab2.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\smpo.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sku4.o
 __end_of___xxtofl 4000 0 CODE 0 text21 dist/default/production\lab2.X.production.o
 __powers_ 3020 0 STRING 0 strings dist/default/production\lab2.X.production.o
 __end_of_Lcd_Cmd 349E 0 CODE 0 text33 dist/default/production\lab2.X.production.o

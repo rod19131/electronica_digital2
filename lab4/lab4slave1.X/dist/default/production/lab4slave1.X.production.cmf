@@ -21,7 +21,7 @@ cstackCOMMON COMMON 1 70 70 4 1
 intentry CODE 0 4 4 8 2
 bssCOMMON COMMON 1 74 74 1 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 2 2
@@ -71,12 +71,12 @@ STRING D3-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lab4slave1.X.production.o
-F cinit CODE >649:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.s
-F cinit CODE >652:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.s
-F cinit CODE >663:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.s
-10 cinit CODE >669:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.s
-10 cinit CODE >671:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.s
-11 cinit CODE >672:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.s
+F cinit CODE >649:C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.s
+F cinit CODE >652:C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.s
+F cinit CODE >663:C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.s
+10 cinit CODE >669:C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.s
+10 cinit CODE >671:C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.s
+11 cinit CODE >672:C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.s
 4 intentry CODE >47:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave1.X\lab4slave1.c
 14 text3 CODE >47:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave1.X\lab4slave1.c
 14 text3 CODE >48:D:\AlejandroDigital\electronica_digital2\lab4\lab4slave1.X\lab4slave1.c
@@ -168,20 +168,20 @@ _BF 4A0 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _PEIE 5E 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 _RBIF 58 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
 _main 194 0 CODE 0 maintext dist/default/production\lab4slave1.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
-start 18 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
+start 18 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
 __size_of_main 0 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
@@ -190,8 +190,8 @@ __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 _SSPCONbits 14 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
 _I2C_Slave_Init 160 0 CODE 0 text2 dist/default/production\lab4slave1.X.production.o
 __size_of_setup 0 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 _WPUBbits 95 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
@@ -202,7 +202,7 @@ _SSPBUF 13 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -247,7 +247,7 @@ _isr 28 0 CODE 0 text3 dist/default/production\lab4slave1.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\lab4slave1.X.production.o
 __end_of_isr 118 0 CODE 0 text3 dist/default/production\lab4slave1.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sb6s.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\snc.o
 __pmaintext 194 0 CODE 0 maintext dist/default/production\lab4slave1.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -

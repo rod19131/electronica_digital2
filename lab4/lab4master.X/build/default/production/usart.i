@@ -1,4 +1,4 @@
-# 1 "lab4master.c"
+# 1 "usart.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,12 @@
 # 1 "<built-in>" 2
 # 1 "D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "lab4master.c" 2
-# 12 "lab4master.c"
+# 1 "usart.c" 2
+
+
+
+# 1 "./usart.h" 1
+# 14 "./usart.h"
 # 1 "D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2488,28 +2492,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 12 "lab4master.c" 2
-
-#pragma config FOSC=INTRC_NOCLKOUT
-#pragma config WDTE=OFF
-#pragma config PWRTE=OFF
-#pragma config MCLRE=OFF
-#pragma config CP=OFF
-#pragma config CPD=OFF
-
-#pragma config BOREN=OFF
-#pragma config IESO=OFF
-#pragma config FCMEN=OFF
-#pragma config LVP=OFF
-
-
-#pragma config WRT=OFF
-#pragma config BOR4V=BOR40V
-
-
-
-
-
+# 14 "./usart.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
 # 13 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
@@ -2644,180 +2627,6 @@ typedef int16_t intptr_t;
 
 
 typedef uint16_t uintptr_t;
-# 33 "lab4master.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 1 3
-
-
-
-# 1 "D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__size_t.h" 1 3
-
-
-
-typedef unsigned size_t;
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 2 3
-
-# 1 "D:/progr/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__null.h" 1 3
-# 5 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 2 3
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdarg.h" 1 3
-
-
-
-
-
-
-typedef void * va_list[1];
-
-#pragma intrinsic(__va_start)
-extern void * __va_start(void);
-
-#pragma intrinsic(__va_arg)
-extern void * __va_arg(void *, ...);
-# 11 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 2 3
-# 43 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 3
-struct __prbuf
-{
- char * ptr;
- void (* func)(char);
-};
-# 85 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\conio.h" 1 3
-
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\errno.h" 1 3
-# 29 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\errno.h" 3
-extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\conio.h" 2 3
-
-
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-
-
-extern char * cgets(char *);
-extern void cputs(const char *);
-# 85 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 2 3
-
-
-
-extern int cprintf(char *, ...);
-#pragma printf_check(cprintf)
-
-
-
-extern int _doprnt(struct __prbuf *, const register char *, register va_list);
-# 180 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 3
-#pragma printf_check(vprintf) const
-#pragma printf_check(vsprintf) const
-
-extern char * gets(char *);
-extern int puts(const char *);
-extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
-extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
-extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
-extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
-extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
-extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
-
-#pragma printf_check(printf) const
-#pragma printf_check(sprintf) const
-extern int sprintf(char *, const char *, ...);
-extern int printf(const char *, ...);
-# 34 "lab4master.c" 2
-
-# 1 "./I2C.h" 1
-# 20 "./I2C.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
-# 20 "./I2C.h" 2
-# 29 "./I2C.h"
-void I2C_Master_Init(const unsigned long c);
-
-
-
-
-
-
-
-void I2C_Master_Wait(void);
-
-
-
-void I2C_Master_Start(void);
-
-
-
-void I2C_Master_RepeatedStart(void);
-
-
-
-void I2C_Master_Stop(void);
-
-
-
-
-
-void I2C_Master_Write(unsigned d);
-
-
-
-
-unsigned short I2C_Master_Read(unsigned short a);
-
-
-
-void I2C_Slave_Init(uint8_t address);
-# 35 "lab4master.c" 2
-
-# 1 "./LCD8bits.h" 1
-# 59 "./LCD8bits.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
-# 59 "./LCD8bits.h" 2
-
-
-
-unsigned char a = 0;
-void Lcd_Port(unsigned char a);
-
-void Lcd_Cmd(unsigned char a);
-
-void Lcd_Clear(void);
-
-void Lcd_Set_Cursor(unsigned char a,unsigned char b);
-
-void Lcd_Init(void);
-
-void Lcd_Write_Char(char a);
-
-void Lcd_Write_String(char *a);
-
-void Lcd_Shift_Right(void);
-
-void Lcd_Shift_Left(void);
-# 36 "lab4master.c" 2
-
-# 1 "./usart.h" 1
-# 15 "./usart.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
 # 15 "./usart.h" 2
 
 
@@ -2825,79 +2634,53 @@ void write(unsigned char data, unsigned char address);
 unsigned char read(unsigned char address);
 void enviocaracter(char a);
 void enviocadena(char* cadena);
-# 37 "lab4master.c" 2
-# 53 "lab4master.c"
-unsigned int senms = 0;
-unsigned int sensorval = 0;
-double t = 0;
-unsigned char s1, s2 = 0;
-char volt[16];
+# 4 "usart.c" 2
 
+void write(unsigned char data, unsigned char address){
+    EEADR = address;
+    EEDAT = data;
 
+    EECON1bits.EEPGD = 0;
+    EECON1bits.WREN = 1;
 
+    INTCONbits.GIE = 0;
 
+    EECON2 = 0x55;
+    EECON2 = 0xAA;
+    EECON1bits.WR = 1;
 
-void setup(void);
+    while(PIR2bits.EEIF==0);
+    PIR2bits.EEIF = 0;
 
+    INTCONbits.GIE = 1;
+    EECON1bits.WREN = 0;
 
-
-
-void main(void) {
-    setup();
-    while(1){
-
-        I2C_Master_Start();
-        I2C_Master_Write(0x51);
-        s1 = I2C_Master_Read(0);
-        I2C_Master_Stop();
-        _delay((unsigned long)((50)*(8000000/4000.0)));
-
-        I2C_Master_Start();
-        I2C_Master_Write(0x61);
-        s2 = I2C_Master_Read(0);
-        I2C_Master_Stop();
-        _delay((unsigned long)((50)*(8000000/4000.0)));
-# 104 "lab4master.c"
-        sprintf(volt, "%d   %d\n", s1, s2);
-        enviocadena(volt);
-        Lcd_Set_Cursor(2,1);
-        Lcd_Write_String(volt);
-    }
 }
 
+unsigned char read(unsigned char address){
+    EEADR = address;
+    EECON1bits.EEPGD = 0;
+    EECON1bits.RD = 1;
+    unsigned char data = EEDAT;
 
+    return data;
+}
 
-void setup(void){
+void enviocaracter(char a){
+    while (TXSTAbits.TRMT == 0){
 
+    }
+    if (PIR1bits.TXIF){
+            TXREG = a;
+        }
+}
 
-    OSCCONbits.IRCF = 7;
-    OSCCONbits.SCS = 1;
-
-    ANSELH = 0;
-    ANSEL = 0;
-    TRISA = 0;
-    TRISCbits.TRISC0 = 0;
-    TRISCbits.TRISC1 = 0;
-    TRISB = 0;
-    TRISD = 0;
-    TRISE = 0;
-    PORTD = 0;
-
-    TXSTAbits.SYNC = 0;
-    TXSTAbits.BRGH = 1;
-
-    BAUDCTLbits.BRG16 = 1;
-
-    SPBRG = 207;
-    SPBRGH = 0;
-
-    RCSTAbits.SPEN = 1;
-    RCSTAbits.RX9 = 0;
-    RCSTAbits.CREN = 1;
-    TXSTAbits.TXEN = 1;
-
-    Lcd_Init();
-    Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("ADC: CONT: TEMP:");
-    I2C_Master_Init(100000);
+void enviocadena(char* cadena){
+    while (*cadena != 0){
+      enviocaracter(*cadena);
+      cadena++;
+    }
+    if (PIR1bits.TXIF){
+            TXREG = 13;
+        }
 }

@@ -34,6 +34,7 @@
 #include <stdio.h>
 #include "I2C.h" 
 #include "LCD8bits.h"
+#include "usart.h"
 //*****************************************************************************
 // Definición de variables
 //*****************************************************************************
@@ -79,28 +80,29 @@ void main(void) {
         s2 = I2C_Master_Read(0);
         I2C_Master_Stop();
         __delay_ms(50);
-        
-        //recepcion sensor i2c temp
-        I2C_Master_Start();
-        I2C_Master_Write(0x80);
-        I2C_Master_Write(0xF3);
-        I2C_Master_Stop();
-        __delay_ms(100);
-        
-        I2C_Master_Start();
-        I2C_Master_Write(0x81);
-        senms = I2C_Master_Read(0);
-        sensorval = I2C_Master_Read(0);  
-        I2C_Master_Stop();
-        __delay_ms(50);
-        
-        //conversion temperatura
-        sensorval = senms<<8;
-        sensorval += senms;
-        sensorval &= ~0b11;
-        t = -46.85 +(175.72*sensorval/65536);
+//        
+//        //recepcion sensor i2c temp
+//        I2C_Master_Start();
+//        I2C_Master_Write(0x80);
+//        I2C_Master_Write(0xF3);
+//        I2C_Master_Stop();
+//        __delay_ms(100);
+//        
+//        I2C_Master_Start();
+//        I2C_Master_Write(0x81);
+//        senms = I2C_Master_Read(0);
+//        sensorval = I2C_Master_Read(0);  
+//        I2C_Master_Stop();
+//        __delay_ms(50);
+//        
+//        //conversion temperatura
+//        sensorval = senms<<8;
+//        sensorval += senms;
+//        sensorval &= ~0b11;
+//        t = -46.85 +(175.72*sensorval/65536);
         //escribir valores en LCD
-        sprintf(volt, "%d   %d    %.0f  ", s1, s2, t); //valores para pantalla 2 linea
+        sprintf(volt, "%d   %d\n", s1, s2); //valores para pantalla 2 linea
+        enviocadena(volt);                           //envio a pc
         Lcd_Set_Cursor(2,1);                         //linea 2
         Lcd_Write_String(volt);
     }
@@ -123,6 +125,19 @@ void setup(void){
     TRISD = 0;
     TRISE = 0;
     PORTD = 0;
+    //TX y RX
+    TXSTAbits.SYNC = 0;
+    TXSTAbits.BRGH = 1;
+    
+    BAUDCTLbits.BRG16 = 1;
+    
+    SPBRG = 207;
+    SPBRGH = 0;
+    
+    RCSTAbits.SPEN = 1;
+    RCSTAbits.RX9 = 0;
+    RCSTAbits.CREN = 1;
+    TXSTAbits.TXEN = 1;
     //configuracion interrupciones
     Lcd_Init();
     Lcd_Set_Cursor(1,1);  //linea 1
