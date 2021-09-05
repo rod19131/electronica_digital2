@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"63 lab4master.c
-[; ;lab4master.c: 63: void setup(void);
+"64 lab4master.c
+[; ;lab4master.c: 64: void setup(void);
 [v _setup `(v ~T0 @X0 0 ef ]
 "41 ./I2C.h
 [; ;./I2C.h: 41: void I2C_Master_Start(void);
@@ -435,151 +435,151 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;lab4master.c: 57: char volt[16];
 [v _volt `uc ~T0 @X0 -> 16 `i e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"68
-[; ;lab4master.c: 68: void main(void) {
+"69
+[; ;lab4master.c: 69: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"69
-[; ;lab4master.c: 69:     setup();
-[e ( _setup ..  ]
 "70
-[; ;lab4master.c: 70:     while(1){
+[; ;lab4master.c: 70:     setup();
+[e ( _setup ..  ]
+"71
+[; ;lab4master.c: 71:     while(1){
 [e :U 141 ]
 {
-"72
-[; ;lab4master.c: 72:         I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
 "73
-[; ;lab4master.c: 73:         I2C_Master_Write(0x51);
-[e ( _I2C_Master_Write (1 -> -> 81 `i `ui ]
-"74
-[; ;lab4master.c: 74:         s1 = I2C_Master_Read(0);
-[e = _s1 -> ( _I2C_Master_Read (1 -> -> 0 `i `us `uc ]
-"75
-[; ;lab4master.c: 75:         I2C_Master_Stop();
-[e ( _I2C_Master_Stop ..  ]
-"76
-[; ;lab4master.c: 76:         _delay((unsigned long)((50)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"78
-[; ;lab4master.c: 78:         I2C_Master_Start();
+[; ;lab4master.c: 73:         I2C_Master_Start();
 [e ( _I2C_Master_Start ..  ]
-"79
-[; ;lab4master.c: 79:         I2C_Master_Write(0x61);
-[e ( _I2C_Master_Write (1 -> -> 97 `i `ui ]
-"80
-[; ;lab4master.c: 80:         s2 = I2C_Master_Read(0);
-[e = _s2 -> ( _I2C_Master_Read (1 -> -> 0 `i `us `uc ]
-"81
-[; ;lab4master.c: 81:         I2C_Master_Stop();
+"74
+[; ;lab4master.c: 74:         I2C_Master_Write(0x51);
+[e ( _I2C_Master_Write (1 -> -> 81 `i `ui ]
+"75
+[; ;lab4master.c: 75:         s1 = I2C_Master_Read(0);
+[e = _s1 -> ( _I2C_Master_Read (1 -> -> 0 `i `us `uc ]
+"76
+[; ;lab4master.c: 76:         I2C_Master_Stop();
 [e ( _I2C_Master_Stop ..  ]
-"82
-[; ;lab4master.c: 82:         _delay((unsigned long)((50)*(8000000/4000.0)));
+"77
+[; ;lab4master.c: 77:         _delay((unsigned long)((50)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"104
-[; ;lab4master.c: 104:         sprintf(volt, "%d   %d\n", s1, s2);
-[e ( _sprintf (1 , , (. , &U _volt :s 1C -> _s1 `i -> _s2 `i ]
+"79
+[; ;lab4master.c: 79:         I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"80
+[; ;lab4master.c: 80:         I2C_Master_Write(0x61);
+[e ( _I2C_Master_Write (1 -> -> 97 `i `ui ]
+"81
+[; ;lab4master.c: 81:         s2 = I2C_Master_Read(0);
+[e = _s2 -> ( _I2C_Master_Read (1 -> -> 0 `i `us `uc ]
+"82
+[; ;lab4master.c: 82:         I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"83
+[; ;lab4master.c: 83:         _delay((unsigned long)((50)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "105
-[; ;lab4master.c: 105:         enviocadena(volt);
-[e ( _enviocadena (1 &U _volt ]
+[; ;lab4master.c: 105:         sprintf(volt, "%d   %d\n", s1, s2);
+[e ( _sprintf (1 , , (. , &U _volt :s 1C -> _s1 `i -> _s2 `i ]
 "106
-[; ;lab4master.c: 106:         Lcd_Set_Cursor(2,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+[; ;lab4master.c: 106:         enviocadena(volt);
+[e ( _enviocadena (1 &U _volt ]
 "107
-[; ;lab4master.c: 107:         Lcd_Write_String(volt);
-[e ( _Lcd_Write_String (1 &U _volt ]
+[; ;lab4master.c: 107:         Lcd_Set_Cursor(2,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "108
-[; ;lab4master.c: 108:     }
+[; ;lab4master.c: 108:         Lcd_Write_String(volt);
+[e ( _Lcd_Write_String (1 &U _volt ]
+"109
+[; ;lab4master.c: 109:     }
 }
 [e :U 140 ]
 [e $U 141  ]
 [e :U 142 ]
-"109
-[; ;lab4master.c: 109: }
+"110
+[; ;lab4master.c: 110: }
 [e :UE 139 ]
 }
-"113
-[; ;lab4master.c: 113: void setup(void){
+"114
+[; ;lab4master.c: 114: void setup(void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"116
-[; ;lab4master.c: 116:     OSCCONbits.IRCF = 7;
-[e = . . _OSCCONbits 0 4 -> -> 7 `i `uc ]
 "117
-[; ;lab4master.c: 117:     OSCCONbits.SCS = 1;
+[; ;lab4master.c: 117:     OSCCONbits.IRCF = 7;
+[e = . . _OSCCONbits 0 4 -> -> 7 `i `uc ]
+"118
+[; ;lab4master.c: 118:     OSCCONbits.SCS = 1;
 [e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
-"119
-[; ;lab4master.c: 119:     ANSELH = 0;
-[e = _ANSELH -> -> 0 `i `uc ]
 "120
-[; ;lab4master.c: 120:     ANSEL = 0;
-[e = _ANSEL -> -> 0 `i `uc ]
+[; ;lab4master.c: 120:     ANSELH = 0;
+[e = _ANSELH -> -> 0 `i `uc ]
 "121
-[; ;lab4master.c: 121:     TRISA = 0;
-[e = _TRISA -> -> 0 `i `uc ]
+[; ;lab4master.c: 121:     ANSEL = 0;
+[e = _ANSEL -> -> 0 `i `uc ]
 "122
-[; ;lab4master.c: 122:     TRISCbits.TRISC0 = 0;
-[e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
+[; ;lab4master.c: 122:     TRISA = 0;
+[e = _TRISA -> -> 0 `i `uc ]
 "123
-[; ;lab4master.c: 123:     TRISCbits.TRISC1 = 0;
-[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
+[; ;lab4master.c: 123:     TRISCbits.TRISC0 = 0;
+[e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
 "124
-[; ;lab4master.c: 124:     TRISB = 0;
-[e = _TRISB -> -> 0 `i `uc ]
+[; ;lab4master.c: 124:     TRISCbits.TRISC1 = 0;
+[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
 "125
-[; ;lab4master.c: 125:     TRISD = 0;
-[e = _TRISD -> -> 0 `i `uc ]
+[; ;lab4master.c: 125:     TRISB = 0;
+[e = _TRISB -> -> 0 `i `uc ]
 "126
-[; ;lab4master.c: 126:     TRISE = 0;
-[e = _TRISE -> -> 0 `i `uc ]
+[; ;lab4master.c: 126:     TRISD = 0;
+[e = _TRISD -> -> 0 `i `uc ]
 "127
-[; ;lab4master.c: 127:     PORTD = 0;
+[; ;lab4master.c: 127:     TRISE = 0;
+[e = _TRISE -> -> 0 `i `uc ]
+"128
+[; ;lab4master.c: 128:     PORTD = 0;
 [e = _PORTD -> -> 0 `i `uc ]
-"129
-[; ;lab4master.c: 129:     TXSTAbits.SYNC = 0;
-[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
 "130
-[; ;lab4master.c: 130:     TXSTAbits.BRGH = 1;
+[; ;lab4master.c: 130:     TXSTAbits.SYNC = 0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"131
+[; ;lab4master.c: 131:     TXSTAbits.BRGH = 1;
 [e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
-"132
-[; ;lab4master.c: 132:     BAUDCTLbits.BRG16 = 1;
+"133
+[; ;lab4master.c: 133:     BAUDCTLbits.BRG16 = 1;
 [e = . . _BAUDCTLbits 0 3 -> -> 1 `i `uc ]
-"134
-[; ;lab4master.c: 134:     SPBRG = 207;
-[e = _SPBRG -> -> 207 `i `uc ]
 "135
-[; ;lab4master.c: 135:     SPBRGH = 0;
+[; ;lab4master.c: 135:     SPBRG = 207;
+[e = _SPBRG -> -> 207 `i `uc ]
+"136
+[; ;lab4master.c: 136:     SPBRGH = 0;
 [e = _SPBRGH -> -> 0 `i `uc ]
-"137
-[; ;lab4master.c: 137:     RCSTAbits.SPEN = 1;
-[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
 "138
-[; ;lab4master.c: 138:     RCSTAbits.RX9 = 0;
-[e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
+[; ;lab4master.c: 138:     RCSTAbits.SPEN = 1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
 "139
-[; ;lab4master.c: 139:     RCSTAbits.CREN = 1;
-[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+[; ;lab4master.c: 139:     RCSTAbits.RX9 = 0;
+[e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
 "140
-[; ;lab4master.c: 140:     TXSTAbits.TXEN = 1;
+[; ;lab4master.c: 140:     RCSTAbits.CREN = 1;
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"141
+[; ;lab4master.c: 141:     TXSTAbits.TXEN = 1;
 [e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
-"142
-[; ;lab4master.c: 142:     Lcd_Init();
-[e ( _Lcd_Init ..  ]
 "143
-[; ;lab4master.c: 143:     Lcd_Set_Cursor(1,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;lab4master.c: 143:     Lcd_Init();
+[e ( _Lcd_Init ..  ]
 "144
-[; ;lab4master.c: 144:     Lcd_Write_String("ADC: CONT: TEMP:");
-[e ( _Lcd_Write_String (1 :s 2C ]
+[; ;lab4master.c: 144:     Lcd_Set_Cursor(1,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "145
-[; ;lab4master.c: 145:     I2C_Master_Init(100000);
-[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
+[; ;lab4master.c: 145:     Lcd_Write_String("ADC: CONT: TEMP:");
+[e ( _Lcd_Write_String (1 :s 2C ]
 "146
-[; ;lab4master.c: 146: }
+[; ;lab4master.c: 146:     I2C_Master_Init(100000);
+[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
+"147
+[; ;lab4master.c: 147: }
 [e :UE 143 ]
 }
 [p f _sprintf 8388736 ]

@@ -56,6 +56,7 @@ double t = 0;              //conversion temperatura
 unsigned char s1, s2 = 0;  //valores esclavos
 char volt[16];        //cadena LCD valores
 
+
 //*****************************************************************************
 // Definición de funciones para que se puedan colocar después del main de lo 
 // contrario hay que colocarlos todas las funciones antes del main

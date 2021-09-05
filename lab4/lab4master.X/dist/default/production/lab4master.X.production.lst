@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Wed Sep 01 23:05:13 2021
+                                                                                               Fri Sep 03 13:16:39 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	16F887
@@ -883,7 +883,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    869 ;;
    870 ;; *************** function _main *****************
    871 ;; Defined at:
-   872 ;;		line 68 in file "lab4master.c"
+   872 ;;		line 69 in file "lab4master.c"
    873 ;; Parameters:    Size  Location     Type
    874 ;;		None
    875 ;; Auto vars:     Size  Location     Type
@@ -926,15 +926,15 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    912                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
    913                           
    914                           
-   915                           ;lab4master.c: 69:     setup();
+   915                           ;lab4master.c: 70:     setup();
    916  067B  120A  118A  2576  120A  118A  	fcall	_setup
    917  0680                     l1574:
    918                           
-   919                           ;lab4master.c: 72:         I2C_Master_Start();
+   919                           ;lab4master.c: 73:         I2C_Master_Start();
    920  0680  120A  118A  2366  120A  118A  	fcall	_I2C_Master_Start
    921  0685                     l1576:
    922                           
-   923                           ;lab4master.c: 73:         I2C_Master_Write(0x51);
+   923                           ;lab4master.c: 74:         I2C_Master_Write(0x51);
    924  0685  3051               	movlw	81
    925  0686  00F0               	movwf	I2C_Master_Write@d
    926  0687  3000               	movlw	0
@@ -942,7 +942,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    928  0689  120A  118A  2378  120A  118A  	fcall	_I2C_Master_Write
    929  068E                     l1578:
    930                           
-   931                           ;lab4master.c: 74:         s1 = I2C_Master_Read(0);
+   931                           ;lab4master.c: 75:         s1 = I2C_Master_Read(0);
    932  068E  3000               	movlw	0
    933  068F  00F0               	movwf	I2C_Master_Read@a
    934  0690  00F1               	movwf	I2C_Master_Read@a+1
@@ -955,11 +955,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    941  069B  00A9               	movwf	_s1
    942  069C                     l1580:
    943                           
-   944                           ;lab4master.c: 75:         I2C_Master_Stop();
+   944                           ;lab4master.c: 76:         I2C_Master_Stop();
    945  069C  120A  118A  236F  120A  118A  	fcall	_I2C_Master_Stop
    946  06A1                     l1582:
    947                           
-   948                           ;lab4master.c: 76:         _delay((unsigned long)((50)*(8000000/4000.0)));
+   948                           ;lab4master.c: 77:         _delay((unsigned long)((50)*(8000000/4000.0)));
    949  06A1  3082               	movlw	130
    950  06A2  1283               	bcf	3,5	;RP0=0, select bank0
    951  06A3  1303               	bcf	3,6	;RP1=0, select bank0
@@ -973,11 +973,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    959  06AA  2EA7               	goto	u987
    960  06AB                     l1584:
    961                           
-   962                           ;lab4master.c: 78:         I2C_Master_Start();
+   962                           ;lab4master.c: 79:         I2C_Master_Start();
    963  06AB  120A  118A  2366  120A  118A  	fcall	_I2C_Master_Start
    964  06B0                     l1586:
    965                           
-   966                           ;lab4master.c: 79:         I2C_Master_Write(0x61);
+   966                           ;lab4master.c: 80:         I2C_Master_Write(0x61);
    967  06B0  3061               	movlw	97
    968  06B1  00F0               	movwf	I2C_Master_Write@d
    969  06B2  3000               	movlw	0
@@ -985,7 +985,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    971  06B4  120A  118A  2378  120A  118A  	fcall	_I2C_Master_Write
    972  06B9                     l1588:
    973                           
-   974                           ;lab4master.c: 80:         s2 = I2C_Master_Read(0);
+   974                           ;lab4master.c: 81:         s2 = I2C_Master_Read(0);
    975  06B9  3000               	movlw	0
    976  06BA  00F0               	movwf	I2C_Master_Read@a
    977  06BB  00F1               	movwf	I2C_Master_Read@a+1
@@ -998,11 +998,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    984  06C6  00A8               	movwf	_s2
    985  06C7                     l1590:
    986                           
-   987                           ;lab4master.c: 81:         I2C_Master_Stop();
+   987                           ;lab4master.c: 82:         I2C_Master_Stop();
    988  06C7  120A  118A  236F  120A  118A  	fcall	_I2C_Master_Stop
    989  06CC                     l1592:
    990                           
-   991                           ;lab4master.c: 82:         _delay((unsigned long)((50)*(8000000/4000.0)));
+   991                           ;lab4master.c: 83:         _delay((unsigned long)((50)*(8000000/4000.0)));
    992  06CC  3082               	movlw	130
    993  06CD  1283               	bcf	3,5	;RP0=0, select bank0
    994  06CE  1303               	bcf	3,6	;RP1=0, select bank0
@@ -1015,7 +1015,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1001  06D4  0BCB               	decfsz	??_main+1,f
   1002  06D5  2ED2               	goto	u997
   1003                           
-  1004                           ;lab4master.c: 104:         sprintf(volt, "%d   %d\n", s1, s2);
+  1004                           ;lab4master.c: 105:         sprintf(volt, "%d   %d\n", s1, s2);
   1005  06D6  301C               	movlw	(low ((STR_1-__stringbase)| (0+32768)))& (0+255)
   1006  06D7  1283               	bcf	3,5	;RP0=0, select bank0
   1007  06D8  1303               	bcf	3,6	;RP1=0, select bank0
@@ -1040,19 +1040,19 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1026  06EB  120A  118A  270B  120A  118A  	fcall	_sprintf
   1027  06F0                     l1594:
   1028                           
-  1029                           ;lab4master.c: 105:         enviocadena(volt);
+  1029                           ;lab4master.c: 106:         enviocadena(volt);
   1030  06F0  302B               	movlw	(low (_volt| 0))& (0+255)
   1031  06F1  120A  118A  23CF  120A  118A  	fcall	_enviocadena
   1032  06F6                     l1596:
   1033                           
-  1034                           ;lab4master.c: 106:         Lcd_Set_Cursor(2,1);
+  1034                           ;lab4master.c: 107:         Lcd_Set_Cursor(2,1);
   1035  06F6  01F4               	clrf	Lcd_Set_Cursor@b
   1036  06F7  0AF4               	incf	Lcd_Set_Cursor@b,f
   1037  06F8  3002               	movlw	2
   1038  06F9  120A  118A  23EE  120A  118A  	fcall	_Lcd_Set_Cursor
   1039  06FE                     l1598:
   1040                           
-  1041                           ;lab4master.c: 107:         Lcd_Write_String(volt);
+  1041                           ;lab4master.c: 108:         Lcd_Write_String(volt);
   1042  06FE  302B               	movlw	(low (_volt| 0))& (0+255)
   1043  06FF  00F3               	movwf	Lcd_Write_String@a
   1044  0700  3000               	movlw	0
@@ -1707,7 +1707,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1664  0576                     __ptext4:	
   1665 ;; *************** function _setup *****************
   1666 ;; Defined at:
-  1667 ;;		line 113 in file "lab4master.c"
+  1667 ;;		line 114 in file "lab4master.c"
   1668 ;; Parameters:    Size  Location     Type
   1669 ;;		None
   1670 ;; Auto vars:     Size  Location     Type
@@ -1746,118 +1746,118 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1703                           ; Regs used in _setup: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
   1704                           
   1705                           
-  1706                           ;lab4master.c: 116:     OSCCONbits.IRCF = 7;
+  1706                           ;lab4master.c: 117:     OSCCONbits.IRCF = 7;
   1707  0576  3070               	movlw	112
   1708  0577  1683               	bsf	3,5	;RP0=1, select bank1
   1709  0578  1303               	bcf	3,6	;RP1=0, select bank1
   1710  0579  048F               	iorwf	15,f	;volatile
   1711  057A                     l1426:
   1712                           
-  1713                           ;lab4master.c: 117:     OSCCONbits.SCS = 1;
+  1713                           ;lab4master.c: 118:     OSCCONbits.SCS = 1;
   1714  057A  140F               	bsf	15,0	;volatile
   1715  057B                     l1428:
   1716                           
-  1717                           ;lab4master.c: 119:     ANSELH = 0;
+  1717                           ;lab4master.c: 120:     ANSELH = 0;
   1718  057B  1683               	bsf	3,5	;RP0=1, select bank3
   1719  057C  1703               	bsf	3,6	;RP1=1, select bank3
   1720  057D  0189               	clrf	9	;volatile
   1721  057E                     l1430:
   1722                           
-  1723                           ;lab4master.c: 120:     ANSEL = 0;
+  1723                           ;lab4master.c: 121:     ANSEL = 0;
   1724  057E  0188               	clrf	8	;volatile
   1725  057F                     l1432:
   1726                           
-  1727                           ;lab4master.c: 121:     TRISA = 0;
+  1727                           ;lab4master.c: 122:     TRISA = 0;
   1728  057F  1683               	bsf	3,5	;RP0=1, select bank1
   1729  0580  1303               	bcf	3,6	;RP1=0, select bank1
   1730  0581  0185               	clrf	5	;volatile
   1731  0582                     l1434:
   1732                           
-  1733                           ;lab4master.c: 122:     TRISCbits.TRISC0 = 0;
+  1733                           ;lab4master.c: 123:     TRISCbits.TRISC0 = 0;
   1734  0582  1007               	bcf	7,0	;volatile
   1735  0583                     l1436:
   1736                           
-  1737                           ;lab4master.c: 123:     TRISCbits.TRISC1 = 0;
+  1737                           ;lab4master.c: 124:     TRISCbits.TRISC1 = 0;
   1738  0583  1087               	bcf	7,1	;volatile
   1739  0584                     l1438:
   1740                           
-  1741                           ;lab4master.c: 124:     TRISB = 0;
+  1741                           ;lab4master.c: 125:     TRISB = 0;
   1742  0584  0186               	clrf	6	;volatile
   1743  0585                     l1440:
   1744                           
-  1745                           ;lab4master.c: 125:     TRISD = 0;
+  1745                           ;lab4master.c: 126:     TRISD = 0;
   1746  0585  0188               	clrf	8	;volatile
   1747  0586                     l1442:
   1748                           
-  1749                           ;lab4master.c: 126:     TRISE = 0;
+  1749                           ;lab4master.c: 127:     TRISE = 0;
   1750  0586  0189               	clrf	9	;volatile
   1751  0587                     l1444:
   1752                           
-  1753                           ;lab4master.c: 127:     PORTD = 0;
+  1753                           ;lab4master.c: 128:     PORTD = 0;
   1754  0587  1283               	bcf	3,5	;RP0=0, select bank0
   1755  0588  1303               	bcf	3,6	;RP1=0, select bank0
   1756  0589  0188               	clrf	8	;volatile
   1757  058A                     l1446:
   1758                           
-  1759                           ;lab4master.c: 129:     TXSTAbits.SYNC = 0;
+  1759                           ;lab4master.c: 130:     TXSTAbits.SYNC = 0;
   1760  058A  1683               	bsf	3,5	;RP0=1, select bank1
   1761  058B  1303               	bcf	3,6	;RP1=0, select bank1
   1762  058C  1218               	bcf	24,4	;volatile
   1763  058D                     l1448:
   1764                           
-  1765                           ;lab4master.c: 130:     TXSTAbits.BRGH = 1;
+  1765                           ;lab4master.c: 131:     TXSTAbits.BRGH = 1;
   1766  058D  1518               	bsf	24,2	;volatile
   1767  058E                     l1450:
   1768                           
-  1769                           ;lab4master.c: 132:     BAUDCTLbits.BRG16 = 1;
+  1769                           ;lab4master.c: 133:     BAUDCTLbits.BRG16 = 1;
   1770  058E  1683               	bsf	3,5	;RP0=1, select bank3
   1771  058F  1703               	bsf	3,6	;RP1=1, select bank3
   1772  0590  1587               	bsf	7,3	;volatile
   1773  0591                     l1452:
   1774                           
-  1775                           ;lab4master.c: 134:     SPBRG = 207;
+  1775                           ;lab4master.c: 135:     SPBRG = 207;
   1776  0591  30CF               	movlw	207
   1777  0592  1683               	bsf	3,5	;RP0=1, select bank1
   1778  0593  1303               	bcf	3,6	;RP1=0, select bank1
   1779  0594  0099               	movwf	25	;volatile
   1780  0595                     l1454:
   1781                           
-  1782                           ;lab4master.c: 135:     SPBRGH = 0;
+  1782                           ;lab4master.c: 136:     SPBRGH = 0;
   1783  0595  019A               	clrf	26	;volatile
   1784  0596                     l1456:
   1785                           
-  1786                           ;lab4master.c: 137:     RCSTAbits.SPEN = 1;
+  1786                           ;lab4master.c: 138:     RCSTAbits.SPEN = 1;
   1787  0596  1283               	bcf	3,5	;RP0=0, select bank0
   1788  0597  1303               	bcf	3,6	;RP1=0, select bank0
   1789  0598  1798               	bsf	24,7	;volatile
   1790  0599                     l1458:
   1791                           
-  1792                           ;lab4master.c: 138:     RCSTAbits.RX9 = 0;
+  1792                           ;lab4master.c: 139:     RCSTAbits.RX9 = 0;
   1793  0599  1318               	bcf	24,6	;volatile
   1794  059A                     l1460:
   1795                           
-  1796                           ;lab4master.c: 139:     RCSTAbits.CREN = 1;
+  1796                           ;lab4master.c: 140:     RCSTAbits.CREN = 1;
   1797  059A  1618               	bsf	24,4	;volatile
   1798  059B                     l1462:
   1799                           
-  1800                           ;lab4master.c: 140:     TXSTAbits.TXEN = 1;
+  1800                           ;lab4master.c: 141:     TXSTAbits.TXEN = 1;
   1801  059B  1683               	bsf	3,5	;RP0=1, select bank1
   1802  059C  1303               	bcf	3,6	;RP1=0, select bank1
   1803  059D  1698               	bsf	24,5	;volatile
   1804  059E                     l1464:
   1805                           
-  1806                           ;lab4master.c: 142:     Lcd_Init();
+  1806                           ;lab4master.c: 143:     Lcd_Init();
   1807  059E  120A  118A  25C4  120A  118A  	fcall	_Lcd_Init
   1808  05A3                     l1466:
   1809                           
-  1810                           ;lab4master.c: 143:     Lcd_Set_Cursor(1,1);
+  1810                           ;lab4master.c: 144:     Lcd_Set_Cursor(1,1);
   1811  05A3  01F4               	clrf	Lcd_Set_Cursor@b
   1812  05A4  0AF4               	incf	Lcd_Set_Cursor@b,f
   1813  05A5  3001               	movlw	1
   1814  05A6  120A  118A  23EE  120A  118A  	fcall	_Lcd_Set_Cursor
   1815  05AB                     l1468:
   1816                           
-  1817                           ;lab4master.c: 144:     Lcd_Write_String("ADC: CONT: TEMP:");
+  1817                           ;lab4master.c: 145:     Lcd_Write_String("ADC: CONT: TEMP:");
   1818  05AB  300B               	movlw	(low ((STR_2-__stringbase)| (0+32768)))& (0+255)
   1819  05AC  00F3               	movwf	Lcd_Write_String@a
   1820  05AD  3080               	movlw	128
@@ -1865,7 +1865,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1822  05AF  120A  118A  24F0  120A  118A  	fcall	_Lcd_Write_String
   1823  05B4                     l1470:
   1824                           
-  1825                           ;lab4master.c: 145:     I2C_Master_Init(100000);
+  1825                           ;lab4master.c: 146:     I2C_Master_Init(100000);
   1826  05B4  3000               	movlw	0
   1827  05B5  1283               	bcf	3,5	;RP0=0, select bank0
   1828  05B6  1303               	bcf	3,6	;RP1=0, select bank0
@@ -3615,7 +3615,7 @@ DATA                 0      0      3D      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Wed Sep 01 23:05:13 2021
+Symbol Table                                                                                   Fri Sep 03 13:16:39 2021
 
                         _a 002A                          _t 0020                          pc 0002  
                        l77 05C3                         _s1 0029                         _s2 0028  

@@ -2772,9 +2772,13 @@ void setup(void);
 void __attribute__((picinterrupt(("")))) isr(void){
     if(RBIF == 1) {
 
-        if (PORTBbits.RB0 == 0) {PORTA++;}
+        if (PORTBbits.RB0 == 0) {PORTA++;
+        sprintf(cont, "%d\n", PORTA);
+                 enviocadena(cont);}
 
-        if (PORTBbits.RB1 == 0) {PORTA--;}
+        if (PORTBbits.RB1 == 0) {PORTA--;
+        sprintf(cont, "%d\n", PORTA);
+                 enviocadena(cont);}
 
         INTCONbits.RBIF = 0;
     }
@@ -2787,10 +2791,11 @@ void main(void) {
 
 
 
-    while(1){if (PIR1bits.RCIF == 1) {
-                 PORTD = RCREG;
-                 sprintf(cont, "%d\n", PORTA);
-                 enviocadena(cont);}}
+    while(1){
+
+        if (PIR1bits.RCIF == 1) {
+                 PORTD = RCREG;}
+    }
 }
 
 
@@ -2810,7 +2815,7 @@ void setup(void){
     OPTION_REGbits.nRBPU = 0;
     WPUBbits.WPUB0 = 1;
     WPUBbits.WPUB1 = 1;
-    PORTA = 0;
+
     PORTB = 0;
     PORTD = 0;
 

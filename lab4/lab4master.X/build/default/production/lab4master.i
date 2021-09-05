@@ -2837,6 +2837,7 @@ char volt[16];
 
 
 
+
 void setup(void);
 
 
@@ -2857,7 +2858,7 @@ void main(void) {
         s2 = I2C_Master_Read(0);
         I2C_Master_Stop();
         _delay((unsigned long)((50)*(8000000/4000.0)));
-# 104 "lab4master.c"
+# 105 "lab4master.c"
         sprintf(volt, "%d   %d\n", s1, s2);
         enviocadena(volt);
         Lcd_Set_Cursor(2,1);

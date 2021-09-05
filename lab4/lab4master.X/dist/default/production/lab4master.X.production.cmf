@@ -39,7 +39,7 @@ bssBANK0 BANK0 1 20 20 1B 1
 strings STRING 0 3 3 34 2
 clrtext CODE 0 35E 35E 8 2
 config CONFIG 4 2007 2007 2 2
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
 end_init CODE 0 0 0 3 2
 config CONFIG 4 2007 2007 2 2
 # %UNUSED Section
@@ -87,16 +87,16 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\lab4master.X.production.o
-7F3 cinit CODE >1092:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-7F3 cinit CODE >1095:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-7F3 cinit CODE >1139:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-7F4 cinit CODE >1140:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-7F5 cinit CODE >1141:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-7F6 cinit CODE >1142:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-7F7 cinit CODE >1143:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-7FC cinit CODE >1149:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-7FC cinit CODE >1151:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-7FD cinit CODE >1152:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
+7F3 cinit CODE >1092:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+7F3 cinit CODE >1095:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+7F3 cinit CODE >1139:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+7F4 cinit CODE >1140:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+7F5 cinit CODE >1141:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+7F6 cinit CODE >1142:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+7F7 cinit CODE >1143:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+7FC cinit CODE >1149:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+7FC cinit CODE >1151:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+7FD cinit CODE >1152:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
 382 text19 CODE >32:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\I2C.c
 382 text19 CODE >34:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\I2C.c
 38E text19 CODE >35:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\I2C.c
@@ -238,32 +238,32 @@ $dist/default/production\lab4master.X.production.o
 4F0 text5 CODE >106:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\LCD8bits.c
 4F3 text5 CODE >107:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\LCD8bits.c
 531 text5 CODE >108:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\LCD8bits.c
-576 text4 CODE >113:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-576 text4 CODE >116:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-57A text4 CODE >117:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-57B text4 CODE >119:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-57E text4 CODE >120:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-57F text4 CODE >121:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-582 text4 CODE >122:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-583 text4 CODE >123:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-584 text4 CODE >124:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-585 text4 CODE >125:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-586 text4 CODE >126:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-587 text4 CODE >127:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-58A text4 CODE >129:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-58D text4 CODE >130:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-58E text4 CODE >132:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-591 text4 CODE >134:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-595 text4 CODE >135:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-596 text4 CODE >137:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-599 text4 CODE >138:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-59A text4 CODE >139:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-59B text4 CODE >140:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-59E text4 CODE >142:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-5A3 text4 CODE >143:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-5AB text4 CODE >144:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-5B4 text4 CODE >145:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-5C3 text4 CODE >146:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+576 text4 CODE >114:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+576 text4 CODE >117:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+57A text4 CODE >118:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+57B text4 CODE >120:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+57E text4 CODE >121:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+57F text4 CODE >122:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+582 text4 CODE >123:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+583 text4 CODE >124:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+584 text4 CODE >125:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+585 text4 CODE >126:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+586 text4 CODE >127:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+587 text4 CODE >128:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+58A text4 CODE >130:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+58D text4 CODE >131:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+58E text4 CODE >133:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+591 text4 CODE >135:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+595 text4 CODE >136:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+596 text4 CODE >138:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+599 text4 CODE >139:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+59A text4 CODE >140:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+59B text4 CODE >141:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+59E text4 CODE >143:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+5A3 text4 CODE >144:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+5AB text4 CODE >145:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+5B4 text4 CODE >146:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+5C3 text4 CODE >147:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
 532 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
 532 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
 534 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
@@ -318,32 +318,32 @@ $dist/default/production\lab4master.X.production.o
 7DC text1 CODE >553:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 7EE text1 CODE >1564:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 7F2 text1 CODE >1567:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
-67B maintext CODE >68:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
 67B maintext CODE >69:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-680 maintext CODE >72:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-685 maintext CODE >73:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-68E maintext CODE >74:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-69C maintext CODE >75:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6A1 maintext CODE >76:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6AB maintext CODE >78:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6B0 maintext CODE >79:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6B9 maintext CODE >80:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6C7 maintext CODE >81:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6CC maintext CODE >82:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6D6 maintext CODE >104:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6F0 maintext CODE >105:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6F6 maintext CODE >106:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-6FE maintext CODE >107:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
-35E clrtext CODE >1126:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-35E clrtext CODE >1127:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-35F clrtext CODE >1128:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-35F clrtext CODE >1129:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-360 clrtext CODE >1130:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-361 clrtext CODE >1131:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-362 clrtext CODE >1132:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-363 clrtext CODE >1133:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-364 clrtext CODE >1134:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
-365 clrtext CODE >1135:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.s
+67B maintext CODE >70:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+680 maintext CODE >73:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+685 maintext CODE >74:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+68E maintext CODE >75:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+69C maintext CODE >76:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6A1 maintext CODE >77:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6AB maintext CODE >79:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6B0 maintext CODE >80:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6B9 maintext CODE >81:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6C7 maintext CODE >82:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6CC maintext CODE >83:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6D6 maintext CODE >105:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6F0 maintext CODE >106:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6F6 maintext CODE >107:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+6FE maintext CODE >108:D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+35E clrtext CODE >1126:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+35E clrtext CODE >1127:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+35F clrtext CODE >1128:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+35F clrtext CODE >1129:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+360 clrtext CODE >1130:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+361 clrtext CODE >1131:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+362 clrtext CODE >1132:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+363 clrtext CODE >1133:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+364 clrtext CODE >1134:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
+365 clrtext CODE >1135:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -373,12 +373,12 @@ __end_of_Lcd_Init C2A 0 CODE 0 text8 dist/default/production\lab4master.X.produc
 __end_of_Lcd_Port 9E0 0 CODE 0 text10 dist/default/production\lab4master.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _PEIE 5E 0 ABS 0 - dist/default/production\lab4master.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
 _main CF6 0 CODE 0 maintext dist/default/production\lab4master.X.production.o
 _volt 2B 0 BANK0 1 bssBANK0 dist/default/production\lab4master.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\lab4master.X.production.o
 _Lcd_Write_Char 73E 0 CODE 0 text6 dist/default/production\lab4master.X.production.o
-start 0 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
+start 0 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
 __size_of_main 0 0 ABS 0 - dist/default/production\lab4master.X.production.o
 __size_of___lldiv 0 0 ABS 0 - dist/default/production\lab4master.X.production.o
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production\lab4master.X.production.o
@@ -386,12 +386,12 @@ __size_of___lwmod 0 0 ABS 0 - dist/default/production\lab4master.X.production.o
 Lcd_Port@a 70 0 COMMON 1 cstackCOMMON dist/default/production\lab4master.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 I2C_Master_Read@a 70 0 COMMON 1 cstackCOMMON dist/default/production\lab4master.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\lab4master.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\lab4master.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -409,8 +409,8 @@ ___lwmod@divisor 78 0 COMMON 1 cstackCOMMON dist/default/production\lab4master.X
 __end_of___lldiv CF6 0 CODE 0 text12 dist/default/production\lab4master.X.production.o
 __end_of___lwdiv AEC 0 CODE 0 text3 dist/default/production\lab4master.X.production.o
 __end_of___lwmod 964 0 CODE 0 text2 dist/default/production\lab4master.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
 _dpowers 26 0 STRING 0 strings dist/default/production\lab4master.X.production.o
 _BAUDCTLbits 187 0 ABS 0 - dist/default/production\lab4master.X.production.o
 ___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\lab4master.X.production.o
@@ -432,7 +432,7 @@ enviocadena@cadena 72 0 COMMON 1 cstackCOMMON dist/default/production\lab4master
 _TRISC3 43B 0 ABS 0 - dist/default/production\lab4master.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\lab4master.X.production.o
 __size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\lab4master.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -497,7 +497,7 @@ __size_of_Lcd_Write_String 0 0 ABS 0 - dist/default/production\lab4master.X.prod
 __stringtab 6 0 STRING 0 strings dist/default/production\lab4master.X.production.o
 Lcd_Write_String@a 73 0 COMMON 1 cstackCOMMON dist/default/production\lab4master.X.production.o
 Lcd_Write_String@i 78 0 COMMON 1 cstackCOMMON dist/default/production\lab4master.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sj30.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sq78.o
 __end_of_Lcd_Cmd 79E 0 CODE 0 text9 dist/default/production\lab4master.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 _RCSTAbits 18 0 ABS 0 - dist/default/production\lab4master.X.production.o

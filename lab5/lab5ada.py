@@ -12,13 +12,13 @@
 
 from Adafruit_IO import Client, RequestError, Feed
 import serial, re                                         
-ADAFRUIT_IO_KEY = "aio_lpMM57xnNjxADRCp0rhLst7N2nL0"
+ADAFRUIT_IO_KEY = "aio_PXCg12aI2L8DkYEK1nop6Wkfs39h"
 ADAFRUIT_IO_USERNAME = "rod19131"
 aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
 feed1 = int
 feed2 = int
 contador = int
-serialcom2 = serial.Serial("COM2", baudrate = 9600, timeout = 1)
+serialcom2 = serial.Serial("COM4", baudrate = 9600, timeout = 1)
 print("connected to: " + serialcom2.portstr)
 
 #Digital Feed
@@ -39,5 +39,5 @@ while 1:
     numbers = re.findall('[0-9]+', str(contador))
     digital_feed4 = aio.feeds('contadorbot')
     aio.send_data(digital_feed4.key, int(numbers[0]))
-    #print(numbers[0])
+    print(numbers[0])
     #print(contador)

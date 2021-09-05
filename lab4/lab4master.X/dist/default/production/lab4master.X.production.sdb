@@ -31,9 +31,9 @@
 [v _I2C_Master_Write I2C_Master_Write `(v  1 e 1 0 ]
 "74
 [v _I2C_Master_Read I2C_Master_Read `(us  1 e 2 0 ]
-"68 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+"69 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
 [v _main main `(v  1 e 1 0 ]
-"113
+"114
 [v _setup setup `(v  1 e 1 0 ]
 "13 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\LCD8bits.c
 [v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
@@ -267,10 +267,10 @@
 [v _s2 s2 `uc  1 e 1 0 ]
 "57
 [v _volt volt `[16]uc  1 e 16 0 ]
-"68
+"69
 [v _main main `(v  1 e 1 0 ]
 {
-"109
+"110
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -315,10 +315,10 @@
 [v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
 "30
 } 0
-"113 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
+"114 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\lab4master.c
 [v _setup setup `(v  1 e 1 0 ]
 {
-"146
+"147
 } 0
 "104 D:\AlejandroDigital\electronica_digital2\lab4\lab4master.X\LCD8bits.c
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]

@@ -48,9 +48,13 @@ void setup(void);
 void __interrupt() isr(void){
     if(RBIF == 1)  {
         //incremento de la variable con antirebote
-        if (PORTBbits.RB0 == 0) {PORTA++;}
+        if (PORTBbits.RB0 == 0) {PORTA++;
+        sprintf(cont, "%d\n", PORTA);
+                 enviocadena(cont);}
         //decremento de la variable con antirebote
-        if (PORTBbits.RB1 == 0) {PORTA--;}
+        if (PORTBbits.RB1 == 0) {PORTA--;
+        sprintf(cont, "%d\n", PORTA);
+                 enviocadena(cont);}
         //se baja la bandera de interrupcion por cambio
         INTCONbits.RBIF = 0;
     }
@@ -63,10 +67,11 @@ void main(void) {
     //*************************************************************************
     // Loop infinito
     //*************************************************************************
-    while(1){if (PIR1bits.RCIF == 1) {
-                 PORTD = RCREG;
-                 sprintf(cont, "%d\n", PORTA);
-                 enviocadena(cont);}}
+    while(1){
+        //PORTD = PORTA;
+        if (PIR1bits.RCIF == 1) {
+                 PORTD = RCREG;}
+    }
 }
 //*****************************************************************************
 // Función de Inicialización
@@ -86,7 +91,7 @@ void setup(void){
     OPTION_REGbits.nRBPU = 0; //pullups habilitados
     WPUBbits.WPUB0 = 1;       //pullups RB0 y RB1 
     WPUBbits.WPUB1 = 1;
-    PORTA = 0;         //se limpian los puertos
+    //PORTA = 0;         //se limpian los puertos
     PORTB = 0;
     PORTD = 0;
     //configuracion interrupt on change b
