@@ -32,6 +32,7 @@
 //*****************************************************************************
 #include <stdint.h>
 #include <stdio.h>
+//#include <math.h>
 #include "I2C.h" 
 #include "LCD8bits.h"
 #include "usart.h"
@@ -50,9 +51,14 @@
 #define D7 RD7
 #define _XTAL_FREQ 8000000
 //variables
-unsigned char s1, s2, L, R, M = 0;  //valores esclavos
+unsigned char s1, s2, L, R, M, xls, yls, z1 = 0;  //valores esclavos
+unsigned char mapping = 0;
+int x, y, xms, yms = 0;
+unsigned int arct;
+int Heading = 0;
 char volt[16];        //cadena LCD valores
-
+//float mapear(int adresval){
+//    return (adresval-0)*(128-0)/(1200-0)+0;}
 //*****************************************************************************
 // Definición de funciones para que se puedan colocar después del main de lo 
 // contrario hay que colocarlos todas las funciones antes del main
@@ -116,9 +122,42 @@ void main(void) {
         s2 = I2C_Master_Read(0);
         I2C_Master_Stop();
         __delay_ms(10);
-
+        //        //recepcion sensor i2c temp
+//        I2C_Master_Start();
+//        I2C_Master_Write(0x1A);
+//        I2C_Master_Write(0x00);
+//        I2C_Master_Stop();
+//        __delay_ms(10);
+        
+//        I2C_Master_Start();
+//        I2C_Master_Write(0x1B);
+//        xls = I2C_Master_Read(1);
+//        xms = I2C_Master_Read(1)<<8;  
+//        yls = I2C_Master_Read(1);  
+//        yms = I2C_Master_Read(1)<<8;  
+//        z1 = I2C_Master_Read(1);  
+//        z1 = I2C_Master_Read(1); 
+//        z1 = I2C_Master_Read(0);
+//        I2C_Master_Stop();
+//        __delay_ms(50);
+//        x = xms | xls;
+//        y = yms | yls;
+//        if (y <= 900 && x > 0){
+//            mapping = 192;
+//        }
+//        if ((y > 900 && x > 0) || (y > 900 && x < 0)){
+//            mapping = 128;}
+//        if (y <= 900 && x < 0){
+//            mapping = 64;
+//        }
+//        if (y < 0 && x < 0){
+//            mapping = 0;
+//        }
+//        if (y < 0 && x > 0){
+//            mapping = 255;
+//        }
         //escribir valores en LCD
-        sprintf(volt, "%d %c%c %d\n", s1, L, R, M); //valores para pantalla 2 linea
+        sprintf(volt, "%d %c%c %d %d %d\n", s1, L, R, M, y, mapping); //valores para pantalla 2 linea
         enviocadena(volt);                           //envio a pc
         Lcd_Set_Cursor(2,1);                         //linea 2
         Lcd_Write_String(volt);
@@ -163,6 +202,27 @@ void setup(void){
     //configuracion interrupciones
     Lcd_Init();
     Lcd_Set_Cursor(1,1);  //linea 1
-    Lcd_Write_String("I_LR_M__ X___Y___");
+    Lcd_Write_String("I_LR_M_MagnetY");
     I2C_Master_Init(100000);        // Inicializar Comuncación I2C
+    
+    I2C_Master_Start();
+    I2C_Master_Write(0x1A);
+    I2C_Master_Write(0x0B);
+    I2C_Master_Write(0x01);
+    I2C_Master_Stop();
+    __delay_ms(10);
+    
+    I2C_Master_Start();
+    I2C_Master_Write(0x1A);
+    I2C_Master_Write(0x09);
+    I2C_Master_Write(0x1D);
+    I2C_Master_Stop();
+    __delay_ms(10);
+    
+    I2C_Master_Start();
+    I2C_Master_Write(0x1A);
+    I2C_Master_Write(0x0A);
+    I2C_Master_Write(0x00);
+    I2C_Master_Stop();
+    __delay_ms(10);
 }

@@ -2745,6 +2745,7 @@ extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 # 34 "proyecto1master.c" 2
 
+
 # 1 "./I2C.h" 1
 # 20 "./I2C.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
@@ -2786,7 +2787,7 @@ unsigned short I2C_Master_Read(unsigned short a);
 
 
 void I2C_Slave_Init(uint8_t address);
-# 35 "proyecto1master.c" 2
+# 36 "proyecto1master.c" 2
 
 # 1 "./LCD8bits.h" 1
 # 59 "./LCD8bits.h"
@@ -2813,7 +2814,7 @@ void Lcd_Write_String(char *a);
 void Lcd_Shift_Right(void);
 
 void Lcd_Shift_Left(void);
-# 36 "proyecto1master.c" 2
+# 37 "proyecto1master.c" 2
 
 # 1 "./usart.h" 1
 # 15 "./usart.h"
@@ -2825,10 +2826,15 @@ void write(unsigned char data, unsigned char address);
 unsigned char read(unsigned char address);
 void enviocaracter(char a);
 void enviocadena(char* cadena);
-# 37 "proyecto1master.c" 2
-# 53 "proyecto1master.c"
-unsigned char s1, s2, L, R, M = 0;
+# 38 "proyecto1master.c" 2
+# 54 "proyecto1master.c"
+unsigned char s1, s2, L, R, M, xls, yls, z1 = 0;
+unsigned char mapping = 0;
+int x, y, xms, yms = 0;
+unsigned int arct;
+int Heading = 0;
 char volt[16];
+
 
 
 
@@ -2893,9 +2899,8 @@ void main(void) {
         s2 = I2C_Master_Read(0);
         I2C_Master_Stop();
         _delay((unsigned long)((10)*(8000000/4000.0)));
-
-
-        sprintf(volt, "%d %c%c %d\n", s1, L, R, M);
+# 160 "proyecto1master.c"
+        sprintf(volt, "%d %c%c %d %d %d\n", s1, L, R, M, y, mapping);
         enviocadena(volt);
         Lcd_Set_Cursor(2,1);
         Lcd_Write_String(volt);
@@ -2940,6 +2945,27 @@ void setup(void){
 
     Lcd_Init();
     Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("I_LR_M__ X___Y___");
+    Lcd_Write_String("I_LR_M_X____Y___");
     I2C_Master_Init(100000);
+
+    I2C_Master_Start();
+    I2C_Master_Write(0x1A);
+    I2C_Master_Write(0x0B);
+    I2C_Master_Write(0x01);
+    I2C_Master_Stop();
+    _delay((unsigned long)((10)*(8000000/4000.0)));
+
+    I2C_Master_Start();
+    I2C_Master_Write(0x1A);
+    I2C_Master_Write(0x09);
+    I2C_Master_Write(0x1D);
+    I2C_Master_Stop();
+    _delay((unsigned long)((10)*(8000000/4000.0)));
+
+    I2C_Master_Start();
+    I2C_Master_Write(0x1A);
+    I2C_Master_Write(0x0A);
+    I2C_Master_Write(0x00);
+    I2C_Master_Stop();
+    _delay((unsigned long)((10)*(8000000/4000.0)));
 }
