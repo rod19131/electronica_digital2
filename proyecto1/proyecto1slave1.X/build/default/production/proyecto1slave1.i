@@ -2792,6 +2792,8 @@ void setup(void){
     OPTION_REGbits.nRBPU = 0;
     WPUBbits.WPUB0 = 1;
     WPUBbits.WPUB1 = 1;
+    WPUBbits.WPUB2 = 1;
+    WPUBbits.WPUB3 = 1;
     PORTA = 0;
     PORTB = 0;
     PORTD = 0;

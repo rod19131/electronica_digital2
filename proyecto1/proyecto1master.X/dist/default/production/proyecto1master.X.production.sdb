@@ -45,7 +45,7 @@
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
 "71 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\proyecto1master.c
 [v _main main `(v  1 e 1 0 ]
-"169
+"170
 [v _setup setup `(v  1 e 1 0 ]
 "35 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\usart.c
 [v _enviocaracter enviocaracter `(v  1 e 1 0 ]
@@ -294,12 +294,22 @@
 [v _L L `uc  1 e 1 0 ]
 [v _R R `uc  1 e 1 0 ]
 [v _M M `uc  1 e 1 0 ]
+[v _xls xls `uc  1 e 1 0 ]
+[v _yls yls `uc  1 e 1 0 ]
+[v _z1 z1 `uc  1 e 1 0 ]
+"55
+[v _mapping mapping `uc  1 e 1 0 ]
+"56
+[v _x x `i  1 e 2 0 ]
+[v _y y `i  1 e 2 0 ]
+[v _xms xms `i  1 e 2 0 ]
+[v _yms yms `i  1 e 2 0 ]
 "59
 [v _volt volt `[16]uc  1 e 16 0 ]
 "71
 [v _main main `(v  1 e 1 0 ]
 {
-"165
+"166
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -344,10 +354,10 @@
 [v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
 "30
 } 0
-"169 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\proyecto1master.c
+"170 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\proyecto1master.c
 [v _setup setup `(v  1 e 1 0 ]
 {
-"228
+"229
 } 0
 "66 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\LCD8bits.c
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]

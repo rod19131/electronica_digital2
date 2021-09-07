@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\proyecto1slave1.X.production.sym \
   --cmf=dist/default/production\proyecto1slave1.X.production.cmf -z \
-  -Q16F887 -oC:\Users\AlejandroRodriguez\AppData\Local\Temp\s678.2 \
+  -Q16F887 -oC:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.2 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/proyecto1slave1.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK \
@@ -19,7 +19,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\AlejandroRodriguez\AppData\Local\Temp\s678.o \
+  -pfunctab=ENTRY -k C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o \
   dist/default/production\proyecto1slave1.X.production.o 
 
 Object code version is 3.11
@@ -29,7 +29,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\AlejandroRodriguez\AppData\Local\Temp\s678.o
+C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
                 end_init                              C        C        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        2        0       4
@@ -38,9 +38,9 @@ dist/default/production\proyecto1slave1.X.production.o
                 intentry                              4        4        8        8       0
                 config                             2007     2007        2        0       4
                 text3                                17       17       C7        8       0
-                text2                                FC       FC       1A        8       0
-                text1                                DE       DE       1E        8       0
-                maintext                            116      116        9        8       0
+                text2                                FE       FE       1A        8       0
+                text1                                DE       DE       20        8       0
+                maintext                            118      118        9        8       0
                 cstackCOMMON                         74       74        4       70       1
                 bssCOMMON                            70       70        4       70       1
 
@@ -53,9 +53,9 @@ TOTAL           Name                               Link     Load   Length     Sp
                 intentry                              4        4        8         0
                 reset_vec                             0        0        3         0
                 text3                                17       17       C7         0
-                text2                                FC       FC       1A         0
-                text1                                DE       DE       1E         0
-                maintext                            116      116        9         0
+                text2                                FE       FE       1A         0
+                text1                                DE       DE       20         0
+                maintext                            118      118        9         0
 
         CLASS   STRCODE        
 
@@ -102,7 +102,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
-                intentry                       000004  00011B  00011F         8       0  CODE        2
+                intentry                       000004  00011D  000121         8       0  CODE        2
                 bssCOMMON                      000070  000008  000078        70       1  COMMON      1
 
 
@@ -114,13 +114,13 @@ UNUSED ADDRESS RANGES
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
         CODE             0003-0003              1           2
-                         011F-1FFF            800
+                         0121-1FFF            800
         COMMON           0078-007D              6           1
         CONST            0003-0003              1           2
-                         011F-1FFF            100
+                         0121-1FFF            100
         EEDATA           2100-21FF            100           2
         ENTRY            0003-0003              1           2
-                         011F-1FFF            100
+                         0121-1FFF            100
         IDLOC            2000-2003              4           2
         RAM              0020-006F             50           1
                          00A0-00EF             50
@@ -132,9 +132,9 @@ UNUSED ADDRESS RANGES
         SFR3             0180-018F             10           1
         STACK            0110-016F             60           1
         STRCODE          0003-0003              1           2
-                         011F-1FFF           1EE1
+                         0121-1FFF           1EDF
         STRING           0003-0003              1           2
-                         011F-1FFF            100
+                         0121-1FFF            100
 
                                   Symbol Table
 
@@ -143,7 +143,7 @@ _ANSEL                   (abs)        0188
 _ANSELH                  (abs)        0189
 _BF                      (abs)        04A0
 _GIE                     (abs)        005F
-_I2C_Slave_Init          text2        00FC
+_I2C_Slave_Init          text2        00FE
 _M                       bssCOMMON    0071
 _OPTION_REGbits          (abs)        0081
 _OSCCONbits              (abs)        008F
@@ -195,7 +195,7 @@ __Hsfr0                  sfr0         0000
 __Hsfr1                  sfr1         0000
 __Hsfr2                  sfr2         0000
 __Hsfr3                  sfr3         0000
-__Hspace_0               (abs)        011F
+__Hspace_0               (abs)        0121
 __Hspace_1               (abs)        0078
 __Hspace_2               (abs)        0000
 __Hspace_3               (abs)        0000
@@ -236,7 +236,7 @@ __Lspace_4               (abs)        0000
 __Lstack                 stack        0000
 __Lstrings               strings      0000
 __Ltext                  text         0000
-__S0                     (abs)        011F
+__S0                     (abs)        0121
 __S1                     (abs)        0078
 __S2                     (abs)        0000
 __S3                     (abs)        0000
@@ -245,25 +245,25 @@ ___latbits               (abs)        0002
 ___sp                    stack        0000
 ___stackhi               (abs)        0000
 ___stacklo               (abs)        0000
-__end_of_I2C_Slave_Init  text2        0116
+__end_of_I2C_Slave_Init  text2        0118
 __end_of__initialization cinit        0013
 __end_of_isr             text3        00DE
-__end_of_main            maintext     011F
-__end_of_setup           text1        00FC
+__end_of_main            maintext     0121
+__end_of_setup           text1        00FE
 __initialization         cinit        000F
 __pbssCOMMON             bssCOMMON    0070
 __pcstackCOMMON          cstackCOMMON 0074
 __pintentry              intentry     0004
-__pmaintext              maintext     0116
+__pmaintext              maintext     0118
 __ptext1                 text1        00DE
-__ptext2                 text2        00FC
+__ptext2                 text2        00FE
 __ptext3                 text3        0017
 __size_of_I2C_Slave_Init (abs)        0000
 __size_of_isr            (abs)        0000
 __size_of_main           (abs)        0000
 __size_of_setup          (abs)        0000
 _isr                     text3        0017
-_main                    maintext     0116
+_main                    maintext     0118
 _setup                   text1        00DE
 _z                       bssCOMMON    0073
 btemp                    (abs)        007E
@@ -407,7 +407,7 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 I2C.c
-		_I2C_Slave_Init		CODE           	00FC	0000	26
+		_I2C_Slave_Init		CODE           	00FE	0000	26
 
 I2C.c estimated size: 26
 
@@ -417,9 +417,9 @@ shared
 shared estimated size: 4
 
 proyecto1slave1.c
-		_main          		CODE           	0116	0000	9
+		_main          		CODE           	0118	0000	9
 		_isr           		CODE           	0017	0000	199
-		_setup         		CODE           	00DE	0000	30
+		_setup         		CODE           	00DE	0000	32
 
-proyecto1slave1.c estimated size: 238
+proyecto1slave1.c estimated size: 240
 

@@ -2873,6 +2873,7 @@ void main(void) {
     if ((PORTBbits.RB0 == 1) && (s1 >= 4)){
             M = 0;
             }
+
     else if ((PORTBbits.RB0 == 0) || (s1 < 4)){
             M = 1;}
 
@@ -2899,7 +2900,41 @@ void main(void) {
         s2 = I2C_Master_Read(0);
         I2C_Master_Stop();
         _delay((unsigned long)((10)*(8000000/4000.0)));
-# 160 "proyecto1master.c"
+
+        I2C_Master_Start();
+        I2C_Master_Write(0x1A);
+        I2C_Master_Write(0x00);
+        I2C_Master_Stop();
+        _delay((unsigned long)((10)*(8000000/4000.0)));
+
+        I2C_Master_Start();
+        I2C_Master_Write(0x1B);
+        xls = I2C_Master_Read(1);
+        xms = I2C_Master_Read(1)<<8;
+        yls = I2C_Master_Read(1);
+        yms = I2C_Master_Read(1)<<8;
+        z1 = I2C_Master_Read(1);
+        z1 = I2C_Master_Read(1);
+        z1 = I2C_Master_Read(0);
+        I2C_Master_Stop();
+        _delay((unsigned long)((50)*(8000000/4000.0)));
+        x = xms | xls;
+        y = yms | yls;
+        if (y <= 900 && x > 0){
+            mapping = 192;
+        }
+        if ((y > 900 && x > 0) || (y > 900 && x < 0)){
+            mapping = 128;}
+        if (y <= 900 && x < 0){
+            mapping = 64;
+        }
+        if (y < 0 && x < 0){
+            mapping = 0;
+        }
+        if (y < 0 && x > 0){
+            mapping = 255;
+        }
+
         sprintf(volt, "%d %c%c %d %d %d\n", s1, L, R, M, y, mapping);
         enviocadena(volt);
         Lcd_Set_Cursor(2,1);
@@ -2945,7 +2980,7 @@ void setup(void){
 
     Lcd_Init();
     Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("I_LR_M_X____Y___");
+    Lcd_Write_String("I_LR_M_MagnetY");
     I2C_Master_Init(100000);
 
     I2C_Master_Start();

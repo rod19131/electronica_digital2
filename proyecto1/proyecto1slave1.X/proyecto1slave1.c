@@ -135,6 +135,8 @@ void setup(void){
     OPTION_REGbits.nRBPU = 0; //pullups habilitados
     WPUBbits.WPUB0 = 1;       //pullups RB0 y RB1 
     WPUBbits.WPUB1 = 1;
+    WPUBbits.WPUB2 = 1;
+    WPUBbits.WPUB3 = 1;
     PORTA = 0;         //se limpian los puertos
     PORTB = 0;
     PORTD = 0;
