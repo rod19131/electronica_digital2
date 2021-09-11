@@ -1,12 +1,12 @@
 /*
- * Archivo:     proyectovacas.c
+ * Archivo:     proyecto1slave0.c
  * Dispositivo: PIC16F887
  * Autor:       Jose Alejandro Rodriguez Porras
  * Compilador:  XC8 MPLABX V5.40
- * Programa:    Proyecto vacaciones
- * Hardware:    2 pots en puerto A y 2 servos en CCP1 y CCP2
- * Creado:      14 de junio de 2021, 05:09 PM
- * Ultima modificacion: 26 de abril de 2021
+ * Programa:    esclavo0 sensor de iluminacion y control de servo
+ * Hardware:    servo en PORTC, leds en PORTD y fotoresistencia en RA0
+ * Creado:      1 de septiembre de 2021, 05:09 PM
+ * Ultima modificacion: 8 de septiembre de 2021
  */
 //CONFIGURATION WORD 1
 #include <xc.h>
@@ -38,7 +38,7 @@
 //*****************************************************************************
 #define _XTAL_FREQ 8000000
 uint8_t z;
-unsigned char luzadc, dummydata, luz = 0;
+unsigned char luzadc, dummydata, luz, mapping, dummy =  0;
 unsigned char mapear(unsigned char adresval){
     return (adresval-0)*(9-0)/(255-0)+0;}
 //*****************************************************************************
@@ -67,7 +67,7 @@ void __interrupt() isr(void){
             PIR1bits.SSPIF = 0;         // Limpia bandera de interrupción recepción/transmisión SSP
             SSPCONbits.CKP = 1;         // Habilita entrada de pulsos de reloj SCL
             while(!SSPSTATbits.BF);     // Esperar a que la recepción se complete
-            dummydata = SSPBUF;             // Guardar en el PORTD el valor del buffer de recepción
+            mapping = SSPBUF;             // Guardar en el PORTD el valor del buffer de recepción
             __delay_us(250);
             
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
@@ -82,26 +82,23 @@ void __interrupt() isr(void){
         PIR1bits.SSPIF = 0;    
     }
    if (ADIF == 1){
+       //lectura de fotoresistencia para conocer iluminacion/mapeo de servo a norte
        if (ADCON0bits.CHS == 0){
             luzadc = adc_canal(0);     //se actualiza la variable con valor del adc
+            //CCPR1L = adc_canal(0);
             luz = mapear(luzadc);
+            ADCON0bits.CHS = 0;
             if (luz <= 3){PORTD = 7;}
             else if (luz <= 6){PORTD = 6;}
-            else {PORTD = 0;}
-            ADCON0bits.CHS = 1;
+            else {PORTD = 0;}  
             __delay_us(20);   //delay de 20 ms
             PIR1bits.ADIF = 0;//se baja bandera interrupcion adc
             ADCON0bits.GO = 1;//inicio de la siguiente conversion
+            //mapeo del servo para indicar donde esta el norte
+            CCPR1L = (mapping >> 1) + 124;
         }
-       else if (ADCON0bits.CHS == 1){
-           CCPR1L = (adc_canal(1)>>1)+124;
-           ADCON0bits.CHS = 0;
-           __delay_us(20);   //delay de 20 ms
-           PIR1bits.ADIF = 0;//se baja bandera interrupcion adc
-           ADCON0bits.GO = 1;//inicio de la siguiente conversion
        }
-       }
-}
+   }
 //*****************************************************************************
 // Main
 //*****************************************************************************
@@ -121,10 +118,10 @@ void setup(void){
     OSCCONbits.IRCF = 7; //8MHz
     OSCCONbits.SCS = 1; //reloj interno
     //configuracion in out
-    ANSEL = 3;
+    ANSEL = 7;
     ANSELH = 0; //Pines digitales
     ANSELbits.ANS0  = 1;//RA0 como pines analogicos
-    TRISA = 3;         //RA0 y RA1 como inputs
+    TRISA = 7;         //RA0 y RA1 como inputs
     TRISB = 0;
     TRISD = 0;
     PORTA = 0;         //se limpian los puertos
@@ -139,12 +136,18 @@ void setup(void){
     CCP1CONbits.CCP1M = 0b1100;
     CCPR1L = 0x0f;             //ciclo de trabajo inicial
     CCP1CONbits.DC1B = 0;
+    //ccp2
+    TRISCbits.TRISC1 = 1;      //CCP2 como entrada;
+    CCP2CONbits.CCP2M = 0b1100;//config pwm
+    CCPR2L = 0x0f;             //ciclo de trabajo inicial
+    CCP2CONbits.DC2B1 = 0;
     //configuracion tmr2
     PIR1bits.TMR2IF = 0; //se apaga la bandera de interrupcion del tmr2
     T2CONbits.T2CKPS = 0b11;//prescaler 1:16
     T2CONbits.TMR2ON = 1;//se enciende el tmr2
     while(PIR1bits.TMR2IF == 0);//esperar un ciclo de tmr2
     PIR1bits.TMR2IF = 0;
+    TRISCbits.TRISC1 = 0;//out pwm2
     TRISCbits.TRISC2 = 0;//out pwm1
     adc_c(); //configuracion adc (usando funcion de libreria)
     __delay_us(20);

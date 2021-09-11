@@ -2703,7 +2703,7 @@ unsigned char adc_canal(unsigned char canal);
 
 
 uint8_t z;
-unsigned char luzadc, dummydata, luz = 0;
+unsigned char luzadc, dummydata, luz, mapping, dummy = 0;
 unsigned char mapear(unsigned char adresval){
     return (adresval-0)*(9-0)/(255-0)+0;}
 
@@ -2732,7 +2732,7 @@ void __attribute__((picinterrupt(("")))) isr(void){
             PIR1bits.SSPIF = 0;
             SSPCONbits.CKP = 1;
             while(!SSPSTATbits.BF);
-            dummydata = SSPBUF;
+            mapping = SSPBUF;
             _delay((unsigned long)((250)*(8000000/4000000.0)));
 
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
@@ -2747,26 +2747,23 @@ void __attribute__((picinterrupt(("")))) isr(void){
         PIR1bits.SSPIF = 0;
     }
    if (ADIF == 1){
+
        if (ADCON0bits.CHS == 0){
             luzadc = adc_canal(0);
+
             luz = mapear(luzadc);
+            ADCON0bits.CHS = 0;
             if (luz <= 3){PORTD = 7;}
             else if (luz <= 6){PORTD = 6;}
             else {PORTD = 0;}
-            ADCON0bits.CHS = 1;
             _delay((unsigned long)((20)*(8000000/4000000.0)));
             PIR1bits.ADIF = 0;
             ADCON0bits.GO = 1;
+
+            CCPR1L = (mapping >> 1) + 124;
         }
-       else if (ADCON0bits.CHS == 1){
-           CCPR1L = (adc_canal(1)>>1)+124;
-           ADCON0bits.CHS = 0;
-           _delay((unsigned long)((20)*(8000000/4000000.0)));
-           PIR1bits.ADIF = 0;
-           ADCON0bits.GO = 1;
        }
-       }
-}
+   }
 
 
 
@@ -2786,10 +2783,10 @@ void setup(void){
     OSCCONbits.IRCF = 7;
     OSCCONbits.SCS = 1;
 
-    ANSEL = 3;
+    ANSEL = 7;
     ANSELH = 0;
     ANSELbits.ANS0 = 1;
-    TRISA = 3;
+    TRISA = 7;
     TRISB = 0;
     TRISD = 0;
     PORTA = 0;
@@ -2805,11 +2802,17 @@ void setup(void){
     CCPR1L = 0x0f;
     CCP1CONbits.DC1B = 0;
 
+    TRISCbits.TRISC1 = 1;
+    CCP2CONbits.CCP2M = 0b1100;
+    CCPR2L = 0x0f;
+    CCP2CONbits.DC2B1 = 0;
+
     PIR1bits.TMR2IF = 0;
     T2CONbits.T2CKPS = 0b11;
     T2CONbits.TMR2ON = 1;
     while(PIR1bits.TMR2IF == 0);
     PIR1bits.TMR2IF = 0;
+    TRISCbits.TRISC1 = 0;
     TRISCbits.TRISC2 = 0;
     adc_c();
     _delay((unsigned long)((20)*(8000000/4000000.0)));

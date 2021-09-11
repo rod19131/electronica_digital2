@@ -1,12 +1,12 @@
 /*
- * Archivo:     proyectovacas.c
+ * Archivo:     proyectoslave1.c
  * Dispositivo: PIC16F887
  * Autor:       Jose Alejandro Rodriguez Porras
  * Compilador:  XC8 MPLABX V5.40
- * Programa:    Proyecto vacaciones
- * Hardware:    2 pots en puerto A y 2 servos en CCP1 y CCP2
- * Creado:      14 de junio de 2021, 05:09 PM
- * Ultima modificacion: 26 de abril de 2021
+ * Programa:    Slave1 proyecto, botones manuales, sensores de linea y puente h
+ * Hardware:    botones y sensores en PORTB y puente H en PORTD
+ * Creado:      1 de septiembre de 2021, 05:09 PM
+ * Ultima modificacion: 8 de septiembre de 2021
  */
 //CONFIGURATION WORD 1
 #include <xc.h>
@@ -70,11 +70,13 @@ void __interrupt() isr(void){
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
             z = SSPBUF;
             BF = 0;
+            //movimiento automatico de motores
+            //combinaciones de puente h
             if (M == 0){
-                if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 1){
+                if (PORTBbits.RB0 == 0 && PORTBbits.RB1 == 0){
                 PORTD = 0;
                 }
-                else if (PORTBbits.RB0 == 0 && PORTBbits.RB1 == 0){
+                else if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 1){
                     PORTD = 0b00101101;
                 }
                 else if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 0){
@@ -84,6 +86,7 @@ void __interrupt() isr(void){
                     PORTD = 0b00101000;
                 }
             }
+            //movimiento manual de motores
             if (M == 1){
                 if (PORTBbits.RB2 == 1 && PORTBbits.RB3 == 1){
                 PORTD = 0;

@@ -501,231 +501,231 @@ Version 4.0 HI-TECH Software Intermediate Code
 "72
 [; ;proyecto1slave1.c: 72:             BF = 0;
 [e = _BF -> -> 0 `i `b ]
-"73
-[; ;proyecto1slave1.c: 73:             if (M == 0){
+"75
+[; ;proyecto1slave1.c: 75:             if (M == 0){
 [e $ ! == -> _M `i -> 0 `i 147  ]
 {
-"74
-[; ;proyecto1slave1.c: 74:                 if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 1){
-[e $ ! && == -> . . _PORTBbits 0 0 `i -> 1 `i == -> . . _PORTBbits 0 1 `i -> 1 `i 148  ]
-{
-"75
-[; ;proyecto1slave1.c: 75:                 PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
 "76
-[; ;proyecto1slave1.c: 76:                 }
+[; ;proyecto1slave1.c: 76:                 if (PORTBbits.RB0 == 0 && PORTBbits.RB1 == 0){
+[e $ ! && == -> . . _PORTBbits 0 0 `i -> 0 `i == -> . . _PORTBbits 0 1 `i -> 0 `i 148  ]
+{
+"77
+[; ;proyecto1slave1.c: 77:                 PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
+"78
+[; ;proyecto1slave1.c: 78:                 }
 }
 [e $U 149  ]
-"77
-[; ;proyecto1slave1.c: 77:                 else if (PORTBbits.RB0 == 0 && PORTBbits.RB1 == 0){
-[e :U 148 ]
-[e $ ! && == -> . . _PORTBbits 0 0 `i -> 0 `i == -> . . _PORTBbits 0 1 `i -> 0 `i 150  ]
-{
-"78
-[; ;proyecto1slave1.c: 78:                     PORTD = 0b00101101;
-[e = _PORTD -> -> 45 `i `uc ]
 "79
-[; ;proyecto1slave1.c: 79:                 }
+[; ;proyecto1slave1.c: 79:                 else if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 1){
+[e :U 148 ]
+[e $ ! && == -> . . _PORTBbits 0 0 `i -> 1 `i == -> . . _PORTBbits 0 1 `i -> 1 `i 150  ]
+{
+"80
+[; ;proyecto1slave1.c: 80:                     PORTD = 0b00101101;
+[e = _PORTD -> -> 45 `i `uc ]
+"81
+[; ;proyecto1slave1.c: 81:                 }
 }
 [e $U 151  ]
-"80
-[; ;proyecto1slave1.c: 80:                 else if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 0){
+"82
+[; ;proyecto1slave1.c: 82:                 else if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 0){
 [e :U 150 ]
 [e $ ! && == -> . . _PORTBbits 0 0 `i -> 1 `i == -> . . _PORTBbits 0 1 `i -> 0 `i 152  ]
 {
-"81
-[; ;proyecto1slave1.c: 81:                     PORTD = 0b00000101;
+"83
+[; ;proyecto1slave1.c: 83:                     PORTD = 0b00000101;
 [e = _PORTD -> -> 5 `i `uc ]
-"82
-[; ;proyecto1slave1.c: 82:                 }
+"84
+[; ;proyecto1slave1.c: 84:                 }
 }
 [e $U 153  ]
-"83
-[; ;proyecto1slave1.c: 83:                 else if (PORTBbits.RB0 == 0 && PORTBbits.RB1 == 1){
+"85
+[; ;proyecto1slave1.c: 85:                 else if (PORTBbits.RB0 == 0 && PORTBbits.RB1 == 1){
 [e :U 152 ]
 [e $ ! && == -> . . _PORTBbits 0 0 `i -> 0 `i == -> . . _PORTBbits 0 1 `i -> 1 `i 154  ]
 {
-"84
-[; ;proyecto1slave1.c: 84:                     PORTD = 0b00101000;
+"86
+[; ;proyecto1slave1.c: 86:                     PORTD = 0b00101000;
 [e = _PORTD -> -> 40 `i `uc ]
-"85
-[; ;proyecto1slave1.c: 85:                 }
+"87
+[; ;proyecto1slave1.c: 87:                 }
 }
 [e :U 154 ]
 [e :U 153 ]
 [e :U 151 ]
 [e :U 149 ]
-"86
-[; ;proyecto1slave1.c: 86:             }
+"88
+[; ;proyecto1slave1.c: 88:             }
 }
 [e :U 147 ]
-"87
-[; ;proyecto1slave1.c: 87:             if (M == 1){
+"90
+[; ;proyecto1slave1.c: 90:             if (M == 1){
 [e $ ! == -> _M `i -> 1 `i 155  ]
 {
-"88
-[; ;proyecto1slave1.c: 88:                 if (PORTBbits.RB2 == 1 && PORTBbits.RB3 == 1){
+"91
+[; ;proyecto1slave1.c: 91:                 if (PORTBbits.RB2 == 1 && PORTBbits.RB3 == 1){
 [e $ ! && == -> . . _PORTBbits 0 2 `i -> 1 `i == -> . . _PORTBbits 0 3 `i -> 1 `i 156  ]
 {
-"89
-[; ;proyecto1slave1.c: 89:                 PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
-"90
-[; ;proyecto1slave1.c: 90:                 }
-}
-[e $U 157  ]
-"91
-[; ;proyecto1slave1.c: 91:                 else if (PORTBbits.RB2 == 0 && PORTBbits.RB3 == 0){
-[e :U 156 ]
-[e $ ! && == -> . . _PORTBbits 0 2 `i -> 0 `i == -> . . _PORTBbits 0 3 `i -> 0 `i 158  ]
-{
 "92
-[; ;proyecto1slave1.c: 92:                     PORTD = 0b00101101;
-[e = _PORTD -> -> 45 `i `uc ]
+[; ;proyecto1slave1.c: 92:                 PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
 "93
 [; ;proyecto1slave1.c: 93:                 }
 }
-[e $U 159  ]
+[e $U 157  ]
 "94
-[; ;proyecto1slave1.c: 94:                 else if (PORTBbits.RB2 == 1 && PORTBbits.RB3 == 0){
-[e :U 158 ]
-[e $ ! && == -> . . _PORTBbits 0 2 `i -> 1 `i == -> . . _PORTBbits 0 3 `i -> 0 `i 160  ]
+[; ;proyecto1slave1.c: 94:                 else if (PORTBbits.RB2 == 0 && PORTBbits.RB3 == 0){
+[e :U 156 ]
+[e $ ! && == -> . . _PORTBbits 0 2 `i -> 0 `i == -> . . _PORTBbits 0 3 `i -> 0 `i 158  ]
 {
 "95
-[; ;proyecto1slave1.c: 95:                     PORTD = 0b00000101;
-[e = _PORTD -> -> 5 `i `uc ]
+[; ;proyecto1slave1.c: 95:                     PORTD = 0b00101101;
+[e = _PORTD -> -> 45 `i `uc ]
 "96
 [; ;proyecto1slave1.c: 96:                 }
 }
-[e $U 161  ]
+[e $U 159  ]
 "97
-[; ;proyecto1slave1.c: 97:                 else if (PORTBbits.RB2 == 0 && PORTBbits.RB3 == 1){
+[; ;proyecto1slave1.c: 97:                 else if (PORTBbits.RB2 == 1 && PORTBbits.RB3 == 0){
+[e :U 158 ]
+[e $ ! && == -> . . _PORTBbits 0 2 `i -> 1 `i == -> . . _PORTBbits 0 3 `i -> 0 `i 160  ]
+{
+"98
+[; ;proyecto1slave1.c: 98:                     PORTD = 0b00000101;
+[e = _PORTD -> -> 5 `i `uc ]
+"99
+[; ;proyecto1slave1.c: 99:                 }
+}
+[e $U 161  ]
+"100
+[; ;proyecto1slave1.c: 100:                 else if (PORTBbits.RB2 == 0 && PORTBbits.RB3 == 1){
 [e :U 160 ]
 [e $ ! && == -> . . _PORTBbits 0 2 `i -> 0 `i == -> . . _PORTBbits 0 3 `i -> 1 `i 162  ]
 {
-"98
-[; ;proyecto1slave1.c: 98:                     PORTD = 0b00101000;
+"101
+[; ;proyecto1slave1.c: 101:                     PORTD = 0b00101000;
 [e = _PORTD -> -> 40 `i `uc ]
-"99
-[; ;proyecto1slave1.c: 99:                 }
+"102
+[; ;proyecto1slave1.c: 102:                 }
 }
 [e :U 162 ]
 [e :U 161 ]
 [e :U 159 ]
 [e :U 157 ]
-"100
-[; ;proyecto1slave1.c: 100:             }
+"103
+[; ;proyecto1slave1.c: 103:             }
 }
 [e :U 155 ]
-"101
-[; ;proyecto1slave1.c: 101:             SSPBUF = PORTD;
-[e = _SSPBUF _PORTD ]
-"102
-[; ;proyecto1slave1.c: 102:             SSPCONbits.CKP = 1;
-[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
-"103
-[; ;proyecto1slave1.c: 103:             _delay((unsigned long)((250)*(8000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
 "104
-[; ;proyecto1slave1.c: 104:             while(SSPSTATbits.BF);
+[; ;proyecto1slave1.c: 104:             SSPBUF = PORTD;
+[e = _SSPBUF _PORTD ]
+"105
+[; ;proyecto1slave1.c: 105:             SSPCONbits.CKP = 1;
+[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
+"106
+[; ;proyecto1slave1.c: 106:             _delay((unsigned long)((250)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"107
+[; ;proyecto1slave1.c: 107:             while(SSPSTATbits.BF);
 [e $U 163  ]
 [e :U 164 ]
 [e :U 163 ]
 [e $ != -> . . _SSPSTATbits 0 0 `i -> 0 `i 164  ]
 [e :U 165 ]
-"105
-[; ;proyecto1slave1.c: 105:         }
+"108
+[; ;proyecto1slave1.c: 108:         }
 }
 [e :U 146 ]
 [e :U 145 ]
-"107
-[; ;proyecto1slave1.c: 107:         PIR1bits.SSPIF = 0;
+"110
+[; ;proyecto1slave1.c: 110:         PIR1bits.SSPIF = 0;
 [e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
-"108
-[; ;proyecto1slave1.c: 108:     }
+"111
+[; ;proyecto1slave1.c: 111:     }
 }
 [e :U 139 ]
-"109
-[; ;proyecto1slave1.c: 109: }
+"112
+[; ;proyecto1slave1.c: 112: }
 [e :UE 138 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"113
-[; ;proyecto1slave1.c: 113: void main(void) {
+"116
+[; ;proyecto1slave1.c: 116: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"114
-[; ;proyecto1slave1.c: 114:     setup();
+"117
+[; ;proyecto1slave1.c: 117:     setup();
 [e ( _setup ..  ]
-"118
-[; ;proyecto1slave1.c: 118:     while(1){}
+"121
+[; ;proyecto1slave1.c: 121:     while(1){}
 [e :U 168 ]
 {
 }
 [e :U 167 ]
 [e $U 168  ]
 [e :U 169 ]
-"119
-[; ;proyecto1slave1.c: 119: }
+"122
+[; ;proyecto1slave1.c: 122: }
 [e :UE 166 ]
 }
-"123
-[; ;proyecto1slave1.c: 123: void setup(void){
+"126
+[; ;proyecto1slave1.c: 126: void setup(void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"127
-[; ;proyecto1slave1.c: 127:     OSCCONbits.IRCF = 7;
-[e = . . _OSCCONbits 0 4 -> -> 7 `i `uc ]
-"128
-[; ;proyecto1slave1.c: 128:     OSCCONbits.SCS = 1;
-[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
 "130
-[; ;proyecto1slave1.c: 130:     ANSELH = 0;
-[e = _ANSELH -> -> 0 `i `uc ]
+[; ;proyecto1slave1.c: 130:     OSCCONbits.IRCF = 7;
+[e = . . _OSCCONbits 0 4 -> -> 7 `i `uc ]
 "131
-[; ;proyecto1slave1.c: 131:     ANSEL = 0;
-[e = _ANSEL -> -> 0 `i `uc ]
-"132
-[; ;proyecto1slave1.c: 132:     TRISA = 0;
-[e = _TRISA -> -> 0 `i `uc ]
+[; ;proyecto1slave1.c: 131:     OSCCONbits.SCS = 1;
+[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
 "133
-[; ;proyecto1slave1.c: 133:     TRISB = 15;
-[e = _TRISB -> -> 15 `i `uc ]
+[; ;proyecto1slave1.c: 133:     ANSELH = 0;
+[e = _ANSELH -> -> 0 `i `uc ]
 "134
-[; ;proyecto1slave1.c: 134:     TRISD = 0;
-[e = _TRISD -> -> 0 `i `uc ]
+[; ;proyecto1slave1.c: 134:     ANSEL = 0;
+[e = _ANSEL -> -> 0 `i `uc ]
 "135
-[; ;proyecto1slave1.c: 135:     OPTION_REGbits.nRBPU = 0;
-[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
+[; ;proyecto1slave1.c: 135:     TRISA = 0;
+[e = _TRISA -> -> 0 `i `uc ]
 "136
-[; ;proyecto1slave1.c: 136:     WPUBbits.WPUB0 = 1;
-[e = . . _WPUBbits 1 0 -> -> 1 `i `uc ]
+[; ;proyecto1slave1.c: 136:     TRISB = 15;
+[e = _TRISB -> -> 15 `i `uc ]
 "137
-[; ;proyecto1slave1.c: 137:     WPUBbits.WPUB1 = 1;
-[e = . . _WPUBbits 1 1 -> -> 1 `i `uc ]
+[; ;proyecto1slave1.c: 137:     TRISD = 0;
+[e = _TRISD -> -> 0 `i `uc ]
 "138
-[; ;proyecto1slave1.c: 138:     WPUBbits.WPUB2 = 1;
-[e = . . _WPUBbits 1 2 -> -> 1 `i `uc ]
+[; ;proyecto1slave1.c: 138:     OPTION_REGbits.nRBPU = 0;
+[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
 "139
-[; ;proyecto1slave1.c: 139:     WPUBbits.WPUB3 = 1;
-[e = . . _WPUBbits 1 3 -> -> 1 `i `uc ]
+[; ;proyecto1slave1.c: 139:     WPUBbits.WPUB0 = 1;
+[e = . . _WPUBbits 1 0 -> -> 1 `i `uc ]
 "140
-[; ;proyecto1slave1.c: 140:     PORTA = 0;
-[e = _PORTA -> -> 0 `i `uc ]
+[; ;proyecto1slave1.c: 140:     WPUBbits.WPUB1 = 1;
+[e = . . _WPUBbits 1 1 -> -> 1 `i `uc ]
 "141
-[; ;proyecto1slave1.c: 141:     PORTB = 0;
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;proyecto1slave1.c: 141:     WPUBbits.WPUB2 = 1;
+[e = . . _WPUBbits 1 2 -> -> 1 `i `uc ]
 "142
-[; ;proyecto1slave1.c: 142:     PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
+[; ;proyecto1slave1.c: 142:     WPUBbits.WPUB3 = 1;
+[e = . . _WPUBbits 1 3 -> -> 1 `i `uc ]
 "143
-[; ;proyecto1slave1.c: 143:     I2C_Slave_Init(0x60);
-[e ( _I2C_Slave_Init (1 -> -> 96 `i `uc ]
+[; ;proyecto1slave1.c: 143:     PORTA = 0;
+[e = _PORTA -> -> 0 `i `uc ]
 "144
-[; ;proyecto1slave1.c: 144: }
+[; ;proyecto1slave1.c: 144:     PORTB = 0;
+[e = _PORTB -> -> 0 `i `uc ]
+"145
+[; ;proyecto1slave1.c: 145:     PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
+"146
+[; ;proyecto1slave1.c: 146:     I2C_Slave_Init(0x60);
+[e ( _I2C_Slave_Init (1 -> -> 96 `i `uc ]
+"147
+[; ;proyecto1slave1.c: 147: }
 [e :UE 170 ]
 }

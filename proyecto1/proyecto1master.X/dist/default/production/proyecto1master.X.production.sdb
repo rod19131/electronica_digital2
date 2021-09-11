@@ -45,7 +45,7 @@
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
 "71 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\proyecto1master.c
 [v _main main `(v  1 e 1 0 ]
-"170
+"176
 [v _setup setup `(v  1 e 1 0 ]
 "35 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\usart.c
 [v _enviocaracter enviocaracter `(v  1 e 1 0 ]
@@ -297,7 +297,6 @@
 [v _xls xls `uc  1 e 1 0 ]
 [v _yls yls `uc  1 e 1 0 ]
 [v _z1 z1 `uc  1 e 1 0 ]
-"55
 [v _mapping mapping `uc  1 e 1 0 ]
 "56
 [v _x x `i  1 e 2 0 ]
@@ -309,27 +308,27 @@
 "71
 [v _main main `(v  1 e 1 0 ]
 {
-"166
+"172
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
 "545
-[v sprintf@val val `ui  1 a 2 19 ]
+[v sprintf@val val `ui  1 a 2 17 ]
 "512
-[v sprintf@c c `uc  1 a 1 22 ]
+[v sprintf@c c `uc  1 a 1 20 ]
 "507
-[v sprintf@ap ap `[1]*.4v  1 a 1 18 ]
+[v sprintf@ap ap `[1]*.4v  1 a 1 16 ]
 "521
-[v sprintf@prec prec `c  1 a 1 17 ]
+[v sprintf@prec prec `c  1 a 1 15 ]
 "525
-[v sprintf@flag flag `uc  1 a 1 16 ]
+[v sprintf@flag flag `uc  1 a 1 14 ]
 "505
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
 [v sprintf@f f `*.24DCuc  1 p 1 0 ]
 "550
-[v sprintf@sp sp `*.4uc  1 a 1 21 ]
+[v sprintf@sp sp `*.4uc  1 a 1 19 ]
 "1567
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
@@ -354,10 +353,10 @@
 [v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
 "30
 } 0
-"170 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\proyecto1master.c
+"176 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\proyecto1master.c
 [v _setup setup `(v  1 e 1 0 ]
 {
-"229
+"236
 } 0
 "66 D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1master.X\LCD8bits.c
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]

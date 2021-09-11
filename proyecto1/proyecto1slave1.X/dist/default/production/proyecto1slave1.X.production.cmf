@@ -21,7 +21,7 @@ cstackCOMMON COMMON 1 74 74 4 1
 intentry CODE 0 4 4 8 2
 bssCOMMON COMMON 1 70 70 4 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
+$C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 2 2
@@ -71,15 +71,15 @@ STRING 121-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\proyecto1slave1.X.production.o
-F cinit CODE >644:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
-F cinit CODE >647:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
-F cinit CODE >667:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
-10 cinit CODE >668:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
-11 cinit CODE >669:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
-12 cinit CODE >670:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
-13 cinit CODE >676:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
-13 cinit CODE >678:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
-14 cinit CODE >679:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
+F cinit CODE >644:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.s
+F cinit CODE >647:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.s
+F cinit CODE >667:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.s
+10 cinit CODE >668:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.s
+11 cinit CODE >669:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.s
+12 cinit CODE >670:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.s
+13 cinit CODE >676:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.s
+13 cinit CODE >678:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.s
+14 cinit CODE >679:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.s
 4 intentry CODE >48:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
 17 text3 CODE >48:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
 17 text3 CODE >49:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
@@ -99,40 +99,40 @@ F cinit CODE >667:C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.s
 50 text3 CODE >70:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
 59 text3 CODE >71:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
 5F text3 CODE >72:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-62 text3 CODE >73:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-67 text3 CODE >74:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-71 text3 CODE >75:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-72 text3 CODE >76:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-73 text3 CODE >77:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-7B text3 CODE >78:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-7D text3 CODE >79:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-7E text3 CODE >80:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-86 text3 CODE >81:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-88 text3 CODE >82:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-89 text3 CODE >83:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-91 text3 CODE >84:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-94 text3 CODE >85:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+62 text3 CODE >75:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+67 text3 CODE >76:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+71 text3 CODE >77:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+72 text3 CODE >78:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+73 text3 CODE >79:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+7B text3 CODE >80:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+7D text3 CODE >81:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+7E text3 CODE >82:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+86 text3 CODE >83:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+88 text3 CODE >84:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+89 text3 CODE >85:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+91 text3 CODE >86:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
 94 text3 CODE >87:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-99 text3 CODE >88:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-A2 text3 CODE >89:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-A3 text3 CODE >90:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-A4 text3 CODE >91:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-AC text3 CODE >92:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-AE text3 CODE >93:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-AF text3 CODE >94:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-B7 text3 CODE >95:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-B9 text3 CODE >96:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-BA text3 CODE >97:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-C2 text3 CODE >98:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-C5 text3 CODE >99:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-C5 text3 CODE >100:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-C5 text3 CODE >101:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-C8 text3 CODE >102:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-C9 text3 CODE >103:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-CE text3 CODE >104:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-D4 text3 CODE >105:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-D4 text3 CODE >107:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-D7 text3 CODE >109:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+94 text3 CODE >90:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+99 text3 CODE >91:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+A2 text3 CODE >92:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+A3 text3 CODE >93:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+A4 text3 CODE >94:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+AC text3 CODE >95:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+AE text3 CODE >96:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+AF text3 CODE >97:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+B7 text3 CODE >98:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+B9 text3 CODE >99:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+BA text3 CODE >100:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+C2 text3 CODE >101:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+C5 text3 CODE >102:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+C5 text3 CODE >103:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+C5 text3 CODE >104:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+C8 text3 CODE >105:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+C9 text3 CODE >106:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+CE text3 CODE >107:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+D4 text3 CODE >108:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+D4 text3 CODE >110:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+D7 text3 CODE >112:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
 FE text2 CODE >93:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\I2C.c
 FF text2 CODE >95:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\I2C.c
 103 text2 CODE >96:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\I2C.c
@@ -145,27 +145,27 @@ FF text2 CODE >95:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1sl
 111 text2 CODE >103:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\I2C.c
 114 text2 CODE >104:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\I2C.c
 117 text2 CODE >105:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\I2C.c
-DE text1 CODE >123:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-DE text1 CODE >127:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-E2 text1 CODE >128:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-E3 text1 CODE >130:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-E6 text1 CODE >131:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-E7 text1 CODE >132:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-EA text1 CODE >133:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-EC text1 CODE >134:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-ED text1 CODE >135:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-EE text1 CODE >136:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-EF text1 CODE >137:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-F0 text1 CODE >138:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-F1 text1 CODE >139:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-F2 text1 CODE >140:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-F5 text1 CODE >141:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-F6 text1 CODE >142:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-F7 text1 CODE >143:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-FD text1 CODE >144:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-118 maintext CODE >113:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-118 maintext CODE >114:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
-11D maintext CODE >118:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+DE text1 CODE >126:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+DE text1 CODE >130:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+E2 text1 CODE >131:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+E3 text1 CODE >133:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+E6 text1 CODE >134:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+E7 text1 CODE >135:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+EA text1 CODE >136:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+EC text1 CODE >137:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+ED text1 CODE >138:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+EE text1 CODE >139:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+EF text1 CODE >140:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+F0 text1 CODE >141:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+F1 text1 CODE >142:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+F2 text1 CODE >143:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+F5 text1 CODE >144:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+F6 text1 CODE >145:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+F7 text1 CODE >146:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+FD text1 CODE >147:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+118 maintext CODE >116:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+118 maintext CODE >117:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
+11D maintext CODE >121:D:\AlejandroDigital\electronica_digital2\proyecto1\proyecto1slave1.X\proyecto1slave1.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -190,20 +190,20 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 _BF 4A0 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _PEIE 5E 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
+___sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
 _main 230 0 CODE 0 maintext dist/default/production\proyecto1slave1.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
-start 18 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
+start 18 0 CODE 0 init C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
 __size_of_main 0 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
@@ -212,8 +212,8 @@ __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 _SSPCONbits 14 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
-___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
+___stackhi 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
+___stacklo 0 0 ABS 0 - C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
 _I2C_Slave_Init 1FC 0 CODE 0 text2 dist/default/production\proyecto1slave1.X.production.o
 __size_of_setup 0 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 _WPUBbits 95 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
@@ -224,7 +224,7 @@ _SSPBUF 13 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
+___int_sp 0 0 STACK 2 stack C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -268,7 +268,7 @@ _isr 2E 0 CODE 0 text3 dist/default/production\proyecto1slave1.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\proyecto1slave1.X.production.o
 __end_of_isr 1BC 0 CODE 0 text3 dist/default/production\proyecto1slave1.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sri8.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\AlejandroRodriguez\AppData\Local\Temp\sn28.o
 __pmaintext 230 0 CODE 0 maintext dist/default/production\proyecto1slave1.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -

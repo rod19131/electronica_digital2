@@ -2727,11 +2727,13 @@ void __attribute__((picinterrupt(("")))) isr(void){
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
             z = SSPBUF;
             BF = 0;
+
+
             if (M == 0){
-                if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 1){
+                if (PORTBbits.RB0 == 0 && PORTBbits.RB1 == 0){
                 PORTD = 0;
                 }
-                else if (PORTBbits.RB0 == 0 && PORTBbits.RB1 == 0){
+                else if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 1){
                     PORTD = 0b00101101;
                 }
                 else if (PORTBbits.RB0 == 1 && PORTBbits.RB1 == 0){
@@ -2741,6 +2743,7 @@ void __attribute__((picinterrupt(("")))) isr(void){
                     PORTD = 0b00101000;
                 }
             }
+
             if (M == 1){
                 if (PORTBbits.RB2 == 1 && PORTBbits.RB3 == 1){
                 PORTD = 0;

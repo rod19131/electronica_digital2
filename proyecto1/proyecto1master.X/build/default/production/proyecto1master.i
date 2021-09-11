@@ -2828,8 +2828,8 @@ void enviocaracter(char a);
 void enviocadena(char* cadena);
 # 38 "proyecto1master.c" 2
 # 54 "proyecto1master.c"
-unsigned char s1, s2, L, R, M, xls, yls, z1 = 0;
-unsigned char mapping = 0;
+unsigned char s1, s2, L, R, M, xls, yls, z1, mapping = 0;
+
 int x, y, xms, yms = 0;
 unsigned int arct;
 int Heading = 0;
@@ -2848,6 +2848,7 @@ void setup(void);
 void main(void) {
     setup();
     while(1){
+
         switch(s2) {
 
             case 0:
@@ -2870,17 +2871,13 @@ void main(void) {
                 R = 62;
                 break;
     }
+
     if ((PORTBbits.RB0 == 1) && (s1 >= 4)){
             M = 0;
             }
 
     else if ((PORTBbits.RB0 == 0) || (s1 < 4)){
             M = 1;}
-
-
-
-
-
 
 
         I2C_Master_Start();
@@ -2920,22 +2917,31 @@ void main(void) {
         _delay((unsigned long)((50)*(8000000/4000.0)));
         x = xms | xls;
         y = yms | yls;
-        if (y <= 900 && x > 0){
-            mapping = 192;
-        }
-        if ((y > 900 && x > 0) || (y > 900 && x < 0)){
-            mapping = 128;}
-        if (y <= 900 && x < 0){
+
+
+        if (y <= 700 && x > 0){
             mapping = 64;
         }
+        if (y > 700){
+            mapping = 128;}
+        if (y <= 700 && x < 0){
+            mapping = 192;
+        }
         if (y < 0 && x < 0){
-            mapping = 0;
+            mapping = 240;
         }
         if (y < 0 && x > 0){
-            mapping = 255;
+            mapping = 0;
         }
 
-        sprintf(volt, "%d %c%c %d %d %d\n", s1, L, R, M, y, mapping);
+
+        I2C_Master_Start();
+        I2C_Master_Write(0x50);
+        I2C_Master_Write(mapping);
+        I2C_Master_Stop();
+        _delay((unsigned long)((10)*(8000000/4000.0)));
+
+        sprintf(volt, "%d %c%c %d %d\n", s1, L, R, M, y);
         enviocadena(volt);
         Lcd_Set_Cursor(2,1);
         Lcd_Write_String(volt);
@@ -2980,6 +2986,7 @@ void setup(void){
 
     Lcd_Init();
     Lcd_Set_Cursor(1,1);
+
     Lcd_Write_String("I_LR_M_MagnetY");
     I2C_Master_Init(100000);
 

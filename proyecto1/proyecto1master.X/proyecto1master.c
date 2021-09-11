@@ -1,12 +1,12 @@
 /*
- * Archivo:     proyectovacas.c
+ * Archivo:     proyecto1master.c
  * Dispositivo: PIC16F887
  * Autor:       Jose Alejandro Rodriguez Porras
  * Compilador:  XC8 MPLABX V5.40
- * Programa:    Proyecto vacaciones
- * Hardware:    2 pots en puerto A y 2 servos en CCP1 y CCP2
- * Creado:      14 de junio de 2021, 05:09 PM
- * Ultima modificacion: 26 de abril de 2021
+ * Programa:    Proyecto 1: Carro Inteligente
+ * Hardware:    LCD en RC0, RC1 y Puerto D, UART en RX y TX, y switch en PORTA.
+ * Creado:      1 de septiembre de 2021, 05:09 PM
+ * Ultima modificacion: 8 de septiembre de 2021
  */
 //CONFIGURATION WORD 1
 #include <xc.h>
@@ -51,8 +51,8 @@
 #define D7 RD7
 #define _XTAL_FREQ 8000000
 //variables
-unsigned char s1, s2, L, R, M, xls, yls, z1 = 0;  //valores esclavos
-unsigned char mapping = 0;
+unsigned char s1, s2, L, R, M, xls, yls, z1, mapping = 0;  //valores esclavos
+//valores gauss magnetometro en ejes x y y
 int x, y, xms, yms = 0;
 unsigned int arct;
 int Heading = 0;
@@ -71,6 +71,7 @@ void setup(void);
 void main(void) {
     setup();
     while(1){
+        //motores activados
         switch(s2) {
             //0
             case 0:
@@ -92,20 +93,16 @@ void main(void) {
                 L = 62;
                 R = 62;
                 break;   
-    }   
+    }
+    //modo del carro
     if ((PORTBbits.RB0 == 1) && (s1 >= 4)){
             M = 0;
             }    
-        
+       
     else if ((PORTBbits.RB0 == 0) || (s1 < 4)){
             M = 1;} 
-//        I2C_Master_Start();
-//        I2C_Master_Write(0x50);
-//        I2C_Master_Write(M);
-//        I2C_Master_Stop();
-//        __delay_ms(10);
         
-        //recepcion adc slave0
+        //recepcion adc slave0 (sensor de luz y movimiento del servo)
         I2C_Master_Start();
         I2C_Master_Write(0x51);
         s1 = I2C_Master_Read(0);
@@ -117,19 +114,19 @@ void main(void) {
         I2C_Master_Write(M);
         I2C_Master_Stop();
         __delay_ms(10);
-        //recepcion cont slave1
+        //recepcion slave1 (puente h, control de motores)
         I2C_Master_Start();
         I2C_Master_Write(0x61);
         s2 = I2C_Master_Read(0);
         I2C_Master_Stop();
         __delay_ms(10);
-        //        //recepcion sensor i2c temp
+        //        //recepcion sensor i2c magnetometro
         I2C_Master_Start();
         I2C_Master_Write(0x1A);
         I2C_Master_Write(0x00);
         I2C_Master_Stop();
         __delay_ms(10);
-        
+        //recepcion valores gauss en ejes x y y
         I2C_Master_Start();
         I2C_Master_Write(0x1B);
         xls = I2C_Master_Read(1);
@@ -143,24 +140,33 @@ void main(void) {
         __delay_ms(50);
         x = xms | xls;
         y = yms | yls;
-        if (y <= 900 && x > 0){
-            mapping = 192;
-        }
-        if ((y > 900 && x > 0) || (y > 900 && x < 0)){
-            mapping = 128;}
-        if (y <= 900 && x < 0){
+        //mapeo valores para indicar el norte con el servo 
+        //if (mapping != 1){
+        if (y <= 700 && x > 0){
             mapping = 64;
         }
+        if (y > 700){
+            mapping = 128;}
+        if (y <= 700 && x < 0){
+            mapping = 192;
+        }
         if (y < 0 && x < 0){
-            mapping = 0;
+            mapping = 240;
         }
         if (y < 0 && x > 0){
-            mapping = 255;
+            mapping = 0;
         }
-        //escribir valores en LCD
-        sprintf(volt, "%d %c%c %d %d %d\n", s1, L, R, M, y, mapping); //valores para pantalla 2 linea
-        enviocadena(volt);                           //envio a pc
-        Lcd_Set_Cursor(2,1);                         //linea 2
+    //}
+        //envio mapeo al servo
+        I2C_Master_Start();
+        I2C_Master_Write(0x50);
+        I2C_Master_Write(mapping);
+        I2C_Master_Stop();
+        __delay_ms(10);
+        //escribir valores en LCD //(iluminacion) (direccion carro) (Modo (gauss)
+        sprintf(volt, "%d %c%c %d %d\n", s1, L, R, M, y); //valores para pantalla 2 linea
+        enviocadena(volt);     //envio a pc
+        Lcd_Set_Cursor(2,1);   //linea 2
         Lcd_Write_String(volt);
     }
 }   
@@ -203,9 +209,10 @@ void setup(void){
     //configuracion interrupciones
     Lcd_Init();
     Lcd_Set_Cursor(1,1);  //linea 1
+                     //iluminacion_direccion_modo_gauss en eje y
     Lcd_Write_String("I_LR_M_MagnetY");
     I2C_Master_Init(100000);        // Inicializar Comuncación I2C
-    
+    //init magnetometro
     I2C_Master_Start();
     I2C_Master_Write(0x1A);
     I2C_Master_Write(0x0B);
