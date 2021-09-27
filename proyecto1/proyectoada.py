@@ -12,7 +12,7 @@
 
 from Adafruit_IO import Client, RequestError, Feed
 import serial, re, time                                         
-ADAFRUIT_IO_KEY = "aio_KmyL20I9uCUHidFRAtkaRFKsJlL9"
+ADAFRUIT_IO_KEY = "aio_evYI72hpegnQ6MXPvTGu4YK2Yi2os"
 ADAFRUIT_IO_USERNAME = "rod19131"
 aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
 feed1 = int
